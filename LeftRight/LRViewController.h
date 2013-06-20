@@ -10,4 +10,6 @@
 
 @interface LRViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *courseNameField;
+
 @end
