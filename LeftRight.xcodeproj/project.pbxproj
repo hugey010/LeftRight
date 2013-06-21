@@ -24,6 +24,7 @@
 		96FACB531773D3040009B820 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB521773D3040009B820 /* Course.m */; };
 		96FACB561773D3050009B820 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB551773D3050009B820 /* Player.m */; };
 		96FACB5A1773DD8D0009B820 /* Course+LRManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */; };
+		96FACB5E1773EAF50009B820 /* LRNewGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB5D1773EAF50009B820 /* LRNewGameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		96FACB551773D3050009B820 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		96FACB581773DD8D0009B820 /* Course+LRManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Course+LRManagedObject.h"; sourceTree = "<group>"; };
 		96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Course+LRManagedObject.m"; sourceTree = "<group>"; };
+		96FACB5C1773EAF50009B820 /* LRNewGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRNewGameController.h; sourceTree = "<group>"; };
+		96FACB5D1773EAF50009B820 /* LRNewGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRNewGameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +105,12 @@
 		96B17CF61772A1800054C287 /* LeftRight */ = {
 			isa = PBXGroup;
 			children = (
+				96FACB5B1773EACE0009B820 /* Controllers */,
 				96FACB501773CF900009B820 /* DataModel */,
 				96B17CFF1772A1800054C287 /* LRAppDelegate.h */,
 				96B17D001772A1800054C287 /* LRAppDelegate.m */,
 				96B17D081772A1800054C287 /* MainStoryboard_iPhone.storyboard */,
 				96B17D0B1772A1800054C287 /* MainStoryboard_iPad.storyboard */,
-				96B17D0E1772A1800054C287 /* LRViewController.h */,
-				96B17D0F1772A1800054C287 /* LRViewController.m */,
 				96B17CF71772A1800054C287 /* Supporting Files */,
 			);
 			path = LeftRight;
@@ -148,6 +150,17 @@
 				96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */,
 			);
 			name = ModelCategories;
+			sourceTree = "<group>";
+		};
+		96FACB5B1773EACE0009B820 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96B17D0E1772A1800054C287 /* LRViewController.h */,
+				96B17D0F1772A1800054C287 /* LRViewController.m */,
+				96FACB5C1773EAF50009B820 /* LRNewGameController.h */,
+				96FACB5D1773EAF50009B820 /* LRNewGameController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +271,7 @@
 				96FACB531773D3040009B820 /* Course.m in Sources */,
 				96FACB561773D3050009B820 /* Player.m in Sources */,
 				96FACB5A1773DD8D0009B820 /* Course+LRManagedObject.m in Sources */,
+				96FACB5E1773EAF50009B820 /* LRNewGameController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
