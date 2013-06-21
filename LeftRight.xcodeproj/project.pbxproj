@@ -26,6 +26,7 @@
 		96FACB5A1773DD8D0009B820 /* Course+LRManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */; };
 		96FACB5E1773EAF50009B820 /* LRNewGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB5D1773EAF50009B820 /* LRNewGameController.m */; };
 		96FACB621773F7550009B820 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB611773F7550009B820 /* TPKeyboardAvoidingScrollView.m */; };
+		96FACB6517740EAF0009B820 /* LRActiveGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB6417740EAF0009B820 /* LRActiveGameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		96FACB5D1773EAF50009B820 /* LRNewGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRNewGameController.m; sourceTree = "<group>"; };
 		96FACB601773F7550009B820 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		96FACB611773F7550009B820 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		96FACB6317740EAF0009B820 /* LRActiveGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRActiveGameController.h; sourceTree = "<group>"; };
+		96FACB6417740EAF0009B820 /* LRActiveGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRActiveGameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				96B17D0F1772A1800054C287 /* LRViewController.m */,
 				96FACB5C1773EAF50009B820 /* LRNewGameController.h */,
 				96FACB5D1773EAF50009B820 /* LRNewGameController.m */,
+				96FACB6317740EAF0009B820 /* LRActiveGameController.h */,
+				96FACB6417740EAF0009B820 /* LRActiveGameController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				96FACB5A1773DD8D0009B820 /* Course+LRManagedObject.m in Sources */,
 				96FACB5E1773EAF50009B820 /* LRNewGameController.m in Sources */,
 				96FACB621773F7550009B820 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				96FACB6517740EAF0009B820 /* LRActiveGameController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
