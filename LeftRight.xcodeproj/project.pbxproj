@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02A2B218804D471AB85697FD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82CAA720BF8A4B89B13CEED7 /* libPods.a */; };
 		96B17CF11772A1800054C287 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF01772A1800054C287 /* UIKit.framework */; };
 		96B17CF31772A1800054C287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF21772A1800054C287 /* Foundation.framework */; };
 		96B17CF51772A1800054C287 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF41772A1800054C287 /* CoreGraphics.framework */; };
@@ -19,9 +20,14 @@
 		96B17D0A1772A1800054C287 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96B17D081772A1800054C287 /* MainStoryboard_iPhone.storyboard */; };
 		96B17D0D1772A1800054C287 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96B17D0B1772A1800054C287 /* MainStoryboard_iPad.storyboard */; };
 		96B17D101772A1800054C287 /* LRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B17D0F1772A1800054C287 /* LRViewController.m */; };
+		96FACB4F1773CE4C0009B820 /* LRModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB4D1773CE4C0009B820 /* LRModel.xcdatamodeld */; };
+		96FACB531773D3040009B820 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB521773D3040009B820 /* Course.m */; };
+		96FACB561773D3050009B820 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB551773D3050009B820 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5333074CF59D4548B2036EDA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		82CAA720BF8A4B89B13CEED7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B17CED1772A1800054C287 /* LeftRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeftRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B17CF01772A1800054C287 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96B17CF21772A1800054C287 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +45,11 @@
 		96B17D0C1772A1800054C287 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		96B17D0E1772A1800054C287 /* LRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRViewController.h; sourceTree = "<group>"; };
 		96B17D0F1772A1800054C287 /* LRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRViewController.m; sourceTree = "<group>"; };
+		96FACB4E1773CE4C0009B820 /* LRModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LRModel.xcdatamodel; sourceTree = "<group>"; };
+		96FACB511773D3040009B820 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		96FACB521773D3040009B820 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		96FACB541773D3050009B820 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		96FACB551773D3050009B820 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +60,7 @@
 				96B17CF11772A1800054C287 /* UIKit.framework in Frameworks */,
 				96B17CF31772A1800054C287 /* Foundation.framework in Frameworks */,
 				96B17CF51772A1800054C287 /* CoreGraphics.framework in Frameworks */,
+				02A2B218804D471AB85697FD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +73,7 @@
 				96B17CF61772A1800054C287 /* LeftRight */,
 				96B17CEF1772A1800054C287 /* Frameworks */,
 				96B17CEE1772A1800054C287 /* Products */,
+				5333074CF59D4548B2036EDA /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +91,7 @@
 				96B17CF01772A1800054C287 /* UIKit.framework */,
 				96B17CF21772A1800054C287 /* Foundation.framework */,
 				96B17CF41772A1800054C287 /* CoreGraphics.framework */,
+				82CAA720BF8A4B89B13CEED7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,6 +99,7 @@
 		96B17CF61772A1800054C287 /* LeftRight */ = {
 			isa = PBXGroup;
 			children = (
+				96FACB501773CF900009B820 /* DataModel */,
 				96B17CFF1772A1800054C287 /* LRAppDelegate.h */,
 				96B17D001772A1800054C287 /* LRAppDelegate.m */,
 				96B17D081772A1800054C287 /* MainStoryboard_iPhone.storyboard */,
@@ -110,6 +125,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		96FACB501773CF900009B820 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				96FACB4D1773CE4C0009B820 /* LRModel.xcdatamodeld */,
+				96FACB541773D3050009B820 /* Player.h */,
+				96FACB551773D3050009B820 /* Player.m */,
+				96FACB511773D3040009B820 /* Course.h */,
+				96FACB521773D3040009B820 /* Course.m */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96B17D131772A1800054C287 /* Build configuration list for PBXNativeTarget "LeftRight" */;
 			buildPhases = (
+				4E92C214284F4FD0A8650CA4 /* Check Pods Manifest.lock */,
 				96B17CE91772A1800054C287 /* Sources */,
 				96B17CEA1772A1800054C287 /* Frameworks */,
 				96B17CEB1772A1800054C287 /* Resources */,
+				C4173B41D12D497198B8DEFA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +202,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E92C214284F4FD0A8650CA4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		C4173B41D12D497198B8DEFA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96B17CE91772A1800054C287 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -181,6 +241,9 @@
 				96B17CFD1772A1800054C287 /* main.m in Sources */,
 				96B17D011772A1800054C287 /* LRAppDelegate.m in Sources */,
 				96B17D101772A1800054C287 /* LRViewController.m in Sources */,
+				96FACB4F1773CE4C0009B820 /* LRModel.xcdatamodeld in Sources */,
+				96FACB531773D3040009B820 /* Course.m in Sources */,
+				96FACB561773D3050009B820 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +337,7 @@
 		};
 		96B17D141772A1800054C287 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5333074CF59D4548B2036EDA /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeftRight/LeftRight-Prefix.pch";
@@ -285,6 +349,7 @@
 		};
 		96B17D151772A1800054C287 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5333074CF59D4548B2036EDA /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeftRight/LeftRight-Prefix.pch";
@@ -316,6 +381,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		96FACB4D1773CE4C0009B820 /* LRModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				96FACB4E1773CE4C0009B820 /* LRModel.xcdatamodel */,
+			);
+			currentVersion = 96FACB4E1773CE4C0009B820 /* LRModel.xcdatamodel */;
+			name = LRModel.xcdatamodeld;
+			path = ../LRModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 96B17CE51772A17F0054C287 /* Project object */;
 }
