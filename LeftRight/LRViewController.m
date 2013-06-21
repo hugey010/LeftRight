@@ -72,15 +72,31 @@
     }
     
     records = [Course MR_findAll];
-    DLog(@"records = %@", records);
     [self.collectionView reloadData];
+}
+
+
+#pragma mark - UITextFieldDelegate methods
+
+-(BOOL)textFieldShouldReturn:(UITextField*)textField;
+{
+    NSInteger nextTag = textField.tag + 1;
+    // Try to find next responder
+    UIResponder* nextResponder = [textField.superview viewWithTag:nextTag];
+    if (nextResponder) {
+        // Found next responder, so set it.
+        [nextResponder becomeFirstResponder];
+    } else {
+        // Not found, so remove keyboard.
+        [textField resignFirstResponder];
+    }
+    return NO; // We do not want UITextField to insert line-breaks.
 }
 
 #pragma mark - private methods
 
 -(void)keyboardWillHide:(NSNotification*)n {
     NSDictionary* userInfo = [n userInfo];
-    DLog(@"userinfo = %@", userInfo);
     NSTimeInterval duration;
     UIViewAnimationCurve animationCurve;
     CGRect startFrame;
@@ -130,14 +146,14 @@
 }
 
 -(Course*)saveCurrentCourse {
-    if (self.courseNameView.text && self.courseNameView.text.length > 0) {
-        Course *course = [[Course MR_findByAttribute:@"name" withValue:self.courseNameView.text] lastObject];
+    if (self.courseNameField.text && self.courseNameField.text.length > 0) {
+        Course *course = [[Course MR_findByAttribute:@"name" withValue:self.courseNameField.text] lastObject];
         
         if (!course) {
             course = [Course MR_createEntity];
         }
         
-        course.name = self.courseNameView.text;
+        course.name = self.courseNameField.text;
         course.handicap1 = [NSNumber numberWithInteger:[self.holeField1.text integerValue]];
         course.handicap2 = [NSNumber numberWithInteger:[self.holeField2.text integerValue]];
         course.handicap3 = [NSNumber numberWithInteger:[self.holeField3.text integerValue]];
@@ -167,15 +183,14 @@
 }
 
 -(void)clearFormData {
-    for (UITextField *f in self.holeFields) {
+    for (UITextField *f in self.allFields) {
         f.text = @"";
     }
-    self.courseNameView.text = @"";
 }
 
 -(void)loadFormDataWithCourse:(Course*)course {
     
-    self.courseNameView.text = course.name;
+    self.courseNameField.text = course.name;
     self.holeField1.text = [NSString stringWithFormat:@"%@", course.handicap1];
     self.holeField2.text = [NSString stringWithFormat:@"%@", course.handicap2];
     self.holeField3.text = [NSString stringWithFormat:@"%@", course.handicap3];
@@ -195,6 +210,9 @@
     self.holeField17.text = [NSString stringWithFormat:@"%@", course.handicap17];
     self.holeField18.text = [NSString stringWithFormat:@"%@", course.handicap18];
     
+}
+
+- (IBAction)holeField8:(id)sender {
 }
 
 - (IBAction)newGameButtonPressed:(id)sender {

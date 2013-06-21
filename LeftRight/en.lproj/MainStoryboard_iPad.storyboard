@@ -14,16 +14,18 @@
                         <subviews>
                             <view contentMode="scaleToFill" id="Bc6-6r-oio">
                                 <rect key="frame" x="308" y="267" width="614" height="51"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="5mk-l8-81R">
-                                        <rect key="frame" x="0.0" y="0.0" width="614" height="51"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
+                            <textField opaque="NO" clipsSubviews="YES" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="loE-kl-zqG">
+                                <rect key="frame" x="308" y="267" width="614" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="Jvy-ya-R2f"/>
+                                </connections>
+                            </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LeftRight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sy7-JW-0P2">
                                 <rect key="frame" x="362" y="1" width="291" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
@@ -210,92 +212,128 @@
                                 <rect key="frame" x="217" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="zpH-Ke-SLb">
-                                <rect key="frame" x="217" y="389" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="a7j-gt-1D6">
+                                <rect key="frame" x="217" y="390" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="92Q-xo-CPW"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="nDS-g8-Ipd">
                                 <rect key="frame" x="301" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="3xx-A3-1VT">
-                                <rect key="frame" x="301" y="389" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="shd-dR-xGq">
+                                <rect key="frame" x="301" y="389" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="Vr3-Vj-gEt"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="fcU-0q-tzD">
                                 <rect key="frame" x="385" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="bbk-7t-1Qi">
-                                <rect key="frame" x="386" y="389" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="WiA-97-Y3T">
+                                <rect key="frame" x="386" y="389" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="pOF-dF-n9n"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="8LP-LS-aXo">
                                 <rect key="frame" x="469" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="XtH-cm-0UZ">
-                                <rect key="frame" x="470" y="389" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="GOg-7Q-BI2">
+                                <rect key="frame" x="471" y="390" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="obc-Qx-YWv"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="Obo-YE-ZXl">
                                 <rect key="frame" x="553" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="pEB-97-V5m">
-                                <rect key="frame" x="554" y="389" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="PYk-Xe-bK6">
+                                <rect key="frame" x="553" y="390" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="IAG-YJ-Bis"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="Nv6-pH-Ibw">
                                 <rect key="frame" x="637" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="tTJ-D1-qUW">
-                                <rect key="frame" x="638" y="389" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="WQT-0h-XHt">
+                                <rect key="frame" x="637" y="390" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="MSp-jf-Ywd"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="NEj-QU-5Ut">
                                 <rect key="frame" x="721" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="QFs-2C-hpB">
-                                <rect key="frame" x="722" y="389" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="Jrg-Ul-WrT">
+                                <rect key="frame" x="721" y="390" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="Lbp-0c-Kwk"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="Sjc-Zf-PI1">
                                 <rect key="frame" x="805" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="2Rd-3c-Lvc">
-                                <rect key="frame" x="806" y="389" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="29" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="3lW-zy-AtZ">
+                                <rect key="frame" x="805" y="390" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="U9U-f3-37p"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="pmZ-AT-NWI">
                                 <rect key="frame" x="889" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="KI7-nL-qlW">
-                                <rect key="frame" x="890" y="389" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="Dod-fs-dmr">
+                                <rect key="frame" x="889" y="390" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="IS0-OV-Hqx"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="m7O-Wi-cHr">
                                 <rect key="frame" x="217" y="450" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
@@ -390,98 +428,135 @@
                                 <rect key="frame" x="217" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="eaQ-h8-jDZ">
-                                <rect key="frame" x="217" y="510" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="Ydb-x9-EZ1">
+                                <rect key="frame" x="218" y="510" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="FbJ-cR-n4D"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="NKZ-Af-EI9">
                                 <rect key="frame" x="301" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="HaO-P7-fR6">
-                                <rect key="frame" x="301" y="510" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="ts2-LF-Dxv">
+                                <rect key="frame" x="302" y="510" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="f0c-Mg-sC0"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="zP4-GP-LYd">
                                 <rect key="frame" x="385" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="ycE-gu-ZrQ">
-                                <rect key="frame" x="386" y="510" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="AQf-ph-fzk">
+                                <rect key="frame" x="386" y="510" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="9bu-B7-DnP"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="kJI-gr-GI3">
                                 <rect key="frame" x="469" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="TOZ-7v-sFN">
-                                <rect key="frame" x="470" y="510" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="34" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="n5s-u1-mEJ">
+                                <rect key="frame" x="469" y="510" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="SXo-r8-ZvF"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="dFb-XX-qS1">
                                 <rect key="frame" x="553" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="PMD-lH-NHK">
-                                <rect key="frame" x="554" y="510" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="ZAD-uN-9aN">
+                                <rect key="frame" x="553" y="510" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="IxI-yu-K5U"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="i3Z-mW-OsD">
                                 <rect key="frame" x="637" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="DkK-EL-3lS">
-                                <rect key="frame" x="638" y="510" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="36" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="Xkz-2B-TIL">
+                                <rect key="frame" x="638" y="510" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="sTy-No-V2h"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="cdI-BF-c5g">
                                 <rect key="frame" x="721" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="2pH-go-3vQ">
-                                <rect key="frame" x="722" y="510" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="37" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="qBQ-Bq-qCU">
+                                <rect key="frame" x="721" y="510" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="ePa-Ve-PbQ"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="CNR-zn-4Db">
                                 <rect key="frame" x="805" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="Vsh-dG-6Bb">
-                                <rect key="frame" x="806" y="510" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="38" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="BOg-XO-nF7">
+                                <rect key="frame" x="806" y="510" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="6MF-SF-vYp"/>
+                                </connections>
+                            </textField>
                             <view contentMode="scaleToFill" id="1Yy-aO-Gt6">
                                 <rect key="frame" x="889" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="iFp-vO-XQ4">
-                                <rect key="frame" x="890" y="510" width="76" height="51"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="39" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="56t-Ta-um5">
+                                <rect key="frame" x="890" y="510" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6U1-Le-XU7">
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="gn4-XB-nW3"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6U1-Le-XU7">
                                 <rect key="frame" x="296" y="659" width="432" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="New Game">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -498,43 +573,43 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="collectionView" destination="Y86-Sy-Mld" id="MZS-Ss-8OA"/>
-                        <outlet property="courseNameView" destination="5mk-l8-81R" id="In5-Ua-VgR"/>
-                        <outlet property="holeField1" destination="zpH-Ke-SLb" id="Xb6-YW-hdy"/>
-                        <outlet property="holeField10" destination="eaQ-h8-jDZ" id="Jcj-Q9-WFI"/>
-                        <outlet property="holeField11" destination="HaO-P7-fR6" id="oIW-BZ-puZ"/>
-                        <outlet property="holeField12" destination="ycE-gu-ZrQ" id="zoZ-cC-caS"/>
-                        <outlet property="holeField13" destination="TOZ-7v-sFN" id="3qE-h2-Amr"/>
-                        <outlet property="holeField14" destination="PMD-lH-NHK" id="5iY-td-gfC"/>
-                        <outlet property="holeField15" destination="DkK-EL-3lS" id="FVy-Ph-bC2"/>
-                        <outlet property="holeField16" destination="2pH-go-3vQ" id="Rcj-n2-Ywj"/>
-                        <outlet property="holeField17" destination="Vsh-dG-6Bb" id="UCZ-Px-rpa"/>
-                        <outlet property="holeField18" destination="iFp-vO-XQ4" id="xH7-NT-rH2"/>
-                        <outlet property="holeField2" destination="3xx-A3-1VT" id="QPx-NO-Wgf"/>
-                        <outlet property="holeField3" destination="bbk-7t-1Qi" id="LR3-Hb-Wiw"/>
-                        <outlet property="holeField4" destination="XtH-cm-0UZ" id="CtF-K9-yR6"/>
-                        <outlet property="holeField5" destination="pEB-97-V5m" id="To1-Gn-f28"/>
-                        <outlet property="holeField6" destination="tTJ-D1-qUW" id="iqY-OG-uYU"/>
-                        <outlet property="holeField7" destination="QFs-2C-hpB" id="NjL-5D-8G5"/>
-                        <outlet property="holeField8" destination="2Rd-3c-Lvc" id="gL1-Y4-v0W"/>
-                        <outlet property="holeField9" destination="KI7-nL-qlW" id="MkP-cw-lw0"/>
-                        <outletCollection property="holeFields" destination="zpH-Ke-SLb" id="X4h-t9-Yen"/>
-                        <outletCollection property="holeFields" destination="3xx-A3-1VT" id="FPA-LW-9Ah"/>
-                        <outletCollection property="holeFields" destination="bbk-7t-1Qi" id="XJB-dJ-5Dk"/>
-                        <outletCollection property="holeFields" destination="XtH-cm-0UZ" id="o83-6D-TyY"/>
-                        <outletCollection property="holeFields" destination="pEB-97-V5m" id="qzB-YN-kp8"/>
-                        <outletCollection property="holeFields" destination="tTJ-D1-qUW" id="xzp-Xp-1MY"/>
-                        <outletCollection property="holeFields" destination="QFs-2C-hpB" id="w4f-zX-9s3"/>
-                        <outletCollection property="holeFields" destination="2Rd-3c-Lvc" id="IiH-Nd-AXz"/>
-                        <outletCollection property="holeFields" destination="KI7-nL-qlW" id="RPj-o0-ggM"/>
-                        <outletCollection property="holeFields" destination="eaQ-h8-jDZ" id="euA-m1-G5H"/>
-                        <outletCollection property="holeFields" destination="HaO-P7-fR6" id="yve-7j-uCg"/>
-                        <outletCollection property="holeFields" destination="ycE-gu-ZrQ" id="Axu-iv-KgY"/>
-                        <outletCollection property="holeFields" destination="TOZ-7v-sFN" id="glF-jF-dET"/>
-                        <outletCollection property="holeFields" destination="PMD-lH-NHK" id="zkF-l2-Uel"/>
-                        <outletCollection property="holeFields" destination="DkK-EL-3lS" id="GBk-fR-fcG"/>
-                        <outletCollection property="holeFields" destination="2pH-go-3vQ" id="vGG-JS-p03"/>
-                        <outletCollection property="holeFields" destination="Vsh-dG-6Bb" id="bw5-It-gXz"/>
-                        <outletCollection property="holeFields" destination="iFp-vO-XQ4" id="uhI-rc-b7U"/>
+                        <outlet property="courseNameField" destination="loE-kl-zqG" id="NO8-Et-dUW"/>
+                        <outlet property="holeField1" destination="a7j-gt-1D6" id="Hhe-83-zLM"/>
+                        <outlet property="holeField10" destination="Ydb-x9-EZ1" id="Omh-fg-Zgm"/>
+                        <outlet property="holeField11" destination="ts2-LF-Dxv" id="Pcx-fr-7BA"/>
+                        <outlet property="holeField12" destination="AQf-ph-fzk" id="W9n-9Q-eGz"/>
+                        <outlet property="holeField13" destination="n5s-u1-mEJ" id="ecq-AY-YVj"/>
+                        <outlet property="holeField14" destination="ZAD-uN-9aN" id="qN7-uf-IaH"/>
+                        <outlet property="holeField15" destination="Xkz-2B-TIL" id="zSK-ET-iyc"/>
+                        <outlet property="holeField16" destination="qBQ-Bq-qCU" id="kak-nI-77Z"/>
+                        <outlet property="holeField17" destination="BOg-XO-nF7" id="wER-8m-Noe"/>
+                        <outlet property="holeField18" destination="56t-Ta-um5" id="ewg-wH-lns"/>
+                        <outlet property="holeField2" destination="shd-dR-xGq" id="L4C-xF-S0g"/>
+                        <outlet property="holeField3" destination="WiA-97-Y3T" id="skW-UA-fID"/>
+                        <outlet property="holeField4" destination="GOg-7Q-BI2" id="ZBQ-N2-Jf4"/>
+                        <outlet property="holeField5" destination="PYk-Xe-bK6" id="O3e-jA-yCh"/>
+                        <outlet property="holeField6" destination="WQT-0h-XHt" id="FEP-ai-8ur"/>
+                        <outlet property="holeField7" destination="Jrg-Ul-WrT" id="73e-kX-xWn"/>
+                        <outlet property="holeField8" destination="3lW-zy-AtZ" id="hwZ-VY-gFV"/>
+                        <outlet property="holeField9" destination="Dod-fs-dmr" id="acY-nx-P4Z"/>
+                        <outletCollection property="allFields" destination="shd-dR-xGq" id="vUG-hH-CZt"/>
+                        <outletCollection property="allFields" destination="WiA-97-Y3T" id="5ff-xG-FMW"/>
+                        <outletCollection property="allFields" destination="GOg-7Q-BI2" id="ooU-81-aJu"/>
+                        <outletCollection property="allFields" destination="PYk-Xe-bK6" id="gNO-Q2-z2y"/>
+                        <outletCollection property="allFields" destination="WQT-0h-XHt" id="9A7-kc-f0c"/>
+                        <outletCollection property="allFields" destination="Jrg-Ul-WrT" id="qlp-JJ-v8u"/>
+                        <outletCollection property="allFields" destination="3lW-zy-AtZ" id="aMa-t8-gDM"/>
+                        <outletCollection property="allFields" destination="Dod-fs-dmr" id="Ncc-M5-LnR"/>
+                        <outletCollection property="allFields" destination="Ydb-x9-EZ1" id="0A4-ll-U60"/>
+                        <outletCollection property="allFields" destination="ts2-LF-Dxv" id="K4I-wg-gRl"/>
+                        <outletCollection property="allFields" destination="AQf-ph-fzk" id="w3i-dS-qqm"/>
+                        <outletCollection property="allFields" destination="n5s-u1-mEJ" id="3eN-bq-Xwa"/>
+                        <outletCollection property="allFields" destination="ZAD-uN-9aN" id="U44-Zm-RZK"/>
+                        <outletCollection property="allFields" destination="Xkz-2B-TIL" id="hyY-uN-AXw"/>
+                        <outletCollection property="allFields" destination="qBQ-Bq-qCU" id="DQN-WI-ejJ"/>
+                        <outletCollection property="allFields" destination="BOg-XO-nF7" id="ZyE-TU-8WR"/>
+                        <outletCollection property="allFields" destination="56t-Ta-um5" id="ghD-zB-baA"/>
+                        <outletCollection property="allFields" destination="a7j-gt-1D6" id="bex-Hm-jGE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
@@ -546,28 +621,29 @@
         <class className="LRViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LRViewController.h"/>
             <relationships>
+                <relationship kind="action" name="holeField8:"/>
                 <relationship kind="action" name="newGameButtonPressed:"/>
                 <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
-                <relationship kind="outlet" name="courseNameView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField1" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField10" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField11" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField12" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField13" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField14" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField15" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField16" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField17" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField18" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField2" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField3" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField4" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField5" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField6" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField7" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField8" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="holeField9" candidateClass="UITextView"/>
-                <relationship kind="outletCollection" name="holeFields" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="courseNameField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField10" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField11" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField12" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField13" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField14" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField15" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField16" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField17" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField18" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField4" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField5" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField6" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField7" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField8" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField9" candidateClass="UITextField"/>
+                <relationship kind="outletCollection" name="allFields" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="UICollectionReusableView" superclassName="UIView">
