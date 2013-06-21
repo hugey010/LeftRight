@@ -23,4 +23,11 @@
 }
 
 
+- (IBAction)backButtonPressed:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)endGameButtonPressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end

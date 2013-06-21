@@ -1065,7 +1065,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="backButtonPressed:" destination="b2E-TD-myi" eventType="touchUpInside" id="8E9-xQ-2nH"/>
+                                    <action selector="backButtonPressed:" destination="oER-8x-caQ" eventType="touchUpInside" id="dDg-Bx-fDq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4fE-Xj-k00">
@@ -1073,7 +1073,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <state key="normal" title="Start Game">
+                                <state key="normal" title="End Game">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1081,7 +1081,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startGameButtonPressed:" destination="b2E-TD-myi" eventType="touchUpInside" id="OUb-Sm-ta5"/>
+                                    <action selector="endGameButtonPressed:" destination="oER-8x-caQ" eventType="touchUpInside" id="HbQ-fn-UY5"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="LgC-e7-7Mo">
@@ -3132,6 +3132,44 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="courseHandicap1" destination="qEa-s5-CL3" id="2Cp-Zj-X7L"/>
+                        <outlet property="courseHandicap10" destination="b3E-hY-Tv9" id="1xF-46-YMj"/>
+                        <outlet property="courseHandicap11" destination="dMm-GX-6tf" id="XQb-OG-3qW"/>
+                        <outlet property="courseHandicap12" destination="fRk-kV-OVZ" id="5lb-WJ-OgT"/>
+                        <outlet property="courseHandicap13" destination="Wh0-qW-AVI" id="JC4-na-Fta"/>
+                        <outlet property="courseHandicap14" destination="plw-Q7-C0W" id="1h4-ed-nPT"/>
+                        <outlet property="courseHandicap15" destination="dAx-EB-PLb" id="ciT-WE-Dps"/>
+                        <outlet property="courseHandicap16" destination="Bpa-Qc-mFc" id="BvZ-eZ-Tbw"/>
+                        <outlet property="courseHandicap17" destination="SXf-0Y-0oe" id="P3C-PJ-hBA"/>
+                        <outlet property="courseHandicap18" destination="Gho-HD-d0x" id="hPi-pi-xaG"/>
+                        <outlet property="courseHandicap2" destination="xV8-FL-EM0" id="XfW-7f-7cw"/>
+                        <outlet property="courseHandicap3" destination="QG6-gf-DbR" id="pWl-bi-lgv"/>
+                        <outlet property="courseHandicap4" destination="gCf-rO-1NF" id="oPa-WG-9r9"/>
+                        <outlet property="courseHandicap5" destination="Rj2-cp-Y4W" id="1wo-81-pg5"/>
+                        <outlet property="courseHandicap6" destination="Fu0-0E-hJf" id="ueA-tf-JAH"/>
+                        <outlet property="courseHandicap7" destination="2rt-dp-XhO" id="19w-EY-1Qi"/>
+                        <outlet property="courseHandicap8" destination="x0o-VX-9tb" id="y84-3g-2ls"/>
+                        <outlet property="courseHandicap9" destination="sRt-rk-p6p" id="NdT-Yw-fwT"/>
+                        <outlet property="pointsLabel1" destination="rM8-4G-D5K" id="1fg-rM-ppL"/>
+                        <outlet property="pointsLabel10" destination="wz0-ha-r25" id="bIw-yu-GYB"/>
+                        <outlet property="pointsLabel11" destination="kli-6X-JrM" id="It2-7P-GaO"/>
+                        <outlet property="pointsLabel12" destination="Je0-FU-xCN" id="LgP-Vv-C96"/>
+                        <outlet property="pointsLabel13" destination="jUd-bs-Wg6" id="Jsj-Gh-Vf7"/>
+                        <outlet property="pointsLabel14" destination="0vc-xf-GuW" id="Kkt-AK-fhJ"/>
+                        <outlet property="pointsLabel15" destination="A14-cf-cxd" id="Rpw-2B-K1S"/>
+                        <outlet property="pointsLabel16" destination="FBL-6c-qK0" id="CC8-RI-4CA"/>
+                        <outlet property="pointsLabel17" destination="Jia-qe-Yop" id="Zy0-tm-ikw"/>
+                        <outlet property="pointsLabel18" destination="5Ft-jr-aOd" id="z8a-Se-iOK"/>
+                        <outlet property="pointsLabel2" destination="U6O-Lf-yej" id="7ue-9N-vTo"/>
+                        <outlet property="pointsLabel3" destination="0DC-eC-lUH" id="n9v-rX-QFf"/>
+                        <outlet property="pointsLabel4" destination="DJv-7h-G59" id="4qe-cS-mZ1"/>
+                        <outlet property="pointsLabel5" destination="pPV-S5-rUe" id="u6Q-dd-EzM"/>
+                        <outlet property="pointsLabel6" destination="6nW-Yo-Lrc" id="rYf-ux-sFK"/>
+                        <outlet property="pointsLabel7" destination="Qt0-GH-md8" id="ZVe-YF-yAu"/>
+                        <outlet property="pointsLabel8" destination="Iv1-7i-sHz" id="HEP-8S-4mg"/>
+                        <outlet property="pointsLabel9" destination="VPp-5r-OgJ" id="veC-8f-MtZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6J0-z2-oHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3141,6 +3179,46 @@
     <classes>
         <class className="LRActiveGameController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LRActiveGameController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButtonPressed:"/>
+                <relationship kind="action" name="endGameButtonPressed:"/>
+                <relationship kind="outlet" name="courseHandicap1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap10" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap11" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap12" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap13" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap14" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap15" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap16" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap17" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap18" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap7" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap8" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap9" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel10" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel11" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel12" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel13" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel14" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel15" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel16" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel17" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel18" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel7" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel8" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel9" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="LRNewGameController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LRNewGameController.h"/>
