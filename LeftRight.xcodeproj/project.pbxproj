@@ -25,6 +25,7 @@
 		96FACB561773D3050009B820 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB551773D3050009B820 /* Player.m */; };
 		96FACB5A1773DD8D0009B820 /* Course+LRManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */; };
 		96FACB5E1773EAF50009B820 /* LRNewGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB5D1773EAF50009B820 /* LRNewGameController.m */; };
+		96FACB621773F7550009B820 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB611773F7550009B820 /* TPKeyboardAvoidingScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Course+LRManagedObject.m"; sourceTree = "<group>"; };
 		96FACB5C1773EAF50009B820 /* LRNewGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRNewGameController.h; sourceTree = "<group>"; };
 		96FACB5D1773EAF50009B820 /* LRNewGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRNewGameController.m; sourceTree = "<group>"; };
+		96FACB601773F7550009B820 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		96FACB611773F7550009B820 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 		96B17CF61772A1800054C287 /* LeftRight */ = {
 			isa = PBXGroup;
 			children = (
+				96FACB5F1773F7400009B820 /* CustomUI */,
 				96FACB5B1773EACE0009B820 /* Controllers */,
 				96FACB501773CF900009B820 /* DataModel */,
 				96B17CFF1772A1800054C287 /* LRAppDelegate.h */,
@@ -161,6 +165,15 @@
 				96FACB5D1773EAF50009B820 /* LRNewGameController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		96FACB5F1773F7400009B820 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				96FACB601773F7550009B820 /* TPKeyboardAvoidingScrollView.h */,
+				96FACB611773F7550009B820 /* TPKeyboardAvoidingScrollView.m */,
+			);
+			name = CustomUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +285,7 @@
 				96FACB561773D3050009B820 /* Player.m in Sources */,
 				96FACB5A1773DD8D0009B820 /* Course+LRManagedObject.m in Sources */,
 				96FACB5E1773EAF50009B820 /* LRNewGameController.m in Sources */,
+				96FACB621773F7550009B820 /* TPKeyboardAvoidingScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

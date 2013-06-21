@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class Course;
+
 @interface LRNewGameController : UIViewController
+
+@property (nonatomic, strong) Course *course;
 
 @property (weak, nonatomic) IBOutlet UITextField *nameField1;
 @property (weak, nonatomic) IBOutlet UITextField *nameField2;
@@ -19,5 +23,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *handicapField2;
 @property (weak, nonatomic) IBOutlet UITextField *handicapField3;
 @property (weak, nonatomic) IBOutlet UITextField *handicapField4;
+
+@property (weak, nonatomic) IBOutlet UILabel *courseLabel;
+
+- (IBAction)backButtonPressed:(id)sender;
+- (IBAction)startGameButtonPressed:(id)sender;
 
 @end

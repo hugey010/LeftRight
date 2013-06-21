@@ -8,6 +8,7 @@
 
 #import "LRViewController.h"
 #import "Course+LRManagedObject.h"
+#import "LRNewGameController.h"
 
 @interface LRViewController () {
     NSArray *records;
@@ -22,7 +23,7 @@
 {
     [super viewDidLoad];
     
-    initialFrame = self.view.frame;
+    initialFrame = CGRectZero;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
@@ -105,7 +106,6 @@
     [[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey]    getValue:&animationCurve];
     [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey]        getValue:&startFrame];
     [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey]          getValue:&endFrame];
-    
 
     
     [UIView animateWithDuration:duration
@@ -129,10 +129,12 @@
     [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey]        getValue:&startFrame];
     [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey]          getValue:&endFrame];
     
-    CGRect frame = CGRectMake(initialFrame.origin.x - endFrame.size.width/2,
-                              0.0f,
-                              initialFrame.size.width,
-                              initialFrame.size.height);
+    initialFrame = self.view.frame;
+    
+    CGRect frame = CGRectMake(self.view.frame.origin.x,
+                              self.view.frame.origin.y - endFrame.size.height/4,
+                              self.view.frame.size.width,
+                              self.view.frame.size.height);
     
     [UIView animateWithDuration:duration
                           delay:0
@@ -218,10 +220,14 @@
 - (IBAction)newGameButtonPressed:(id)sender {
     Course *course = [self saveCurrentCourse];
     if ([course isValidCourse]) {
+        LRNewGameController *newgame = [self.storyboard instantiateViewControllerWithIdentifier:@"newgame"];
+        newgame.course = course;
+        [self.navigationController pushViewController:newgame animated:YES];
         
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Course Values" message:@"Current course must have a name and handicap values between 1 and 9." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
         [alert show];
+        
     }
     
     
