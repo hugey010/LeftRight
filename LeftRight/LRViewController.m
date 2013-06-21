@@ -7,10 +7,11 @@
 //
 
 #import "LRViewController.h"
-#import "Course.h"
+#import "Course+LRManagedObject.h"
 
 @interface LRViewController () {
     NSArray *records;
+    CGRect initialFrame;
 }
 
 @end
@@ -20,8 +21,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    initialFrame = self.view.frame;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
 
     records = [Course MR_findAll];
+}
+
+-(void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - UICollectionViewDataSource methods
@@ -68,7 +78,58 @@
 
 #pragma mark - private methods
 
--(void)saveCurrentCourse {
+-(void)keyboardWillHide:(NSNotification*)n {
+    NSDictionary* userInfo = [n userInfo];
+    DLog(@"userinfo = %@", userInfo);
+    NSTimeInterval duration;
+    UIViewAnimationCurve animationCurve;
+    CGRect startFrame;
+    CGRect endFrame;
+    [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&duration];
+    [[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey]    getValue:&animationCurve];
+    [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey]        getValue:&startFrame];
+    [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey]          getValue:&endFrame];
+    
+
+    
+    [UIView animateWithDuration:duration
+                          delay:0
+                        options:animationCurve|UIViewAnimationOptionBeginFromCurrentState
+                     animations:^{
+                         [self.view setFrame:initialFrame];
+                     }
+                     completion:nil];
+}
+
+-(void)keyboardWillShow:(NSNotification*)n {
+    
+    NSDictionary* userInfo = [n userInfo];
+    NSTimeInterval duration;
+    UIViewAnimationCurve animationCurve;
+    CGRect startFrame;
+    CGRect endFrame;
+    [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&duration];
+    [[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey]    getValue:&animationCurve];
+    [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey]        getValue:&startFrame];
+    [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey]          getValue:&endFrame];
+    
+    CGRect frame = CGRectMake(initialFrame.origin.x - endFrame.size.width/2,
+                              0.0f,
+                              initialFrame.size.width,
+                              initialFrame.size.height);
+    
+    [UIView animateWithDuration:duration
+                          delay:0
+                        options:animationCurve|UIViewAnimationOptionBeginFromCurrentState
+                     animations:^{
+                         [self.view setFrame:frame];
+                     }
+                     completion:nil];
+    
+    
+}
+
+-(Course*)saveCurrentCourse {
     if (self.courseNameView.text && self.courseNameView.text.length > 0) {
         Course *course = [[Course MR_findByAttribute:@"name" withValue:self.courseNameView.text] lastObject];
         
@@ -97,7 +158,11 @@
         course.handicap18 = [NSNumber numberWithInteger:[self.holeField18.text integerValue]];
         
         [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+        
+        return course;
     }
+    
+    return nil;
 
 }
 
@@ -133,5 +198,14 @@
 }
 
 - (IBAction)newGameButtonPressed:(id)sender {
+    Course *course = [self saveCurrentCourse];
+    if ([course isValidCourse]) {
+        
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Course Values" message:@"Current course must have a name and handicap values between 1 and 9." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+        [alert show];
+    }
+    
+    
 }
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LRViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface LRViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *courseNameView;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;

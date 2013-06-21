@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="Bc6-6r-oio">
-                                <rect key="frame" x="308" y="152" width="614" height="51"/>
+                                <rect key="frame" x="308" y="267" width="614" height="51"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="5mk-l8-81R">
                                         <rect key="frame" x="0.0" y="0.0" width="614" height="51"/>
@@ -24,27 +24,27 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LeftRight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sy7-JW-0P2">
-                                <rect key="frame" x="14" y="1" width="291" height="44"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LeftRight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sy7-JW-0P2">
+                                <rect key="frame" x="362" y="1" width="291" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Select Course" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G3F-ok-QNU">
-                                <rect key="frame" x="197" y="2" width="248" height="40"/>
+                                <rect key="frame" x="6" y="92" width="248" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Course Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j9i-6v-ZeP">
-                                <rect key="frame" x="102" y="161" width="200" height="34"/>
+                                <rect key="frame" x="102" y="276" width="200" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="Y86-Sy-Mld">
-                                <rect key="frame" x="0.0" y="46" width="1024" height="88"/>
-                                <color key="backgroundColor" red="0.2041771765" green="0.39176778880000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="136" width="1024" height="88"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Xx-Kp-9XA">
                                     <size key="itemSize" width="223" height="71"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -62,12 +62,13 @@
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="21" contentMode="left" text="New Course" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5OP-ZV-AZg">
                                                     <rect key="frame" x="11" y="3" width="202" height="65"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -76,407 +77,407 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" id="5fI-xe-OYn">
-                                <rect key="frame" x="59" y="214" width="149" height="51"/>
+                                <rect key="frame" x="59" y="329" width="149" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hole" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vzS-xA-Axy">
-                                <rect key="frame" x="66" y="223" width="86" height="34"/>
+                                <rect key="frame" x="66" y="338" width="86" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="kX0-Hu-lxw">
-                                <rect key="frame" x="59" y="274" width="149" height="51"/>
+                                <rect key="frame" x="59" y="389" width="149" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Handicap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lul-O0-quj">
-                                <rect key="frame" x="66" y="283" width="142" height="34"/>
+                                <rect key="frame" x="66" y="398" width="142" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="LxX-tk-SzI">
-                                <rect key="frame" x="59" y="335" width="149" height="51"/>
+                                <rect key="frame" x="59" y="450" width="149" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hole" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iQS-N5-z9i">
-                                <rect key="frame" x="66" y="344" width="86" height="34"/>
+                                <rect key="frame" x="66" y="459" width="86" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="qtB-RN-SU0">
-                                <rect key="frame" x="59" y="395" width="149" height="51"/>
+                                <rect key="frame" x="59" y="510" width="149" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Handicap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tTL-5F-ikI">
-                                <rect key="frame" x="66" y="404" width="142" height="34"/>
+                                <rect key="frame" x="66" y="519" width="142" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="s2A-MN-E0U">
-                                <rect key="frame" x="217" y="214" width="76" height="51"/>
+                                <rect key="frame" x="217" y="329" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eu2-U2-mXs">
-                                <rect key="frame" x="227" y="223" width="57" height="34"/>
+                                <rect key="frame" x="227" y="338" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="drO-Az-bPF">
-                                <rect key="frame" x="301" y="214" width="76" height="51"/>
+                                <rect key="frame" x="301" y="329" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nUZ-7X-I2G">
-                                <rect key="frame" x="311" y="223" width="57" height="34"/>
+                                <rect key="frame" x="311" y="338" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="1VY-Z6-5ag">
-                                <rect key="frame" x="385" y="214" width="76" height="51"/>
+                                <rect key="frame" x="385" y="329" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8gE-0O-mMg">
-                                <rect key="frame" x="395" y="223" width="57" height="34"/>
+                                <rect key="frame" x="395" y="338" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="dCV-cO-d8H">
-                                <rect key="frame" x="469" y="214" width="76" height="51"/>
+                                <rect key="frame" x="469" y="329" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DXZ-2u-qwb">
-                                <rect key="frame" x="479" y="223" width="57" height="34"/>
+                                <rect key="frame" x="479" y="338" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="LKW-8P-bxH">
-                                <rect key="frame" x="553" y="214" width="76" height="51"/>
+                                <rect key="frame" x="553" y="329" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="syj-IV-G1j">
-                                <rect key="frame" x="563" y="223" width="57" height="34"/>
+                                <rect key="frame" x="563" y="338" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="po1-LZ-09l">
-                                <rect key="frame" x="637" y="214" width="76" height="51"/>
+                                <rect key="frame" x="637" y="329" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mCq-kZ-8j1">
-                                <rect key="frame" x="647" y="223" width="57" height="34"/>
+                                <rect key="frame" x="647" y="338" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="0a8-yg-2N4">
-                                <rect key="frame" x="721" y="214" width="76" height="51"/>
+                                <rect key="frame" x="721" y="329" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fyn-DM-TF2">
-                                <rect key="frame" x="731" y="223" width="57" height="34"/>
+                                <rect key="frame" x="731" y="338" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="9kV-2S-TJH">
-                                <rect key="frame" x="805" y="214" width="76" height="51"/>
+                                <rect key="frame" x="805" y="329" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m2m-Nd-k5j">
-                                <rect key="frame" x="815" y="223" width="57" height="34"/>
+                                <rect key="frame" x="815" y="338" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="0es-nJ-qLX">
-                                <rect key="frame" x="889" y="214" width="76" height="51"/>
+                                <rect key="frame" x="889" y="329" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HvD-TL-ZV0">
-                                <rect key="frame" x="899" y="223" width="57" height="34"/>
+                                <rect key="frame" x="899" y="338" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="OPP-Yo-qAl">
-                                <rect key="frame" x="217" y="274" width="76" height="51"/>
+                                <rect key="frame" x="217" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="zpH-Ke-SLb">
-                                <rect key="frame" x="217" y="274" width="76" height="51"/>
+                                <rect key="frame" x="217" y="389" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="nDS-g8-Ipd">
-                                <rect key="frame" x="301" y="274" width="76" height="51"/>
+                                <rect key="frame" x="301" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="3xx-A3-1VT">
-                                <rect key="frame" x="301" y="274" width="76" height="51"/>
+                                <rect key="frame" x="301" y="389" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="fcU-0q-tzD">
-                                <rect key="frame" x="385" y="274" width="76" height="51"/>
+                                <rect key="frame" x="385" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="bbk-7t-1Qi">
-                                <rect key="frame" x="386" y="274" width="76" height="51"/>
+                                <rect key="frame" x="386" y="389" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="8LP-LS-aXo">
-                                <rect key="frame" x="469" y="274" width="76" height="51"/>
+                                <rect key="frame" x="469" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="XtH-cm-0UZ">
-                                <rect key="frame" x="470" y="274" width="76" height="51"/>
+                                <rect key="frame" x="470" y="389" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="Obo-YE-ZXl">
-                                <rect key="frame" x="553" y="274" width="76" height="51"/>
+                                <rect key="frame" x="553" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="pEB-97-V5m">
-                                <rect key="frame" x="554" y="274" width="76" height="51"/>
+                                <rect key="frame" x="554" y="389" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="Nv6-pH-Ibw">
-                                <rect key="frame" x="637" y="274" width="76" height="51"/>
+                                <rect key="frame" x="637" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="tTJ-D1-qUW">
-                                <rect key="frame" x="638" y="274" width="76" height="51"/>
+                                <rect key="frame" x="638" y="389" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="NEj-QU-5Ut">
-                                <rect key="frame" x="721" y="274" width="76" height="51"/>
+                                <rect key="frame" x="721" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="QFs-2C-hpB">
-                                <rect key="frame" x="722" y="274" width="76" height="51"/>
+                                <rect key="frame" x="722" y="389" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="Sjc-Zf-PI1">
-                                <rect key="frame" x="805" y="274" width="76" height="51"/>
+                                <rect key="frame" x="805" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="2Rd-3c-Lvc">
-                                <rect key="frame" x="806" y="274" width="76" height="51"/>
+                                <rect key="frame" x="806" y="389" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="pmZ-AT-NWI">
-                                <rect key="frame" x="889" y="274" width="76" height="51"/>
+                                <rect key="frame" x="889" y="389" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="KI7-nL-qlW">
-                                <rect key="frame" x="890" y="274" width="76" height="51"/>
+                                <rect key="frame" x="890" y="389" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="m7O-Wi-cHr">
-                                <rect key="frame" x="217" y="335" width="76" height="51"/>
+                                <rect key="frame" x="217" y="450" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WGS-Nc-fb0">
-                                <rect key="frame" x="227" y="344" width="57" height="34"/>
+                                <rect key="frame" x="227" y="459" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="hwu-aE-7VX">
-                                <rect key="frame" x="301" y="335" width="76" height="51"/>
+                                <rect key="frame" x="301" y="450" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z6C-OW-lEk">
-                                <rect key="frame" x="311" y="344" width="57" height="34"/>
+                                <rect key="frame" x="311" y="459" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="yxn-UY-a5z">
-                                <rect key="frame" x="385" y="335" width="76" height="51"/>
+                                <rect key="frame" x="385" y="450" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y3a-u5-pdF">
-                                <rect key="frame" x="395" y="344" width="57" height="34"/>
+                                <rect key="frame" x="395" y="459" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="fIU-1A-bPw">
-                                <rect key="frame" x="469" y="335" width="76" height="51"/>
+                                <rect key="frame" x="469" y="450" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TVR-BE-vEB">
-                                <rect key="frame" x="479" y="344" width="57" height="34"/>
+                                <rect key="frame" x="479" y="459" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="4uc-N9-o9S">
-                                <rect key="frame" x="553" y="335" width="76" height="51"/>
+                                <rect key="frame" x="553" y="450" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Fl-6l-hIL">
-                                <rect key="frame" x="563" y="344" width="57" height="34"/>
+                                <rect key="frame" x="563" y="459" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="ddY-I2-uyA">
-                                <rect key="frame" x="637" y="335" width="76" height="51"/>
+                                <rect key="frame" x="637" y="450" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZVA-Kj-9QW">
-                                <rect key="frame" x="647" y="344" width="57" height="34"/>
+                                <rect key="frame" x="647" y="459" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="FkZ-ad-5zd">
-                                <rect key="frame" x="721" y="335" width="76" height="51"/>
+                                <rect key="frame" x="721" y="450" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kYn-jF-fQY">
-                                <rect key="frame" x="731" y="344" width="57" height="34"/>
+                                <rect key="frame" x="731" y="459" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="rOx-kR-eUn">
-                                <rect key="frame" x="805" y="335" width="76" height="51"/>
+                                <rect key="frame" x="805" y="450" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IaW-ao-3BH">
-                                <rect key="frame" x="815" y="344" width="57" height="34"/>
+                                <rect key="frame" x="815" y="459" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="ag2-oe-gZv">
-                                <rect key="frame" x="889" y="335" width="76" height="51"/>
+                                <rect key="frame" x="889" y="450" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ayU-Mb-ya3">
-                                <rect key="frame" x="899" y="344" width="57" height="34"/>
+                                <rect key="frame" x="899" y="459" width="57" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="W6u-xh-u93">
-                                <rect key="frame" x="217" y="395" width="76" height="51"/>
+                                <rect key="frame" x="217" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="eaQ-h8-jDZ">
-                                <rect key="frame" x="217" y="395" width="76" height="51"/>
+                                <rect key="frame" x="217" y="510" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="NKZ-Af-EI9">
-                                <rect key="frame" x="301" y="395" width="76" height="51"/>
+                                <rect key="frame" x="301" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="HaO-P7-fR6">
-                                <rect key="frame" x="301" y="395" width="76" height="51"/>
+                                <rect key="frame" x="301" y="510" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="zP4-GP-LYd">
-                                <rect key="frame" x="385" y="395" width="76" height="51"/>
+                                <rect key="frame" x="385" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="ycE-gu-ZrQ">
-                                <rect key="frame" x="386" y="395" width="76" height="51"/>
+                                <rect key="frame" x="386" y="510" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="kJI-gr-GI3">
-                                <rect key="frame" x="469" y="395" width="76" height="51"/>
+                                <rect key="frame" x="469" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="TOZ-7v-sFN">
-                                <rect key="frame" x="470" y="395" width="76" height="51"/>
+                                <rect key="frame" x="470" y="510" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="dFb-XX-qS1">
-                                <rect key="frame" x="553" y="395" width="76" height="51"/>
+                                <rect key="frame" x="553" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="PMD-lH-NHK">
-                                <rect key="frame" x="554" y="395" width="76" height="51"/>
+                                <rect key="frame" x="554" y="510" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="i3Z-mW-OsD">
-                                <rect key="frame" x="637" y="395" width="76" height="51"/>
+                                <rect key="frame" x="637" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="DkK-EL-3lS">
-                                <rect key="frame" x="638" y="395" width="76" height="51"/>
+                                <rect key="frame" x="638" y="510" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="cdI-BF-c5g">
-                                <rect key="frame" x="721" y="395" width="76" height="51"/>
+                                <rect key="frame" x="721" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="2pH-go-3vQ">
-                                <rect key="frame" x="722" y="395" width="76" height="51"/>
+                                <rect key="frame" x="722" y="510" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="CNR-zn-4Db">
-                                <rect key="frame" x="805" y="395" width="76" height="51"/>
+                                <rect key="frame" x="805" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="Vsh-dG-6Bb">
-                                <rect key="frame" x="806" y="395" width="76" height="51"/>
+                                <rect key="frame" x="806" y="510" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <view contentMode="scaleToFill" id="1Yy-aO-Gt6">
-                                <rect key="frame" x="889" y="395" width="76" height="51"/>
+                                <rect key="frame" x="889" y="510" width="76" height="51"/>
                                 <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" id="iFp-vO-XQ4">
-                                <rect key="frame" x="890" y="395" width="76" height="51"/>
+                                <rect key="frame" x="890" y="510" width="76" height="51"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="next"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6U1-Le-XU7">
-                                <rect key="frame" x="296" y="584" width="432" height="80"/>
+                                <rect key="frame" x="296" y="659" width="432" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="New Game">
@@ -491,7 +492,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.91764712329999998" green="0.61568629740000003" blue="0.16862745579999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>

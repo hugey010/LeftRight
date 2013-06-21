@@ -23,6 +23,7 @@
 		96FACB4F1773CE4C0009B820 /* LRModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB4D1773CE4C0009B820 /* LRModel.xcdatamodeld */; };
 		96FACB531773D3040009B820 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB521773D3040009B820 /* Course.m */; };
 		96FACB561773D3050009B820 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB551773D3050009B820 /* Player.m */; };
+		96FACB5A1773DD8D0009B820 /* Course+LRManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		96FACB521773D3040009B820 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		96FACB541773D3050009B820 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		96FACB551773D3050009B820 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		96FACB581773DD8D0009B820 /* Course+LRManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Course+LRManagedObject.h"; sourceTree = "<group>"; };
+		96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Course+LRManagedObject.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 		96FACB501773CF900009B820 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				96FACB571773DD6F0009B820 /* ModelCategories */,
 				96FACB4D1773CE4C0009B820 /* LRModel.xcdatamodeld */,
 				96FACB541773D3050009B820 /* Player.h */,
 				96FACB551773D3050009B820 /* Player.m */,
@@ -135,6 +139,15 @@
 				96FACB521773D3040009B820 /* Course.m */,
 			);
 			name = DataModel;
+			sourceTree = "<group>";
+		};
+		96FACB571773DD6F0009B820 /* ModelCategories */ = {
+			isa = PBXGroup;
+			children = (
+				96FACB581773DD8D0009B820 /* Course+LRManagedObject.h */,
+				96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */,
+			);
+			name = ModelCategories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +257,7 @@
 				96FACB4F1773CE4C0009B820 /* LRModel.xcdatamodeld in Sources */,
 				96FACB531773D3040009B820 /* Course.m in Sources */,
 				96FACB561773D3050009B820 /* Player.m in Sources */,
+				96FACB5A1773DD8D0009B820 /* Course+LRManagedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
