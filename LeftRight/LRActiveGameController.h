@@ -14,6 +14,31 @@
 
 @property (nonatomic, strong) Course *course;
 
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *player1NameLabels;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *player2NameLabels;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *player3NameLabels;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *player4NameLabels;
+
+@property (weak, nonatomic) IBOutlet UILabel *player1HandicapLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player2HandicapLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player3HandicapLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player4HandicapLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *player1OutLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player2OutLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player3OutLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player4OutLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *player1InLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player2InLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player3InLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player4InLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *player1TotalLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player2TotalLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player3TotalLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player4TotalLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *courseHandicap1;
 @property (weak, nonatomic) IBOutlet UILabel *courseHandicap2;
 @property (weak, nonatomic) IBOutlet UILabel *courseHandicap3;
@@ -52,6 +77,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *pointsLabel17;
 @property (weak, nonatomic) IBOutlet UILabel *pointsLabel18;
 
+@property (weak, nonatomic) IBOutlet UITextField *pressField;
 
 
 - (IBAction)backButtonPressed:(id)sender;
