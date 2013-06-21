@@ -225,7 +225,7 @@
         [self.navigationController pushViewController:newgame animated:YES];
         
     } else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Course Values" message:@"Current course must have a name and handicap values between 1 and 9." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Course Values" message:@"Current course must have a name and handicap values between 0 and 9." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
         [alert show];
         
     }
