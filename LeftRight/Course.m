@@ -2,11 +2,12 @@
 //  Course.m
 //  LeftRight
 //
-//  Created by Tyler Hugenberg on 6/20/13.
+//  Created by Tyler Hugenberg on 6/21/13.
 //  Copyright (c) 2013 Hugey. All rights reserved.
 //
 
 #import "Course.h"
+#import "Player.h"
 
 
 @implementation Course
@@ -30,5 +31,9 @@
 @dynamic handicap16;
 @dynamic handicap17;
 @dynamic handicap18;
+@dynamic player_1;
+@dynamic player_2;
+@dynamic player_3;
+@dynamic player_4;
 
 @end

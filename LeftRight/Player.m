@@ -2,7 +2,7 @@
 //  Player.m
 //  LeftRight
 //
-//  Created by Tyler Hugenberg on 6/20/13.
+//  Created by Tyler Hugenberg on 6/21/13.
 //  Copyright (c) 2013 Hugey. All rights reserved.
 //
 
@@ -30,5 +30,6 @@
 @dynamic score16;
 @dynamic score17;
 @dynamic score18;
+@dynamic handicap;
 
 @end

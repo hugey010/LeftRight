@@ -2,7 +2,7 @@
 //  Player.h
 //  LeftRight
 //
-//  Created by Tyler Hugenberg on 6/20/13.
+//  Created by Tyler Hugenberg on 6/21/13.
 //  Copyright (c) 2013 Hugey. All rights reserved.
 //
 
@@ -31,5 +31,6 @@
 @property (nonatomic, retain) NSNumber * score16;
 @property (nonatomic, retain) NSNumber * score17;
 @property (nonatomic, retain) NSNumber * score18;
+@property (nonatomic, retain) NSNumber * handicap;
 
 @end

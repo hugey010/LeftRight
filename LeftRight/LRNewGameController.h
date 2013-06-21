@@ -26,6 +26,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *courseLabel;
 
+@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *allFields;
+
 - (IBAction)backButtonPressed:(id)sender;
 - (IBAction)startGameButtonPressed:(id)sender;
 

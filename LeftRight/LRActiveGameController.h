@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class Course;
+
 @interface LRActiveGameController : UIViewController
+
+@property (nonatomic, strong) Course *course;
 
 @end

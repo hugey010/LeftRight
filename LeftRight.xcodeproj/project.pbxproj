@@ -21,12 +21,12 @@
 		96B17D0D1772A1800054C287 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96B17D0B1772A1800054C287 /* MainStoryboard_iPad.storyboard */; };
 		96B17D101772A1800054C287 /* LRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B17D0F1772A1800054C287 /* LRViewController.m */; };
 		96FACB4F1773CE4C0009B820 /* LRModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB4D1773CE4C0009B820 /* LRModel.xcdatamodeld */; };
-		96FACB531773D3040009B820 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB521773D3040009B820 /* Course.m */; };
-		96FACB561773D3050009B820 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB551773D3050009B820 /* Player.m */; };
 		96FACB5A1773DD8D0009B820 /* Course+LRManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */; };
 		96FACB5E1773EAF50009B820 /* LRNewGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB5D1773EAF50009B820 /* LRNewGameController.m */; };
 		96FACB621773F7550009B820 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB611773F7550009B820 /* TPKeyboardAvoidingScrollView.m */; };
 		96FACB6517740EAF0009B820 /* LRActiveGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB6417740EAF0009B820 /* LRActiveGameController.m */; };
+		96FACB68177413CB0009B820 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB67177413CB0009B820 /* Course.m */; };
+		96FACB6B177413CC0009B820 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB6A177413CC0009B820 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,10 +50,6 @@
 		96B17D0E1772A1800054C287 /* LRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRViewController.h; sourceTree = "<group>"; };
 		96B17D0F1772A1800054C287 /* LRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRViewController.m; sourceTree = "<group>"; };
 		96FACB4E1773CE4C0009B820 /* LRModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LRModel.xcdatamodel; sourceTree = "<group>"; };
-		96FACB511773D3040009B820 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
-		96FACB521773D3040009B820 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
-		96FACB541773D3050009B820 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		96FACB551773D3050009B820 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		96FACB581773DD8D0009B820 /* Course+LRManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Course+LRManagedObject.h"; sourceTree = "<group>"; };
 		96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Course+LRManagedObject.m"; sourceTree = "<group>"; };
 		96FACB5C1773EAF50009B820 /* LRNewGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRNewGameController.h; sourceTree = "<group>"; };
@@ -62,6 +58,10 @@
 		96FACB611773F7550009B820 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		96FACB6317740EAF0009B820 /* LRActiveGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRActiveGameController.h; sourceTree = "<group>"; };
 		96FACB6417740EAF0009B820 /* LRActiveGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRActiveGameController.m; sourceTree = "<group>"; };
+		96FACB66177413CB0009B820 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		96FACB67177413CB0009B820 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		96FACB69177413CC0009B820 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		96FACB6A177413CC0009B820 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,10 +142,10 @@
 			children = (
 				96FACB571773DD6F0009B820 /* ModelCategories */,
 				96FACB4D1773CE4C0009B820 /* LRModel.xcdatamodeld */,
-				96FACB541773D3050009B820 /* Player.h */,
-				96FACB551773D3050009B820 /* Player.m */,
-				96FACB511773D3040009B820 /* Course.h */,
-				96FACB521773D3040009B820 /* Course.m */,
+				96FACB69177413CC0009B820 /* Player.h */,
+				96FACB6A177413CC0009B820 /* Player.m */,
+				96FACB66177413CB0009B820 /* Course.h */,
+				96FACB67177413CB0009B820 /* Course.m */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
@@ -286,12 +286,12 @@
 				96B17D011772A1800054C287 /* LRAppDelegate.m in Sources */,
 				96B17D101772A1800054C287 /* LRViewController.m in Sources */,
 				96FACB4F1773CE4C0009B820 /* LRModel.xcdatamodeld in Sources */,
-				96FACB531773D3040009B820 /* Course.m in Sources */,
-				96FACB561773D3050009B820 /* Player.m in Sources */,
 				96FACB5A1773DD8D0009B820 /* Course+LRManagedObject.m in Sources */,
 				96FACB5E1773EAF50009B820 /* LRNewGameController.m in Sources */,
 				96FACB621773F7550009B820 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				96FACB6517740EAF0009B820 /* LRActiveGameController.m in Sources */,
+				96FACB68177413CB0009B820 /* Course.m in Sources */,
+				96FACB6B177413CC0009B820 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,9 +20,14 @@
         <attribute name="handicap17" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="handicap18" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="player_1" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
+        <relationship name="player_2" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
+        <relationship name="player_3" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
+        <relationship name="player_4" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
     </entity>
     <entity name="GameHistory" syncable="YES"/>
     <entity name="Player" representedClassName="Player" syncable="YES">
+        <attribute name="handicap" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="score1" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="score2" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -44,8 +49,8 @@
         <attribute name="score18" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Course" positionX="160" positionY="192" width="128" height="330"/>
-        <element name="Player" positionX="160" positionY="192" width="128" height="330"/>
+        <element name="Course" positionX="160" positionY="192" width="128" height="390"/>
+        <element name="Player" positionX="160" positionY="192" width="128" height="345"/>
         <element name="GameHistory" positionX="160" positionY="192" width="128" height="45"/>
     </elements>
 </model>
