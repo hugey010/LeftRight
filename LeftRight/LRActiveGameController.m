@@ -13,6 +13,7 @@
 
 @interface LRActiveGameController () {
     Hole *currentHole;
+    UITextField *currentField;
     
     NSMutableArray *groupedHoles;
 
@@ -49,6 +50,53 @@
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField {
     
+    NSInteger activeIndex;
+    
+    for (NSArray *holes in groupedHoles) {
+        for (UITextField *field in holes) {
+            if (field == textField) {
+                activeIndex = [groupedHoles indexOfObject:holes];
+                currentField = textField;
+                goto loopEnd;
+            }
+        }
+    }
+    loopEnd:;
+    
+    [self removeObserversFromHole:currentHole];
+    currentHole = self.course.has_holes[activeIndex];
+    [self addObserversToHole:currentHole];
+    
+    self.currentHoleLabel.text = [NSString stringWithFormat:@"%d", activeIndex];
+    
+    for (UITextField *field in groupedHoles[activeIndex]) {
+        field.userInteractionEnabled = YES;
+    }
+    
+}
+
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSString *appendString = [NSString stringWithFormat:@"%@%@", textField.text, string];
+    
+    return YES;
+}
+
+-(void)addObserversToHole:(Hole*)hole {
+    [hole addObserver:self forKeyPath:@"player1Score" options:NSKeyValueObservingOptionNew context:nil];
+    [hole addObserver:self forKeyPath:@"player2Score" options:NSKeyValueObservingOptionNew context:nil];
+    [hole addObserver:self forKeyPath:@"player3Score" options:NSKeyValueObservingOptionNew context:nil];
+    [hole addObserver:self forKeyPath:@"player4Score" options:NSKeyValueObservingOptionNew context:nil];
+    [hole addObserver:self forKeyPath:@"team" options:NSKeyValueObservingOptionNew context:nil];
+    
+}
+
+-(void)removeObserversFromHole:(Hole*)hole {
+    [hole removeObserver:self forKeyPath:@"player1Score"];
+    [hole removeObserver:self forKeyPath:@"player2Score"];
+    [hole removeObserver:self forKeyPath:@"player3Score"];
+    [hole removeObserver:self forKeyPath:@"player4Score"];
+    [hole removeObserver:self forKeyPath:@"team"];
+
 }
 
 #pragma mark - Course Setup
