@@ -14,7 +14,7 @@
 #define kTeam2 @2
 #define kTeam3 @3
 
-@interface LRActiveGameController : UIViewController
+@interface LRActiveGameController : UIViewController <UITextFieldDelegate>
 
 @property (nonatomic, strong) Course *course;
 
@@ -162,11 +162,25 @@
 @property (weak, nonatomic) IBOutlet UITextField *player4Hole17;
 @property (weak, nonatomic) IBOutlet UITextField *player4Hole18;
 
-
-
-
-
-
+// hole arrays
+@property (nonatomic, strong) NSMutableArray *hole1s;
+@property (nonatomic, strong) NSMutableArray *hole2s;
+@property (nonatomic, strong) NSMutableArray *hole3s;
+@property (nonatomic, strong) NSMutableArray *hole4s;
+@property (nonatomic, strong) NSMutableArray *hole5s;
+@property (nonatomic, strong) NSMutableArray *hole6s;
+@property (nonatomic, strong) NSMutableArray *hole7s;
+@property (nonatomic, strong) NSMutableArray *hole8s;
+@property (nonatomic, strong) NSMutableArray *hole9s;
+@property (nonatomic, strong) NSMutableArray *hole10s;
+@property (nonatomic, strong) NSMutableArray *hole11s;
+@property (nonatomic, strong) NSMutableArray *hole12s;
+@property (nonatomic, strong) NSMutableArray *hole13s;
+@property (nonatomic, strong) NSMutableArray *hole14s;
+@property (nonatomic, strong) NSMutableArray *hole15s;
+@property (nonatomic, strong) NSMutableArray *hole16s;
+@property (nonatomic, strong) NSMutableArray *hole17s;
+@property (nonatomic, strong) NSMutableArray *hole18s;
 
 
 

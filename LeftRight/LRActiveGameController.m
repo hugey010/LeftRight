@@ -13,6 +13,9 @@
 
 @interface LRActiveGameController () {
     Hole *currentHole;
+    
+    NSMutableArray *groupedHoles;
+
 }
 
 @end
@@ -42,7 +45,34 @@
     // TODO: add this to history
 }
 
+#pragma mark - UITextFieldDelegate methods
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField {
+    
+}
+
 #pragma mark - Course Setup
+
+-(void)setupHoleArrays {
+    groupedHoles = [NSMutableArray array];
+    
+    for (NSInteger holeNo = 0; holeNo < 18; holeNo++) {
+        
+        NSMutableArray *currentArray = [NSMutableArray array];
+        
+        for (NSInteger playerNo = 0; playerNo < 4; playerNo++) {
+            NSString *holeString = [NSString stringWithFormat:@"player%dhole%d", 1, holeNo+1];
+            UITextField *field = [self valueForKey:holeString];
+            [currentArray addObject:field];
+
+        }
+        
+        NSString *holeArrayString = [NSString stringWithFormat:@"hole%ds", holeNo+1];
+        [self setValue:currentArray forKey:holeArrayString];
+        
+        groupedHoles[holeNo] = currentArray;
+    }
+}
 
 -(void)createAllHoles {
     NSMutableOrderedSet *set = [NSMutableOrderedSet orderedSet];
