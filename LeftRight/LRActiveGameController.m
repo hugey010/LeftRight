@@ -11,7 +11,9 @@
 #import "Player.h"
 #import "Hole.h"
 
-@interface LRActiveGameController ()
+@interface LRActiveGameController () {
+    Hole *currentHole;
+}
 
 @end
 
@@ -27,9 +29,8 @@
     [self setupHandicaps];
     [self setupNames];
 
+
 }
-
-
 
 - (IBAction)backButtonPressed:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
@@ -37,12 +38,8 @@
 
 - (IBAction)endGameButtonPressed:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
-}
-
-- (IBAction)previousHoleButtonPressed:(id)sender {
-}
-
-- (IBAction)nextHoleButtonPressed:(id)sender {
+    
+    // TODO: add this to history
 }
 
 #pragma mark - Course Setup
@@ -53,11 +50,12 @@
         Hole *hole = [Hole MR_createEntity];
         hole.team = kTeam1;
         hole.press = @1;
-        [set addObject:hole];
-
+        set[i] = hole;
     }
     
     self.course.has_holes = set;
+    
+    currentHole = set[0];
 }
 
 -(void)setupHandicaps {

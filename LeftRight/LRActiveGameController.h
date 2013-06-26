@@ -81,6 +81,96 @@
 @property (weak, nonatomic) IBOutlet UILabel *pointsLabel17;
 @property (weak, nonatomic) IBOutlet UILabel *pointsLabel18;
 
+// THE FIELDS
+// player 1
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole1;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole2;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole3;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole4;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole5;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole6;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole7;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole8;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole9;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole10;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole11;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole12;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole13;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole14;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole15;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole16;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole17;
+@property (weak, nonatomic) IBOutlet UITextField *player1Hole18;
+
+// player 2
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole1;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole2;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole3;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole4;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole5;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole6;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole7;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole8;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole9;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole10;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole11;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole12;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole13;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole14;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole15;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole16;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole17;
+@property (weak, nonatomic) IBOutlet UITextField *player2Hole18;
+
+// player3
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole1;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole2;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole3;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole4;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole5;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole6;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole7;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole8;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole9;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole10;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole11;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole12;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole13;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole14;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole15;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole16;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole17;
+@property (weak, nonatomic) IBOutlet UITextField *player3Hole18;
+
+// player4
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole1;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole2;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole3;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole4;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole5;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole6;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole7;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole8;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole9;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole10;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole11;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole12;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole13;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole14;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole15;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole16;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole17;
+@property (weak, nonatomic) IBOutlet UITextField *player4Hole18;
+
+
+
+
+
+
+
+
+
+
 @property (weak, nonatomic) IBOutlet UITextField *pressField;
 
 

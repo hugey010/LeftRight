@@ -1087,7 +1087,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dNN-hK-o9a">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dNN-hK-o9a">
                                         <rect key="frame" x="11" y="212" width="192" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1103,7 +1103,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                                     </view>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TZo-hA-g9a">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TZo-hA-g9a">
                                         <rect key="frame" x="11" y="254" width="192" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1377,7 +1377,7 @@
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kkg-cj-9Y8">
-                                        <rect key="frame" x="11" y="496" width="192" height="29"/>
+                                        <rect key="frame" x="11" y="496" width="234" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1417,8 +1417,8 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gyW-D3-3JE">
-                                        <rect key="frame" x="11" y="538" width="192" height="29"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gyW-D3-3JE">
+                                        <rect key="frame" x="11" y="538" width="234" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1464,8 +1464,8 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x2N-5j-yiC">
-                                        <rect key="frame" x="11" y="580" width="192" height="29"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x2N-5j-yiC">
+                                        <rect key="frame" x="11" y="580" width="234" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1511,8 +1511,8 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ea0-bv-YZc">
-                                        <rect key="frame" x="11" y="622" width="192" height="29"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ea0-bv-YZc">
+                                        <rect key="frame" x="11" y="622" width="234" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -3073,7 +3073,7 @@
                                 </subviews>
                             </scrollView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LeftRight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WV5-XG-uKR">
-                                <rect key="frame" x="367" y="0.0" width="291" height="41"/>
+                                <rect key="frame" x="261" y="0.0" width="181" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -3112,15 +3112,48 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KbM-Lv-imU">
-                                <rect key="frame" x="570" y="74" width="65" height="34"/>
+                                <rect key="frame" x="707" y="4" width="65" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current Hole:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kNL-5r-Ze1">
-                                <rect key="frame" x="371" y="74" width="233" height="34"/>
+                                <rect key="frame" x="508" y="4" width="233" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="PCG-5I-TAn">
+                                <rect key="frame" x="35" y="82" width="238" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gRg-G8-pxZ">
+                                <rect key="frame" x="42" y="88" width="225" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="ujg-W4-UvF">
+                                <rect key="frame" x="289" y="83" width="238" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e8g-Ao-2FT">
+                                <rect key="frame" x="296" y="89" width="225" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="4d8-91-DxO">
+                                <rect key="frame" x="543" y="82" width="238" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5rK-hz-RMC">
+                                <rect key="frame" x="550" y="88" width="225" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -3150,18 +3183,90 @@
                         <outlet property="courseHandicap9" destination="sRt-rk-p6p" id="NdT-Yw-fwT"/>
                         <outlet property="currentHoleLabel" destination="KbM-Lv-imU" id="TwW-yB-7m5"/>
                         <outlet property="player1HandicapLabel" destination="wdl-sa-WLT" id="uAb-Gk-PXe"/>
+                        <outlet property="player1Hole1" destination="6sj-q3-MPY" id="lhX-h8-89T"/>
+                        <outlet property="player1Hole10" destination="vWm-2Z-c3m" id="UUd-Kw-MpK"/>
+                        <outlet property="player1Hole11" destination="7gJ-3c-whX" id="UOA-G5-29X"/>
+                        <outlet property="player1Hole12" destination="ugO-1b-vu7" id="iIF-wR-Yd8"/>
+                        <outlet property="player1Hole13" destination="OhL-fG-5Fd" id="0rV-ki-wtu"/>
+                        <outlet property="player1Hole14" destination="nzy-co-Voy" id="Zkx-Ep-VUP"/>
+                        <outlet property="player1Hole15" destination="pSu-MU-cch" id="UjY-LQ-qPg"/>
+                        <outlet property="player1Hole16" destination="aYv-Hq-CGk" id="TQO-Eh-tOA"/>
+                        <outlet property="player1Hole17" destination="GYC-ak-MIO" id="VkJ-UE-9Bc"/>
+                        <outlet property="player1Hole18" destination="mLt-1E-Hy7" id="f1v-75-YaB"/>
+                        <outlet property="player1Hole2" destination="1j0-g5-ooF" id="K2T-r9-xCa"/>
+                        <outlet property="player1Hole3" destination="Rb9-hz-gxz" id="kdM-0G-RnQ"/>
+                        <outlet property="player1Hole4" destination="ggZ-Lx-SNh" id="9BC-5d-H3m"/>
+                        <outlet property="player1Hole5" destination="hZE-J7-c1Y" id="qq5-bG-Qfq"/>
+                        <outlet property="player1Hole6" destination="6pl-fb-FAu" id="f5u-jf-yxg"/>
+                        <outlet property="player1Hole7" destination="Fo2-Cs-4Dg" id="Bdv-RW-xMQ"/>
+                        <outlet property="player1Hole8" destination="M8A-Ma-CKN" id="yRy-Ud-qVq"/>
+                        <outlet property="player1Hole9" destination="SOD-In-dT5" id="DF1-pI-SLq"/>
                         <outlet property="player1InLabel" destination="FLe-B6-rcC" id="S96-tM-qCE"/>
                         <outlet property="player1OutLabel" destination="3bY-cn-dKs" id="4xT-u2-VaG"/>
                         <outlet property="player1TotalLabel" destination="iwr-zk-B4K" id="gKq-Tf-kFo"/>
                         <outlet property="player2HandicapLabel" destination="Qsz-Fl-g2t" id="grs-VT-sRd"/>
+                        <outlet property="player2Hole1" destination="ahg-4v-C0d" id="MVk-e1-P3h"/>
+                        <outlet property="player2Hole10" destination="719-Di-ifR" id="WXc-CL-kQp"/>
+                        <outlet property="player2Hole11" destination="mB8-pR-t06" id="Nza-bi-zD4"/>
+                        <outlet property="player2Hole12" destination="Yp3-MR-LiD" id="H9D-qc-X35"/>
+                        <outlet property="player2Hole13" destination="Wj2-Ee-oJ8" id="fFo-Jh-5zY"/>
+                        <outlet property="player2Hole14" destination="qQ2-4c-HXS" id="fhZ-Mw-t4v"/>
+                        <outlet property="player2Hole15" destination="Fv5-gg-3rj" id="F2j-gQ-Zyx"/>
+                        <outlet property="player2Hole16" destination="gC4-lG-c1a" id="2sc-gT-8zX"/>
+                        <outlet property="player2Hole17" destination="Iof-na-Bx7" id="3tN-Tf-tcc"/>
+                        <outlet property="player2Hole18" destination="7MU-AD-3kC" id="v1K-Tq-FA3"/>
+                        <outlet property="player2Hole2" destination="jFc-YU-BTv" id="2Kk-fS-Uyj"/>
+                        <outlet property="player2Hole3" destination="pYF-h5-q6a" id="Ti2-mR-O0W"/>
+                        <outlet property="player2Hole4" destination="w4M-aX-NDy" id="Kju-wA-FSd"/>
+                        <outlet property="player2Hole5" destination="xO5-k0-9az" id="fes-Xg-auV"/>
+                        <outlet property="player2Hole6" destination="LJe-nX-fMe" id="G6W-9d-fQK"/>
+                        <outlet property="player2Hole7" destination="dcE-BG-WKy" id="213-Il-bJb"/>
+                        <outlet property="player2Hole8" destination="06a-5o-6ov" id="Xv1-pn-s17"/>
+                        <outlet property="player2Hole9" destination="qpB-1f-CiD" id="huz-ge-JhC"/>
                         <outlet property="player2InLabel" destination="J08-ST-37L" id="Nzu-YH-Z41"/>
                         <outlet property="player2OutLabel" destination="3Tn-wy-xd7" id="GGt-P6-uLw"/>
                         <outlet property="player2TotalLabel" destination="4X1-u3-OSv" id="9ci-BX-p4X"/>
                         <outlet property="player3HandicapLabel" destination="Piv-cg-dED" id="bUy-48-a9N"/>
+                        <outlet property="player3Hole1" destination="CdH-dd-Chx" id="d3A-pm-Tt3"/>
+                        <outlet property="player3Hole10" destination="kdl-l8-7kC" id="UTI-E4-O4d"/>
+                        <outlet property="player3Hole11" destination="KfY-P3-0Eu" id="aJ2-2g-7fI"/>
+                        <outlet property="player3Hole12" destination="AQg-B7-84w" id="hQe-sb-HfI"/>
+                        <outlet property="player3Hole13" destination="QN3-Le-zUa" id="qfj-7a-w96"/>
+                        <outlet property="player3Hole14" destination="PLk-it-OaV" id="qkR-7h-i1y"/>
+                        <outlet property="player3Hole15" destination="Ipf-jV-he6" id="e4z-Ca-Lot"/>
+                        <outlet property="player3Hole16" destination="gGq-Y2-h8J" id="heS-yp-OQj"/>
+                        <outlet property="player3Hole17" destination="H8D-pu-cqE" id="d7d-JX-r8Z"/>
+                        <outlet property="player3Hole18" destination="hzI-PN-Gf7" id="n1Z-lZ-XF3"/>
+                        <outlet property="player3Hole2" destination="TD2-nf-Mhr" id="PuW-ut-LFQ"/>
+                        <outlet property="player3Hole3" destination="pha-6n-Gcm" id="sWz-mX-2I6"/>
+                        <outlet property="player3Hole4" destination="q7O-wc-udU" id="kTO-VY-M60"/>
+                        <outlet property="player3Hole5" destination="DK4-fL-c0k" id="LS5-Dv-OBo"/>
+                        <outlet property="player3Hole6" destination="4nE-uO-xcA" id="SFN-ao-THG"/>
+                        <outlet property="player3Hole7" destination="gJd-sO-9hd" id="7Ab-2B-avf"/>
+                        <outlet property="player3Hole8" destination="fAA-3p-iRt" id="QJg-qV-EV7"/>
+                        <outlet property="player3Hole9" destination="rPI-vC-SMI" id="yFh-iq-maI"/>
                         <outlet property="player3InLabel" destination="Z3O-hX-rcN" id="iLv-69-mPl"/>
                         <outlet property="player3OutLabel" destination="t3h-wo-7yr" id="H6L-bH-ptT"/>
                         <outlet property="player3TotalLabel" destination="9Jb-L3-Dhz" id="kT8-CM-Elm"/>
                         <outlet property="player4HandicapLabel" destination="dtf-BR-6mz" id="hla-Sl-9PV"/>
+                        <outlet property="player4Hole1" destination="6eb-zT-wrG" id="n1g-Wy-x0p"/>
+                        <outlet property="player4Hole10" destination="nCG-cu-in2" id="3BQ-o3-yqa"/>
+                        <outlet property="player4Hole11" destination="dIO-ll-3zb" id="J3o-u9-ZJ9"/>
+                        <outlet property="player4Hole12" destination="Bck-ZI-xoX" id="WgF-7o-TcG"/>
+                        <outlet property="player4Hole13" destination="16b-vQ-8ir" id="j3r-uk-Wds"/>
+                        <outlet property="player4Hole14" destination="qDW-CX-ayp" id="HTB-rO-WCg"/>
+                        <outlet property="player4Hole15" destination="UEt-Zy-xKw" id="W2H-kV-5fa"/>
+                        <outlet property="player4Hole16" destination="0bs-Qf-Yku" id="5ho-jS-jQT"/>
+                        <outlet property="player4Hole17" destination="JMa-Ai-Olm" id="b9I-a5-REA"/>
+                        <outlet property="player4Hole18" destination="8VE-9L-5QG" id="wAe-h6-oBl"/>
+                        <outlet property="player4Hole2" destination="ddw-0o-QAe" id="ROw-Ca-1DK"/>
+                        <outlet property="player4Hole3" destination="aHg-6U-neh" id="IEk-if-dTX"/>
+                        <outlet property="player4Hole4" destination="eEi-rY-Anh" id="lgc-n6-0Ra"/>
+                        <outlet property="player4Hole5" destination="sCL-Xq-2H4" id="7ac-zx-TkF"/>
+                        <outlet property="player4Hole6" destination="UBs-fU-oob" id="PQi-aZ-p92"/>
+                        <outlet property="player4Hole7" destination="iLP-UI-NXA" id="Xkm-1z-sHV"/>
+                        <outlet property="player4Hole8" destination="p6f-z9-ga0" id="LHx-OJ-tEt"/>
+                        <outlet property="player4Hole9" destination="uRI-si-XD4" id="IC6-iP-Zbp"/>
                         <outlet property="player4InLabel" destination="ABo-Tn-fuj" id="MhY-jF-v6B"/>
                         <outlet property="player4OutLabel" destination="yew-SQ-kln" id="j9a-VU-3tk"/>
                         <outlet property="player4TotalLabel" destination="AlW-qG-1Tg" id="sLk-oW-qCB"/>
@@ -3192,6 +3297,9 @@
                         <outletCollection property="player2NameLabels" destination="gyW-D3-3JE" id="FGi-TG-jHG"/>
                         <outletCollection property="player3NameLabels" destination="x2N-5j-yiC" id="2Qo-ir-QH2"/>
                         <outletCollection property="player4NameLabels" destination="Ea0-bv-YZc" id="qh4-Jb-gHf"/>
+                        <outletCollection property="player2NameLabels" destination="gRg-G8-pxZ" id="g4M-oE-9fe"/>
+                        <outletCollection property="player3NameLabels" destination="e8g-Ao-2FT" id="Ih8-7a-Xsb"/>
+                        <outletCollection property="player4NameLabels" destination="5rK-hz-RMC" id="NjN-KI-6lj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6J0-z2-oHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3205,8 +3313,6 @@
             <relationships>
                 <relationship kind="action" name="backButtonPressed:"/>
                 <relationship kind="action" name="endGameButtonPressed:"/>
-                <relationship kind="action" name="nextHoleButtonPressed:"/>
-                <relationship kind="action" name="previousHoleButtonPressed:"/>
                 <relationship kind="outlet" name="courseHandicap1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="courseHandicap10" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="courseHandicap11" candidateClass="UILabel"/>
@@ -3227,18 +3333,90 @@
                 <relationship kind="outlet" name="courseHandicap9" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="currentHoleLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player1HandicapLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player1Hole1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole10" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole11" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole12" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole13" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole14" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole15" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole16" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole17" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole18" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole4" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole5" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole6" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole7" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole8" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player1Hole9" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="player1InLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player1OutLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player1TotalLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player2HandicapLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player2Hole1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole10" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole11" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole12" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole13" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole14" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole15" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole16" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole17" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole18" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole4" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole5" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole6" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole7" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole8" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player2Hole9" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="player2InLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player2OutLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player2TotalLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player3HandicapLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player3Hole1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole10" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole11" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole12" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole13" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole14" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole15" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole16" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole17" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole18" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole4" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole5" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole6" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole7" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole8" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player3Hole9" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="player3InLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player3OutLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player3TotalLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player4HandicapLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player4Hole1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole10" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole11" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole12" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole13" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole14" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole15" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole16" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole17" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole18" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole4" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole5" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole6" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole7" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole8" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="player4Hole9" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="player4InLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player4OutLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player4TotalLabel" candidateClass="UILabel"/>
@@ -3323,6 +3501,9 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
