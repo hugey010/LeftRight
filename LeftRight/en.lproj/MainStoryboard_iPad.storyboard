@@ -2364,7 +2364,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="0S6-sh-TbW"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="A1f-GR-0z7"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="iDT-kM-bqP">
@@ -3501,9 +3501,6 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

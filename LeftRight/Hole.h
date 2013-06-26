@@ -22,6 +22,7 @@
 @property (nonatomic, retain) NSNumber * team2Points;
 @property (nonatomic, retain) NSNumber * press;
 @property (nonatomic, retain) NSOrderedSet *in_course;
+
 @end
 
 @interface Hole (CoreDataGeneratedAccessors)

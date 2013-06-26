@@ -16,6 +16,8 @@
     UITextField *currentField;
     
     NSMutableArray *groupedHoles;
+    
+    NSNumberFormatter *numberFormatter;
 
 }
 
@@ -28,12 +30,24 @@
 {
     [super viewDidLoad];
     
+    numberFormatter = [[NSNumberFormatter alloc] init];
+    [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    
     [self createAllHoles];
+    [self setupHoleArrays];
     
     [self setupHandicaps];
     [self setupNames];
+    [self setupHoleObservers];
+    
 
 
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    
 }
 
 - (IBAction)backButtonPressed:(id)sender {
@@ -48,9 +62,11 @@
 
 #pragma mark - UITextFieldDelegate methods
 
+
 -(void)textFieldDidBeginEditing:(UITextField *)textField {
     
-    NSInteger activeIndex;
+    
+    NSInteger activeIndex = 0;
     
     for (NSArray *holes in groupedHoles) {
         for (UITextField *field in holes) {
@@ -63,22 +79,50 @@
     }
     loopEnd:;
     
-    [self removeObserversFromHole:currentHole];
     currentHole = self.course.has_holes[activeIndex];
-    [self addObserversToHole:currentHole];
     
     self.currentHoleLabel.text = [NSString stringWithFormat:@"%d", activeIndex];
     
-    for (UITextField *field in groupedHoles[activeIndex]) {
-        field.userInteractionEnabled = YES;
-    }
+     
     
 }
+ 
+
 
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     NSString *appendString = [NSString stringWithFormat:@"%@%@", textField.text, string];
     
-    return YES;
+    
+    if (textField == self.player1Hole1) {
+        currentHole.player1Score = [numberFormatter numberFromString:appendString];
+    }
+    
+    /*
+    for (NSArray *holes in groupedHoles) {
+        for (NSInteger i = 0; i < 4; i++) {
+            UITextField *field = holes[i];
+            if (field == textField) {
+                
+                
+                
+                
+                goto loopEnd;
+            }
+            
+            
+        }
+    }
+    loopEnd:;
+     */
+    
+    return appendString.length <= 2;
+}
+ 
+
+#pragma mark - Observer methods
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    DLog(@" ahole changed");
 }
 
 -(void)addObserversToHole:(Hole*)hole {
@@ -101,6 +145,13 @@
 
 #pragma mark - Course Setup
 
+-(void)setupHoleObservers {
+    for (NSInteger i = 0; i < 18; i++) {
+        Hole *hole = self.course.has_holes[i];
+        [self addObserversToHole:hole];
+    }
+}
+
 -(void)setupHoleArrays {
     groupedHoles = [NSMutableArray array];
     
@@ -109,8 +160,9 @@
         NSMutableArray *currentArray = [NSMutableArray array];
         
         for (NSInteger playerNo = 0; playerNo < 4; playerNo++) {
-            NSString *holeString = [NSString stringWithFormat:@"player%dhole%d", 1, holeNo+1];
+            NSString *holeString = [NSString stringWithFormat:@"player%dHole%d", 1, holeNo+1];
             UITextField *field = [self valueForKey:holeString];
+            
             [currentArray addObject:field];
 
         }
@@ -129,6 +181,7 @@
         hole.team = kTeam1;
         hole.press = @1;
         set[i] = hole;
+        [self addObserversToHole:hole];
     }
     
     self.course.has_holes = set;
