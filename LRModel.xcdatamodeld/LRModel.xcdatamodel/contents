@@ -20,12 +20,21 @@
         <attribute name="handicap17" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="handicap18" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="player_1" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
-        <relationship name="player_2" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
-        <relationship name="player_3" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
-        <relationship name="player_4" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
+        <relationship name="has_holes" toMany="YES" minCount="18" maxCount="18" deletionRule="Nullify" ordered="YES" destinationEntity="Hole" inverseName="in_course" inverseEntity="Hole" syncable="YES"/>
+        <relationship name="has_players" optional="YES" toMany="YES" minCount="4" maxCount="4" deletionRule="Nullify" ordered="YES" destinationEntity="Player" inverseName="in_course" inverseEntity="Player" syncable="YES"/>
     </entity>
-    <entity name="GameHistory" syncable="YES"/>
+    <entity name="GameHistory" representedClassName="GameHistory" syncable="YES"/>
+    <entity name="Hole" representedClassName="Hole" syncable="YES">
+        <attribute name="player1Score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="player2Score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="player3Score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="player4Score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="press" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="team" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="team1Points" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="team2Points" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="in_course" minCount="1" maxCount="1" deletionRule="Nullify" ordered="YES" destinationEntity="Course" inverseName="has_holes" inverseEntity="Course" syncable="YES"/>
+    </entity>
     <entity name="Player" representedClassName="Player" syncable="YES">
         <attribute name="handicap" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -47,10 +56,12 @@
         <attribute name="score16" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="score17" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="score18" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="in_course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="has_players" inverseEntity="Course" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Course" positionX="160" positionY="192" width="128" height="390"/>
-        <element name="Player" positionX="160" positionY="192" width="128" height="345"/>
-        <element name="GameHistory" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="Course" positionX="-360" positionY="-324" width="128" height="358"/>
+        <element name="GameHistory" positionX="-110" positionY="207" width="128" height="43"/>
+        <element name="Player" positionX="-164" positionY="-306" width="128" height="358"/>
+        <element name="Hole" positionX="-585" positionY="-135" width="128" height="178"/>
     </elements>
 </model>

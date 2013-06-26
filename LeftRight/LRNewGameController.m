@@ -50,25 +50,24 @@
 - (IBAction)startGameButtonPressed:(id)sender {
     if ([self checkAllFields]) {
         
+        
         Player *p1 = [Player MR_createEntity];
         p1.name = self.nameField1.text;
         p1.handicap = [NSNumber numberWithInteger:[self.handicapField1.text integerValue]];
-        self.course.player_1 = p1;
         
         Player *p2 = [Player MR_createEntity];
         p2.name = self.nameField2.text;
         p2.handicap = [NSNumber numberWithInteger:[self.handicapField2.text integerValue]];
-        self.course.player_2 = p2;
         
         Player *p3 = [Player MR_createEntity];
         p3.name = self.nameField3.text;
         p3.handicap = [NSNumber numberWithInteger:[self.handicapField3.text integerValue]];
-        self.course.player_3 = p3;
         
         Player *p4 = [Player MR_createEntity];
         p4.name = self.nameField4.text;
         p4.handicap = [NSNumber numberWithInteger:[self.handicapField4.text integerValue]];
-        self.course.player_4 = p4;
+        
+        self.course.has_players = [NSOrderedSet orderedSetWithArray:@[p1, p2, p3, p4]];
         
         LRActiveGameController *active = [self.storyboard instantiateViewControllerWithIdentifier:@"active"];
         active.course = self.course;

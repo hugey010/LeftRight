@@ -10,6 +10,10 @@
 
 @class Course;
 
+#define kTeam1 @1
+#define kTeam2 @2
+#define kTeam3 @3
+
 @interface LRActiveGameController : UIViewController
 
 @property (nonatomic, strong) Course *course;
@@ -82,5 +86,8 @@
 
 - (IBAction)backButtonPressed:(id)sender;
 - (IBAction)endGameButtonPressed:(id)sender;
+- (IBAction)previousHoleButtonPressed:(id)sender;
+- (IBAction)nextHoleButtonPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *currentHoleLabel;
 
 @end

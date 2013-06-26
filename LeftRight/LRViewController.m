@@ -156,6 +156,7 @@
             course = [Course MR_createEntity];
         }
         
+        
         course.name = self.courseNameField.text;
         course.handicap1 = [NSNumber numberWithInteger:[self.holeField1.text integerValue]];
         course.handicap2 = [NSNumber numberWithInteger:[self.holeField2.text integerValue]];
@@ -221,6 +222,9 @@
 - (IBAction)newGameButtonPressed:(id)sender {
     Course *course = [self saveCurrentCourse];
     if ([course isValidCourse]) {
+        
+        [self.collectionView reloadData];
+        
         LRNewGameController *newgame = [self.storyboard instantiateViewControllerWithIdentifier:@"newgame"];
         newgame.course = course;
         [self.navigationController pushViewController:newgame animated:YES];

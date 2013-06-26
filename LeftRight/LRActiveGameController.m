@@ -9,6 +9,7 @@
 #import "LRActiveGameController.h"
 #import "Course.h"
 #import "Player.h"
+#import "Hole.h"
 
 @interface LRActiveGameController ()
 
@@ -20,6 +21,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self createAllHoles];
     
     [self setupHandicaps];
     [self setupNames];
@@ -36,7 +39,23 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+- (IBAction)previousHoleButtonPressed:(id)sender {
+}
+
+- (IBAction)nextHoleButtonPressed:(id)sender {
+}
+
 #pragma mark - Course Setup
+
+-(void)createAllHoles {
+    for (NSInteger i = 0; i < 18; i++) {
+        Hole *hole = [Hole MR_createEntity];
+        [self.course addHas_holesObject:hole];
+        hole.team = kTeam1;
+        hole.press = @1;
+        
+    }
+}
 
 -(void)setupHandicaps {
     self.courseHandicap1.text = [NSString stringWithFormat:@"%@", self.course.handicap1];
