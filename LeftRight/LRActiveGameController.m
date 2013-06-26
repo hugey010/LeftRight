@@ -48,13 +48,16 @@
 #pragma mark - Course Setup
 
 -(void)createAllHoles {
+    NSMutableOrderedSet *set = [NSMutableOrderedSet orderedSet];
     for (NSInteger i = 0; i < 18; i++) {
         Hole *hole = [Hole MR_createEntity];
-        [self.course addHas_holesObject:hole];
         hole.team = kTeam1;
         hole.press = @1;
-        
+        [set addObject:hole];
+
     }
+    
+    self.course.has_holes = set;
 }
 
 -(void)setupHandicaps {
@@ -77,24 +80,28 @@
     self.courseHandicap17.text = [NSString stringWithFormat:@"%@", self.course.handicap17];
     self.courseHandicap18.text = [NSString stringWithFormat:@"%@", self.course.handicap18];
     
-    self.player1HandicapLabel.text = [NSString stringWithFormat:@"%@", self.course.player_1.handicap];
-    self.player2HandicapLabel.text = [NSString stringWithFormat:@"%@", self.course.player_2.handicap];
-    self.player3HandicapLabel.text = [NSString stringWithFormat:@"%@", self.course.player_3.handicap];
-    self.player4HandicapLabel.text = [NSString stringWithFormat:@"%@", self.course.player_4.handicap];
+    NSArray *players = [self.course.has_players array];
+    
+    self.player1HandicapLabel.text = [NSString stringWithFormat:@"%@", [players[0] handicap]];
+    self.player2HandicapLabel.text = [NSString stringWithFormat:@"%@", [players[1] handicap]];
+    self.player3HandicapLabel.text = [NSString stringWithFormat:@"%@", [players[2] handicap]];
+    self.player4HandicapLabel.text = [NSString stringWithFormat:@"%@", [players[3] handicap]];
 }
 
 -(void)setupNames {
+    NSArray *players = [self.course.has_players array];
+    
     for (UILabel *l in self.player1NameLabels) {
-        l.text = self.course.player_1.name;
+        l.text = [players[0] name];
     }
     for (UILabel *l in self.player2NameLabels) {
-        l.text = self.course.player_2.name;
+        l.text = [players[1] name];
     }
     for (UILabel *l in self.player3NameLabels) {
-        l.text = self.course.player_3.name;
+        l.text = [players[2] name];
     }
     for (UILabel *l in self.player4NameLabels) {
-        l.text = self.course.player_4.name;
+        l.text = [players[3] name];
     }
 }
 

@@ -190,6 +190,7 @@
     for (UITextField *f in self.allFields) {
         f.text = @"";
     }
+    self.courseNameField.text = @"";
 }
 
 -(void)loadFormDataWithCourse:(Course*)course {

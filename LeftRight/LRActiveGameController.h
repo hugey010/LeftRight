@@ -86,8 +86,7 @@
 
 - (IBAction)backButtonPressed:(id)sender;
 - (IBAction)endGameButtonPressed:(id)sender;
-- (IBAction)previousHoleButtonPressed:(id)sender;
-- (IBAction)nextHoleButtonPressed:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UILabel *currentHoleLabel;
 
 @end

@@ -21,6 +21,19 @@
 @property (nonatomic, retain) NSNumber * team1Points;
 @property (nonatomic, retain) NSNumber * team2Points;
 @property (nonatomic, retain) NSNumber * press;
-@property (nonatomic, retain) Course *in_course;
+@property (nonatomic, retain) NSOrderedSet *in_course;
+@end
 
+@interface Hole (CoreDataGeneratedAccessors)
+
+- (void)insertObject:(Course *)value inIn_courseAtIndex:(NSUInteger)idx;
+- (void)removeObjectFromIn_courseAtIndex:(NSUInteger)idx;
+- (void)insertIn_course:(NSArray *)value atIndexes:(NSIndexSet *)indexes;
+- (void)removeIn_courseAtIndexes:(NSIndexSet *)indexes;
+- (void)replaceObjectInIn_courseAtIndex:(NSUInteger)idx withObject:(Course *)value;
+- (void)replaceIn_courseAtIndexes:(NSIndexSet *)indexes withIn_course:(NSArray *)values;
+- (void)addIn_courseObject:(Course *)value;
+- (void)removeIn_courseObject:(Course *)value;
+- (void)addIn_course:(NSOrderedSet *)values;
+- (void)removeIn_course:(NSOrderedSet *)values;
 @end

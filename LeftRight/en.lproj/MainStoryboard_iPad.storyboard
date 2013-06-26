@@ -3111,53 +3111,18 @@
                                     <action selector="endGameButtonPressed:" destination="oER-8x-caQ" eventType="touchUpInside" id="HbQ-fn-UY5"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" id="mQj-6C-vGa">
-                                <rect key="frame" x="480" y="50" width="65" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KbM-Lv-imU">
-                                <rect key="frame" x="480" y="59" width="65" height="34"/>
+                                <rect key="frame" x="570" y="74" width="65" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current Hole" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kNL-5r-Ze1">
-                                <rect key="frame" x="396" y="99" width="233" height="34"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current Hole:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kNL-5r-Ze1">
+                                <rect key="frame" x="371" y="74" width="233" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KHV-S4-jOw">
-                                <rect key="frame" x="319" y="58" width="121" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Previous">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="previousHoleButtonPressed:" destination="oER-8x-caQ" eventType="touchUpInside" id="WsS-pS-vZ9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OJe-Km-9tt">
-                                <rect key="frame" x="585" y="54" width="121" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="nextHoleButtonPressed:" destination="oER-8x-caQ" eventType="touchUpInside" id="Bbo-jc-lEY"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -3234,6 +3199,132 @@
             <point key="canvasLocation" x="2125" y="-100"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="LRActiveGameController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LRActiveGameController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButtonPressed:"/>
+                <relationship kind="action" name="endGameButtonPressed:"/>
+                <relationship kind="action" name="nextHoleButtonPressed:"/>
+                <relationship kind="action" name="previousHoleButtonPressed:"/>
+                <relationship kind="outlet" name="courseHandicap1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap10" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap11" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap12" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap13" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap14" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap15" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap16" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap17" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap18" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap7" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap8" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseHandicap9" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="currentHoleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player1HandicapLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player1InLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player1OutLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player1TotalLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player2HandicapLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player2InLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player2OutLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player2TotalLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player3HandicapLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player3InLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player3OutLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player3TotalLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player4HandicapLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player4InLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player4OutLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player4TotalLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel10" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel11" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel12" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel13" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel14" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel15" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel16" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel17" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel18" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel7" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel8" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pointsLabel9" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pressField" candidateClass="UITextField"/>
+                <relationship kind="outletCollection" name="player1NameLabels" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="player2NameLabels" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="player3NameLabels" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="player4NameLabels" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="LRNewGameController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LRNewGameController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButtonPressed:"/>
+                <relationship kind="action" name="startGameButtonPressed:"/>
+                <relationship kind="outlet" name="courseLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="handicapField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="handicapField2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="handicapField3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="handicapField4" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nameField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nameField2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nameField3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nameField4" candidateClass="UITextField"/>
+                <relationship kind="outletCollection" name="allFields" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LRViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LRViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="holeField8:"/>
+                <relationship kind="action" name="newGameButtonPressed:"/>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="courseNameField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField10" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField11" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField12" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField13" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField14" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField15" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField16" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField17" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField18" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField4" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField5" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField6" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField7" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField8" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="holeField9" candidateClass="UITextField"/>
+                <relationship kind="outletCollection" name="allFields" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="TPKeyboardAvoidingScrollView" superclassName="UIScrollView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TPKeyboardAvoidingScrollView.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -20,7 +20,7 @@
         <attribute name="handicap17" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="handicap18" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="has_holes" toMany="YES" minCount="18" maxCount="18" deletionRule="Nullify" ordered="YES" destinationEntity="Hole" inverseName="in_course" inverseEntity="Hole" syncable="YES"/>
+        <relationship name="has_holes" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Hole" inverseName="in_course" inverseEntity="Hole" syncable="YES"/>
         <relationship name="has_players" optional="YES" toMany="YES" minCount="4" maxCount="4" deletionRule="Nullify" ordered="YES" destinationEntity="Player" inverseName="in_course" inverseEntity="Player" syncable="YES"/>
     </entity>
     <entity name="GameHistory" representedClassName="GameHistory" syncable="YES"/>
@@ -33,7 +33,7 @@
         <attribute name="team" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="team1Points" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="team2Points" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="in_course" minCount="1" maxCount="1" deletionRule="Nullify" ordered="YES" destinationEntity="Course" inverseName="has_holes" inverseEntity="Course" syncable="YES"/>
+        <relationship name="in_course" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Course" inverseName="has_holes" inverseEntity="Course" syncable="YES"/>
     </entity>
     <entity name="Player" representedClassName="Player" syncable="YES">
         <attribute name="handicap" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>

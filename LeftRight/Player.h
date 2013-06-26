@@ -2,16 +2,18 @@
 //  Player.h
 //  LeftRight
 //
-//  Created by Tyler Hugenberg on 6/21/13.
+//  Created by Tyler Hugenberg on 6/25/13.
 //  Copyright (c) 2013 Hugey. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class Course;
 
 @interface Player : NSManagedObject
 
+@property (nonatomic, retain) NSNumber * handicap;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * score1;
 @property (nonatomic, retain) NSNumber * score2;
@@ -31,6 +33,6 @@
 @property (nonatomic, retain) NSNumber * score16;
 @property (nonatomic, retain) NSNumber * score17;
 @property (nonatomic, retain) NSNumber * score18;
-@property (nonatomic, retain) NSNumber * handicap;
+@property (nonatomic, retain) Course *in_course;
 
 @end

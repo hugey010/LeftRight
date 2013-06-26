@@ -2,15 +2,17 @@
 //  Player.m
 //  LeftRight
 //
-//  Created by Tyler Hugenberg on 6/21/13.
+//  Created by Tyler Hugenberg on 6/25/13.
 //  Copyright (c) 2013 Hugey. All rights reserved.
 //
 
 #import "Player.h"
+#import "Course.h"
 
 
 @implementation Player
 
+@dynamic handicap;
 @dynamic name;
 @dynamic score1;
 @dynamic score2;
@@ -30,6 +32,6 @@
 @dynamic score16;
 @dynamic score17;
 @dynamic score18;
-@dynamic handicap;
+@dynamic in_course;
 
 @end
