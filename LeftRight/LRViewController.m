@@ -9,6 +9,7 @@
 #import "LRViewController.h"
 #import "Course+LRManagedObject.h"
 #import "LRNewGameController.h"
+#import "Hole.h"
 
 @interface LRViewController () {
     NSArray *records;
@@ -158,24 +159,25 @@
         
         
         course.name = self.courseNameField.text;
-        course.handicap1 = [NSNumber numberWithInteger:[self.holeField1.text integerValue]];
-        course.handicap2 = [NSNumber numberWithInteger:[self.holeField2.text integerValue]];
-        course.handicap3 = [NSNumber numberWithInteger:[self.holeField3.text integerValue]];
-        course.handicap4 = [NSNumber numberWithInteger:[self.holeField4.text integerValue]];
-        course.handicap5 = [NSNumber numberWithInteger:[self.holeField5.text integerValue]];
-        course.handicap6 = [NSNumber numberWithInteger:[self.holeField6.text integerValue]];
-        course.handicap7 = [NSNumber numberWithInteger:[self.holeField7.text integerValue]];
-        course.handicap8 = [NSNumber numberWithInteger:[self.holeField8.text integerValue]];
-        course.handicap9 = [NSNumber numberWithInteger:[self.holeField9.text integerValue]];
-        course.handicap10 = [NSNumber numberWithInteger:[self.holeField10.text integerValue]];
-        course.handicap11 = [NSNumber numberWithInteger:[self.holeField11.text integerValue]];
-        course.handicap12 = [NSNumber numberWithInteger:[self.holeField12.text integerValue]];
-        course.handicap13 = [NSNumber numberWithInteger:[self.holeField13.text integerValue]];
-        course.handicap14 = [NSNumber numberWithInteger:[self.holeField14.text integerValue]];
-        course.handicap15 = [NSNumber numberWithInteger:[self.holeField15.text integerValue]];
-        course.handicap16 = [NSNumber numberWithInteger:[self.holeField16.text integerValue]];
-        course.handicap17 = [NSNumber numberWithInteger:[self.holeField17.text integerValue]];
-        course.handicap18 = [NSNumber numberWithInteger:[self.holeField18.text integerValue]];
+        [course.has_holes[0] setHandicap:[NSNumber numberWithInteger:[self.holeField1.text integerValue]]];
+        [course.has_holes[1] setHandicap:[NSNumber numberWithInteger:[self.holeField2.text integerValue]]];
+        [course.has_holes[2] setHandicap:[NSNumber numberWithInteger:[self.holeField3.text integerValue]]];
+        [course.has_holes[3] setHandicap:[NSNumber numberWithInteger:[self.holeField4.text integerValue]]];
+        [course.has_holes[4] setHandicap:[NSNumber numberWithInteger:[self.holeField5.text integerValue]]];
+        [course.has_holes[5] setHandicap:[NSNumber numberWithInteger:[self.holeField6.text integerValue]]];
+        [course.has_holes[6] setHandicap:[NSNumber numberWithInteger:[self.holeField7.text integerValue]]];
+        [course.has_holes[7] setHandicap:[NSNumber numberWithInteger:[self.holeField8.text integerValue]]];
+        [course.has_holes[8] setHandicap:[NSNumber numberWithInteger:[self.holeField9.text integerValue]]];
+        [course.has_holes[9] setHandicap:[NSNumber numberWithInteger:[self.holeField10.text integerValue]]];
+        [course.has_holes[10] setHandicap:[NSNumber numberWithInteger:[self.holeField11.text integerValue]]];
+        [course.has_holes[11] setHandicap:[NSNumber numberWithInteger:[self.holeField12.text integerValue]]];
+        [course.has_holes[12] setHandicap:[NSNumber numberWithInteger:[self.holeField13.text integerValue]]];
+        [course.has_holes[13] setHandicap:[NSNumber numberWithInteger:[self.holeField14.text integerValue]]];
+        [course.has_holes[14] setHandicap:[NSNumber numberWithInteger:[self.holeField15.text integerValue]]];
+        [course.has_holes[15] setHandicap:[NSNumber numberWithInteger:[self.holeField16.text integerValue]]];
+        [course.has_holes[16] setHandicap:[NSNumber numberWithInteger:[self.holeField17.text integerValue]]];
+        [course.has_holes[17] setHandicap:[NSNumber numberWithInteger:[self.holeField18.text integerValue]]];
+
         
         [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
         
@@ -196,24 +198,24 @@
 -(void)loadFormDataWithCourse:(Course*)course {
     
     self.courseNameField.text = course.name;
-    self.holeField1.text = [NSString stringWithFormat:@"%@", course.handicap1];
-    self.holeField2.text = [NSString stringWithFormat:@"%@", course.handicap2];
-    self.holeField3.text = [NSString stringWithFormat:@"%@", course.handicap3];
-    self.holeField4.text = [NSString stringWithFormat:@"%@", course.handicap4];
-    self.holeField5.text = [NSString stringWithFormat:@"%@", course.handicap5];
-    self.holeField6.text = [NSString stringWithFormat:@"%@", course.handicap6];
-    self.holeField7.text = [NSString stringWithFormat:@"%@", course.handicap7];
-    self.holeField8.text = [NSString stringWithFormat:@"%@", course.handicap8];
-    self.holeField9.text = [NSString stringWithFormat:@"%@", course.handicap9];
-    self.holeField10.text = [NSString stringWithFormat:@"%@", course.handicap10];
-    self.holeField11.text = [NSString stringWithFormat:@"%@", course.handicap11];
-    self.holeField12.text = [NSString stringWithFormat:@"%@", course.handicap12];
-    self.holeField13.text = [NSString stringWithFormat:@"%@", course.handicap13];
-    self.holeField14.text = [NSString stringWithFormat:@"%@", course.handicap14];
-    self.holeField15.text = [NSString stringWithFormat:@"%@", course.handicap15];
-    self.holeField16.text = [NSString stringWithFormat:@"%@", course.handicap16];
-    self.holeField17.text = [NSString stringWithFormat:@"%@", course.handicap17];
-    self.holeField18.text = [NSString stringWithFormat:@"%@", course.handicap18];
+    self.holeField1.text = [NSString stringWithFormat:@"%@", [course.has_holes[0] handicap]];
+    self.holeField2.text = [NSString stringWithFormat:@"%@", [course.has_holes[1] handicap]];
+    self.holeField3.text = [NSString stringWithFormat:@"%@", [course.has_holes[2] handicap]];
+    self.holeField4.text = [NSString stringWithFormat:@"%@", [course.has_holes[3] handicap]];
+    self.holeField5.text = [NSString stringWithFormat:@"%@", [course.has_holes[4] handicap]];
+    self.holeField6.text = [NSString stringWithFormat:@"%@", [course.has_holes[5] handicap]];
+    self.holeField7.text = [NSString stringWithFormat:@"%@", [course.has_holes[6] handicap]];
+    self.holeField8.text = [NSString stringWithFormat:@"%@", [course.has_holes[7] handicap]];
+    self.holeField9.text = [NSString stringWithFormat:@"%@", [course.has_holes[8] handicap]];
+    self.holeField10.text = [NSString stringWithFormat:@"%@", [course.has_holes[9] handicap]];
+    self.holeField11.text = [NSString stringWithFormat:@"%@", [course.has_holes[10] handicap]];
+    self.holeField12.text = [NSString stringWithFormat:@"%@", [course.has_holes[11] handicap]];
+    self.holeField13.text = [NSString stringWithFormat:@"%@", [course.has_holes[12] handicap]];
+    self.holeField14.text = [NSString stringWithFormat:@"%@", [course.has_holes[13] handicap]];
+    self.holeField15.text = [NSString stringWithFormat:@"%@", [course.has_holes[14] handicap]];
+    self.holeField16.text = [NSString stringWithFormat:@"%@", [course.has_holes[15] handicap]];
+    self.holeField17.text = [NSString stringWithFormat:@"%@", [course.has_holes[16] handicap]];
+    self.holeField18.text = [NSString stringWithFormat:@"%@", [course.has_holes[17] handicap]];
     
 }
 

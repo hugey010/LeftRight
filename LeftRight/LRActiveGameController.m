@@ -474,7 +474,12 @@
             
         }
         
+
+        UILabel *pointsLabel = [self valueForKey:[NSString stringWithFormat:@"pointsLabel%d", i+1]];
+        pointsLabel.text = [NSString stringWithFormat:@"%d", teamATotal];
         
+        
+        //NSInteger pointDiff =
         
 
 

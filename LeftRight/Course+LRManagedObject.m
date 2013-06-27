@@ -7,28 +7,29 @@
 //
 
 #import "Course+LRManagedObject.h"
+#import "Hole.h"
 
 @implementation Course (LRManagedObject)
 
 -(BOOL)isValidCourse {
-    return ([self isValidHoleField:self.handicap1]
-            && [self isValidHoleField:self.handicap2]
-            && [self isValidHoleField:self.handicap3]
-            && [self isValidHoleField:self.handicap4]
-            && [self isValidHoleField:self.handicap5]
-            && [self isValidHoleField:self.handicap6]
-            && [self isValidHoleField:self.handicap7]
-            && [self isValidHoleField:self.handicap8]
-            && [self isValidHoleField:self.handicap9]
-            && [self isValidHoleField:self.handicap10]
-            && [self isValidHoleField:self.handicap11]
-            && [self isValidHoleField:self.handicap12]
-            && [self isValidHoleField:self.handicap13]
-            && [self isValidHoleField:self.handicap14]
-            && [self isValidHoleField:self.handicap15]
-            && [self isValidHoleField:self.handicap16]
-            && [self isValidHoleField:self.handicap17]
-            && [self isValidHoleField:self.handicap18]
+    return ([self isValidHoleField:[self.has_holes[0] handicap]]
+            && [self isValidHoleField:[self.has_holes[1] handicap]]
+            && [self isValidHoleField:[self.has_holes[2] handicap]]
+            && [self isValidHoleField:[self.has_holes[3] handicap]]
+            && [self isValidHoleField:[self.has_holes[4] handicap]]
+            && [self isValidHoleField:[self.has_holes[5] handicap]]
+            && [self isValidHoleField:[self.has_holes[6] handicap]]
+            && [self isValidHoleField:[self.has_holes[7] handicap]]
+            && [self isValidHoleField:[self.has_holes[8] handicap]]
+            && [self isValidHoleField:[self.has_holes[9] handicap]]
+            && [self isValidHoleField:[self.has_holes[10] handicap]]
+            && [self isValidHoleField:[self.has_holes[11] handicap]]
+            && [self isValidHoleField:[self.has_holes[12] handicap]]
+            && [self isValidHoleField:[self.has_holes[13] handicap]]
+            && [self isValidHoleField:[self.has_holes[14] handicap]]
+            && [self isValidHoleField:[self.has_holes[15] handicap]]
+            && [self isValidHoleField:[self.has_holes[16] handicap]]
+            && [self isValidHoleField:[self.has_holes[17] handicap]]
             && self.name.length > 0);
 }
 
