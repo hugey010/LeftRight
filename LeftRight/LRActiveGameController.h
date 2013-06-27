@@ -182,6 +182,10 @@
 @property (nonatomic, strong) NSMutableArray *hole17s;
 @property (nonatomic, strong) NSMutableArray *hole18s;
 
+@property (weak, nonatomic) IBOutlet UILabel *player1TotalPointLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player2TotalPointLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player3TotalPointLabel;
+@property (weak, nonatomic) IBOutlet UILabel *player4TotalPointLabel;
 
 @property (weak, nonatomic) IBOutlet UIButton *team1Button;
 @property (weak, nonatomic) IBOutlet UIButton *team2Button;

@@ -110,6 +110,7 @@
 
 -(void)pressFieldChanged:(NSNotification*)notification {
     currentHole.press = [numberFormatter numberFromString:self.pressField.text];
+    [self recalculateAllValues];
 
 }
 
@@ -366,7 +367,6 @@
 
     
     for (NSInteger i = 0; i < 9; i++) {
-        DLog(@"self.course some vlaue = %d", [[self.course.has_holes[i] player1Score] integerValue]);
         p1Out += [[self.course.has_holes[i] player1Score] integerValue];
         p2Out += [[self.course.has_holes[i] player2Score] integerValue];
         p3Out += [[self.course.has_holes[i] player3Score] integerValue];
@@ -402,7 +402,14 @@
     self.player4TotalLabel.text = [NSString stringWithFormat:@"%d", p4Out + p4In];
     
     
+    
+    
     // loop for calculations in each hole
+    NSInteger p1Points = 0;
+    NSInteger p2Points = 0;
+    NSInteger p3Points = 0;
+    NSInteger p4Points = 0;
+    
     for (NSInteger i = 0; i < 18; i++) {
         
         // calculate lowest handicap
@@ -479,12 +486,69 @@
         pointsLabel.text = [NSString stringWithFormat:@"%d", teamATotal];
         
         
-        //NSInteger pointDiff =
+        NSInteger pointDiff = ABS(teamATotal + teamBTotal) * [hole.press integerValue];
+        
+        
+
+        
+        if ([hole.team isEqualToNumber:kTeam1]) {
+            if (teamATotal > teamBTotal) {
+                p1Points -= pointDiff;
+                p2Points -= pointDiff;
+                p3Points += pointDiff;
+                p4Points += pointDiff;
+                
+            } else {
+                p1Points += pointDiff;
+                p2Points += pointDiff;
+                p3Points -= pointDiff;
+                p4Points -= pointDiff;
+            }
+            
+        } else if ([hole.team isEqualToNumber:kTeam2]) {
+            if (teamATotal > teamBTotal) {
+                p1Points -= pointDiff;
+                p2Points += pointDiff;
+                p3Points -= pointDiff;
+                p4Points += pointDiff;
+                
+            } else {
+                p1Points += pointDiff;
+                p2Points -= pointDiff;
+                p3Points += pointDiff;
+                p4Points -= pointDiff;
+            }
+            
+        } else if ([hole.team isEqualToNumber:kTeam3]) {
+            if (teamATotal > teamBTotal) {
+                p1Points -= pointDiff;
+                p2Points += pointDiff;
+                p3Points += pointDiff;
+                p4Points -= pointDiff;
+                
+            } else {
+                p1Points += pointDiff;
+                p2Points -= pointDiff;
+                p3Points -= pointDiff;
+                p4Points += pointDiff;
+            }
+            
+        }
+        
         
 
 
     }
     
+    [self.course.has_players[0] setPoints:[NSNumber numberWithInteger:p1Points]];
+    [self.course.has_players[1] setPoints:[NSNumber numberWithInteger:p2Points]];
+    [self.course.has_players[2] setPoints:[NSNumber numberWithInteger:p3Points]];
+    [self.course.has_players[3] setPoints:[NSNumber numberWithInteger:p4Points]];
+
+    self.player1TotalPointLabel.text = [NSString stringWithFormat:@"%@", [self.course.has_players[0] points]];
+    self.player2TotalPointLabel.text = [NSString stringWithFormat:@"%@", [self.course.has_players[1] points]];
+    self.player3TotalPointLabel.text = [NSString stringWithFormat:@"%@", [self.course.has_players[2] points]];
+    self.player4TotalPointLabel.text = [NSString stringWithFormat:@"%@", [self.course.has_players[3] points]];
 
     
 
@@ -612,16 +676,22 @@
 - (IBAction)team1ButtonPressed:(id)sender {
     currentHole.team = kTeam1;
     [self resetHoleButtonsExcept:sender];
+    [self recalculateAllValues];
+    
 }
 
 - (IBAction)team2ButtonPressed:(id)sender {
     currentHole.team = kTeam2;
     [self resetHoleButtonsExcept:sender];
+    [self recalculateAllValues];
+
 }
 
 - (IBAction)team3ButtonPressed:(id)sender {
     currentHole.team = kTeam3;
     [self resetHoleButtonsExcept:sender];
+    [self recalculateAllValues];
+
 }
 
 -(void)resetHoleButtonsExcept:(UIButton*)button {
