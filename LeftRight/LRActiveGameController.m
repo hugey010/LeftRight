@@ -352,7 +352,57 @@
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     DLog(@" ahole changed");
     // recalculate all values
+
+    [self recalculateAllValues];
     
+}
+
+-(void) recalculateAllValues {
+    // calculate out totals
+    NSInteger p1Out = 0;
+    NSInteger p2Out = 0;
+    NSInteger p3Out = 0;
+    NSInteger p4Out = 0;
+
+    
+    for (NSInteger i = 0; i < 9; i++) {
+        DLog(@"self.course some vlaue = %d", [[self.course.has_holes[i] player1Score] integerValue]);
+        p1Out += [[self.course.has_holes[i] player1Score] integerValue];
+        p2Out += [[self.course.has_holes[i] player2Score] integerValue];
+        p3Out += [[self.course.has_holes[i] player3Score] integerValue];
+        p4Out += [[self.course.has_holes[i] player4Score] integerValue];
+    }
+    self.player1OutLabel.text = [NSString stringWithFormat:@"%d", p1Out];
+    self.player2OutLabel.text = [NSString stringWithFormat:@"%d", p2Out];
+    self.player3OutLabel.text = [NSString stringWithFormat:@"%d", p3Out];
+    self.player4OutLabel.text = [NSString stringWithFormat:@"%d", p4Out];
+    
+    // calculate in totals
+    NSInteger p1In = 0;
+    NSInteger p2In = 0;
+    NSInteger p3In = 0;
+    NSInteger p4In = 0;
+    
+    
+    for (NSInteger i = 9; i < 18; i++) {
+        p1In += [[self.course.has_holes[i] player1Score] integerValue];
+        p2In += [[self.course.has_holes[i] player2Score] integerValue];
+        p3In += [[self.course.has_holes[i] player3Score] integerValue];
+        p4In += [[self.course.has_holes[i] player4Score] integerValue];
+    }
+    self.player1InLabel.text = [NSString stringWithFormat:@"%d", p1In];
+    self.player2InLabel.text = [NSString stringWithFormat:@"%d", p2In];
+    self.player3InLabel.text = [NSString stringWithFormat:@"%d", p3In];
+    self.player4InLabel.text = [NSString stringWithFormat:@"%d", p4In];
+    
+    // totals
+    self.player1TotalLabel.text = [NSString stringWithFormat:@"%d", p1Out + p1In];
+    self.player2TotalLabel.text = [NSString stringWithFormat:@"%d", p2Out + p2In];
+    self.player3TotalLabel.text = [NSString stringWithFormat:@"%d", p3Out + p3In];
+    self.player4TotalLabel.text = [NSString stringWithFormat:@"%d", p4Out + p4In];
+
+    
+
 }
 
 -(void)addObserversToHole:(Hole*)hole {
