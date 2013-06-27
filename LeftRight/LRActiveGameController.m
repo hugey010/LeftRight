@@ -41,6 +41,9 @@
     [self setupNames];
     [self setupHoleObservers];
     
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pressFieldChanged:) name:UITextFieldTextDidChangeNotification object:self.pressField];
+
 
 
 }
@@ -66,13 +69,17 @@
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField {
     
+    if (textField == self.pressField) {
+        return;
+    }
+    
     for (NSArray *holes in groupedHoles) {
         for (UITextField *field in holes) {
             if (field == textField) {
                 activeIndex = [groupedHoles indexOfObject:holes];
                 currentField = textField;
                 currentHole = self.course.has_holes[activeIndex];
-                self.currentHoleLabel.text = [NSString stringWithFormat:@"%d", activeIndex];
+                self.currentHoleLabel.text = [NSString stringWithFormat:@"%d", activeIndex+1];
                 
                 
                 // set team buttons
@@ -101,13 +108,17 @@
 
 #pragma mark - Observer methods
 
--(void)inputFieldChanged:(NSNotification*)notification {
+-(void)pressFieldChanged:(NSNotification*)notification {
+    currentHole.press = [numberFormatter numberFromString:self.pressField.text];
 
-    if (currentField == self.pressField) {
-        currentHole.press = [numberFormatter numberFromString:currentField.text];
-    }
+}
+
+-(void)inputFieldChanged:(NSNotification*)notification {
+    
+    
+
     // player 1 fields
-    else if (currentField == self.player1Hole1) {
+    if (currentField == self.player1Hole1) {
         [self.course.has_holes[0] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
         
     } else if (currentField == self.player1Hole2) {
