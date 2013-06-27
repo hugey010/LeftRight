@@ -183,6 +183,12 @@
 @property (nonatomic, strong) NSMutableArray *hole18s;
 
 
+@property (weak, nonatomic) IBOutlet UIButton *team1Button;
+@property (weak, nonatomic) IBOutlet UIButton *team2Button;
+@property (weak, nonatomic) IBOutlet UIButton *team3Button;
+- (IBAction)team1ButtonPressed:(id)sender;
+- (IBAction)team2ButtonPressed:(id)sender;
+- (IBAction)team3ButtonPressed:(id)sender;
 
 
 @property (weak, nonatomic) IBOutlet UITextField *pressField;

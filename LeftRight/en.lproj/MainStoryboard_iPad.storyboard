@@ -984,7 +984,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="UOq-p1-jsS" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="0.0" y="135" width="1024" height="1255"/>
+                                <rect key="frame" x="0.0" y="135" width="1024" height="715"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="pCV-JG-cGr">
@@ -3109,34 +3109,31 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gRg-G8-pxZ">
-                                <rect key="frame" x="49" y="98" width="225" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" id="ujg-W4-UvF">
                                 <rect key="frame" x="296" y="93" width="238" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e8g-Ao-2FT">
-                                <rect key="frame" x="303" y="99" width="225" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" id="4d8-91-DxO">
                                 <rect key="frame" x="550" y="93" width="238" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5rK-hz-RMC">
-                                <rect key="frame" x="557" y="99" width="225" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JN4-SW-RA1">
+                                <rect key="frame" x="550" y="90" width="238" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Player 3">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="team3ButtonPressed:" destination="oER-8x-caQ" eventType="touchUpInside" id="BrN-3A-cnQ"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" id="EZU-qJ-1Gf">
                                 <rect key="frame" x="810" y="93" width="94" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3163,6 +3160,36 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MBL-dO-Yk3">
+                                <rect key="frame" x="296" y="91" width="238" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Player 2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="team2ButtonPressed:" destination="oER-8x-caQ" eventType="touchUpInside" id="Dci-zJ-ngS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tHe-gw-EbE">
+                                <rect key="frame" x="41" y="90" width="238" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Player 1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="team1ButtonPressed:" destination="oER-8x-caQ" eventType="touchUpInside" id="PcP-H4-eCC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -3296,6 +3323,9 @@
                         <outlet property="pointsLabel8" destination="Iv1-7i-sHz" id="HEP-8S-4mg"/>
                         <outlet property="pointsLabel9" destination="VPp-5r-OgJ" id="veC-8f-MtZ"/>
                         <outlet property="pressField" destination="c5w-6C-XDd" id="Hau-5K-9wb"/>
+                        <outlet property="team1Button" destination="tHe-gw-EbE" id="rmO-KC-aes"/>
+                        <outlet property="team2Button" destination="MBL-dO-Yk3" id="US4-gP-HGr"/>
+                        <outlet property="team3Button" destination="JN4-SW-RA1" id="HKg-HO-8Os"/>
                         <outletCollection property="player1NameLabels" destination="XGw-oB-wLX" id="kqX-X6-Kk9"/>
                         <outletCollection property="player2NameLabels" destination="dNN-hK-o9a" id="upo-Zz-wJ4"/>
                         <outletCollection property="player3NameLabels" destination="TZo-hA-g9a" id="mn3-Uk-tNX"/>
@@ -3304,9 +3334,6 @@
                         <outletCollection property="player2NameLabels" destination="gyW-D3-3JE" id="FGi-TG-jHG"/>
                         <outletCollection property="player3NameLabels" destination="x2N-5j-yiC" id="2Qo-ir-QH2"/>
                         <outletCollection property="player4NameLabels" destination="Ea0-bv-YZc" id="qh4-Jb-gHf"/>
-                        <outletCollection property="player2NameLabels" destination="gRg-G8-pxZ" id="g4M-oE-9fe"/>
-                        <outletCollection property="player3NameLabels" destination="e8g-Ao-2FT" id="Ih8-7a-Xsb"/>
-                        <outletCollection property="player4NameLabels" destination="5rK-hz-RMC" id="NjN-KI-6lj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6J0-z2-oHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3320,6 +3347,9 @@
             <relationships>
                 <relationship kind="action" name="backButtonPressed:"/>
                 <relationship kind="action" name="endGameButtonPressed:"/>
+                <relationship kind="action" name="team1ButtonPressed:"/>
+                <relationship kind="action" name="team2ButtonPressed:"/>
+                <relationship kind="action" name="team3ButtonPressed:"/>
                 <relationship kind="outlet" name="courseHandicap1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="courseHandicap10" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="courseHandicap11" candidateClass="UILabel"/>
@@ -3446,6 +3476,9 @@
                 <relationship kind="outlet" name="pointsLabel8" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pointsLabel9" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pressField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="team1Button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="team2Button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="team3Button" candidateClass="UIButton"/>
                 <relationship kind="outletCollection" name="player1NameLabels" candidateClass="UILabel"/>
                 <relationship kind="outletCollection" name="player2NameLabels" candidateClass="UILabel"/>
                 <relationship kind="outletCollection" name="player3NameLabels" candidateClass="UILabel"/>

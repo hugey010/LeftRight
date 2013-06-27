@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02A2B218804D471AB85697FD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82CAA720BF8A4B89B13CEED7 /* libPods.a */; };
+		9681950F177BEEA900C31908 /* red_rectangle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9681950E177BEEA900C31908 /* red_rectangle.jpg */; };
 		96B17CF11772A1800054C287 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF01772A1800054C287 /* UIKit.framework */; };
 		96B17CF31772A1800054C287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF21772A1800054C287 /* Foundation.framework */; };
 		96B17CF51772A1800054C287 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF41772A1800054C287 /* CoreGraphics.framework */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		5333074CF59D4548B2036EDA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		82CAA720BF8A4B89B13CEED7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9681950E177BEEA900C31908 /* red_rectangle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red_rectangle.jpg; sourceTree = "<group>"; };
 		96B17CED1772A1800054C287 /* LeftRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeftRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B17CF01772A1800054C287 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96B17CF21772A1800054C287 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +90,7 @@
 		96B17CE41772A17F0054C287 = {
 			isa = PBXGroup;
 			children = (
+				9681950E177BEEA900C31908 /* red_rectangle.jpg */,
 				96B17CF61772A1800054C287 /* LeftRight */,
 				96B17CEF1772A1800054C287 /* Frameworks */,
 				96B17CEE1772A1800054C287 /* Products */,
@@ -251,6 +254,7 @@
 				96B17D071772A1800054C287 /* Default-568h@2x.png in Resources */,
 				96B17D0A1772A1800054C287 /* MainStoryboard_iPhone.storyboard in Resources */,
 				96B17D0D1772A1800054C287 /* MainStoryboard_iPad.storyboard in Resources */,
+				9681950F177BEEA900C31908 /* red_rectangle.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

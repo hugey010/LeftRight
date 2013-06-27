@@ -74,7 +74,22 @@
                 currentHole = self.course.has_holes[activeIndex];
                 self.currentHoleLabel.text = [NSString stringWithFormat:@"%d", activeIndex];
                 
-                // TODO: need to setup current team buttons and current press value
+                
+                // set team buttons
+                if ([currentHole.team isEqualToNumber:kTeam1]) {
+                    [self resetHoleButtonsExcept:self.team1Button];
+                    
+                } else if ([currentHole.team isEqualToNumber:kTeam2]) {
+                    [self resetHoleButtonsExcept:self.team2Button];
+                    
+                } else if ([currentHole.team isEqualToNumber:kTeam3]) {
+                    [self resetHoleButtonsExcept:self.team3Button];
+                    
+                }
+                
+                // set press value
+                self.pressField.text = [NSString stringWithFormat:@"%@", currentHole.press];
+                
                 
                 return;
             }
@@ -88,12 +103,11 @@
 
 -(void)inputFieldChanged:(NSNotification*)notification {
 
-    
-    // setup current hole.
-    // refresh its values
-    
+    if (currentField == self.pressField) {
+        currentHole.press = [numberFormatter numberFromString:currentField.text];
+    }
     // player 1 fields
-    if (currentField == self.player1Hole1) {
+    else if (currentField == self.player1Hole1) {
         [self.course.has_holes[0] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
         
     } else if (currentField == self.player1Hole2) {
@@ -439,6 +453,35 @@
     for (UILabel *l in self.player4NameLabels) {
         l.text = [players[3] name];
     }
+    
+    [self.team1Button setTitle:[players[1] name] forState:UIControlStateNormal];
+    [self.team2Button setTitle:[players[2] name] forState:UIControlStateNormal];
+    [self.team3Button setTitle:[players[3] name] forState:UIControlStateNormal];
+
 }
 
+- (IBAction)team1ButtonPressed:(id)sender {
+    currentHole.team = kTeam1;
+    [self resetHoleButtonsExcept:sender];
+}
+
+- (IBAction)team2ButtonPressed:(id)sender {
+    currentHole.team = kTeam2;
+    [self resetHoleButtonsExcept:sender];
+}
+
+- (IBAction)team3ButtonPressed:(id)sender {
+    currentHole.team = kTeam3;
+    [self resetHoleButtonsExcept:sender];
+}
+
+-(void)resetHoleButtonsExcept:(UIButton*)button {
+    [self.team1Button setBackgroundImage:nil forState:UIControlStateNormal];
+    [self.team2Button setBackgroundImage:nil forState:UIControlStateNormal];
+    [self.team3Button setBackgroundImage:nil forState:UIControlStateNormal];
+    
+    [button setBackgroundImage:[UIImage imageNamed:@"red_rectangle.png"] forState:UIControlStateNormal];
+
+    
+}
 @end
