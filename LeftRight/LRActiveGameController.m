@@ -546,7 +546,7 @@
 -(void)createAllHoles {
     NSMutableOrderedSet *set = [NSMutableOrderedSet orderedSet];
     for (NSInteger i = 0; i < 18; i++) {
-        Hole *hole = [Hole MR_createEntity];
+        Hole *hole = self.course.has_holes[i];
         hole.team = kTeam1;
         hole.press = @1;
         set[i] = hole;
