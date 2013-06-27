@@ -408,6 +408,7 @@
     self.course.has_holes = set;
     
     currentHole = set[0];
+    [self resetHoleButtonsExcept:self.team1Button];
 }
 
 -(void)setupHandicaps {
@@ -480,7 +481,7 @@
     [self.team2Button setBackgroundImage:nil forState:UIControlStateNormal];
     [self.team3Button setBackgroundImage:nil forState:UIControlStateNormal];
     
-    [button setBackgroundImage:[UIImage imageNamed:@"red_rectangle.png"] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:@"red_rectangle.jpg"] forState:UIControlStateNormal];
 
     
 }
