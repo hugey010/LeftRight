@@ -14,6 +14,7 @@
 @interface LRActiveGameController () {
     Hole *currentHole;
     UITextField *currentField;
+    NSInteger activeIndex;
     
     NSMutableArray *groupedHoles;
     
@@ -65,64 +66,268 @@
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField {
     
-    
-    NSInteger activeIndex = 0;
-    
     for (NSArray *holes in groupedHoles) {
         for (UITextField *field in holes) {
             if (field == textField) {
                 activeIndex = [groupedHoles indexOfObject:holes];
                 currentField = textField;
-                goto loopEnd;
+                currentHole = self.course.has_holes[activeIndex];
+                self.currentHoleLabel.text = [NSString stringWithFormat:@"%d", activeIndex];
+                
+                // TODO: need to setup current team buttons and current press value
+                
+                return;
             }
         }
     }
-    loopEnd:;
-    
-    currentHole = self.course.has_holes[activeIndex];
-    
-    self.currentHoleLabel.text = [NSString stringWithFormat:@"%d", activeIndex];
-    
-     
-    
-}
- 
 
-
--(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    NSString *appendString = [NSString stringWithFormat:@"%@%@", textField.text, string];
-    
-    
-    if (textField == self.player1Hole1) {
-        currentHole.player1Score = [numberFormatter numberFromString:appendString];
-    }
-    
-    /*
-    for (NSArray *holes in groupedHoles) {
-        for (NSInteger i = 0; i < 4; i++) {
-            UITextField *field = holes[i];
-            if (field == textField) {
-                
-                
-                
-                
-                goto loopEnd;
-            }
-            
-            
-        }
-    }
-    loopEnd:;
-     */
-    
-    return appendString.length <= 2;
 }
  
 
 #pragma mark - Observer methods
 
+-(void)inputFieldChanged:(NSNotification*)notification {
+
+    
+    // setup current hole.
+    // refresh its values
+    
+    // player 1 fields
+    if (currentField == self.player1Hole1) {
+        [self.course.has_holes[0] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole2) {
+        [self.course.has_holes[1] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole3) {
+        [self.course.has_holes[2] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole4) {
+        [self.course.has_holes[3] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole5) {
+        [self.course.has_holes[4] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole6) {
+        [self.course.has_holes[5] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole7) {
+        [self.course.has_holes[6] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole8) {
+        [self.course.has_holes[7] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole9) {
+        [self.course.has_holes[8] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole10) {
+        [self.course.has_holes[9] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole11) {
+        [self.course.has_holes[10] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole12) {
+        [self.course.has_holes[11] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole13) {
+        [self.course.has_holes[12] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole14) {
+        [self.course.has_holes[13] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole15) {
+        [self.course.has_holes[14] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole16) {
+        [self.course.has_holes[15] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole17) {
+        [self.course.has_holes[16] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player1Hole18) {
+        [self.course.has_holes[17] setPlayer1Score:[numberFormatter numberFromString:currentField.text]];
+        
+    }
+    
+    // player 2 fields
+    if (currentField == self.player2Hole1) {
+        [self.course.has_holes[0] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole2) {
+        [self.course.has_holes[1] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole3) {
+        [self.course.has_holes[2] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole4) {
+        [self.course.has_holes[3] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole5) {
+        [self.course.has_holes[4] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole6) {
+        [self.course.has_holes[5] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole7) {
+        [self.course.has_holes[6] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole8) {
+        [self.course.has_holes[7] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole9) {
+        [self.course.has_holes[8] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole10) {
+        [self.course.has_holes[9] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole11) {
+        [self.course.has_holes[10] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole12) {
+        [self.course.has_holes[11] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole13) {
+        [self.course.has_holes[12] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole14) {
+        [self.course.has_holes[13] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole15) {
+        [self.course.has_holes[14] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole16) {
+        [self.course.has_holes[15] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole17) {
+        [self.course.has_holes[16] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player2Hole18) {
+        [self.course.has_holes[17] setPlayer2Score:[numberFormatter numberFromString:currentField.text]];
+        
+    }
+
+    // player 3 fields
+    if (currentField == self.player3Hole1) {
+        [self.course.has_holes[0] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole2) {
+        [self.course.has_holes[1] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole3) {
+        [self.course.has_holes[2] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole4) {
+        [self.course.has_holes[3] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole5) {
+        [self.course.has_holes[4] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole6) {
+        [self.course.has_holes[5] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole7) {
+        [self.course.has_holes[6] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole8) {
+        [self.course.has_holes[7] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole9) {
+        [self.course.has_holes[8] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole10) {
+        [self.course.has_holes[9] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole11) {
+        [self.course.has_holes[10] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole12) {
+        [self.course.has_holes[11] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole13) {
+        [self.course.has_holes[12] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole14) {
+        [self.course.has_holes[13] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole15) {
+        [self.course.has_holes[14] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole16) {
+        [self.course.has_holes[15] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole17) {
+        [self.course.has_holes[16] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player3Hole18) {
+        [self.course.has_holes[17] setPlayer3Score:[numberFormatter numberFromString:currentField.text]];
+        
+    }
+    
+    // player 4 fields
+    if (currentField == self.player4Hole1) {
+        [self.course.has_holes[0] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole2) {
+        [self.course.has_holes[1] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole3) {
+        [self.course.has_holes[2] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole4) {
+        [self.course.has_holes[3] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole5) {
+        [self.course.has_holes[4] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole6) {
+        [self.course.has_holes[5] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole7) {
+        [self.course.has_holes[6] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole8) {
+        [self.course.has_holes[7] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole9) {
+        [self.course.has_holes[8] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole10) {
+        [self.course.has_holes[9] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole11) {
+        [self.course.has_holes[10] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole12) {
+        [self.course.has_holes[11] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole13) {
+        [self.course.has_holes[12] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole14) {
+        [self.course.has_holes[13] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole15) {
+        [self.course.has_holes[14] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole16) {
+        [self.course.has_holes[15] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole17) {
+        [self.course.has_holes[16] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    } else if (currentField == self.player4Hole18) {
+        [self.course.has_holes[17] setPlayer4Score:[numberFormatter numberFromString:currentField.text]];
+        
+    }
+    
+
+    
+}
+
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     DLog(@" ahole changed");
+    // recalculate all values
+    
 }
 
 -(void)addObserversToHole:(Hole*)hole {
@@ -160,10 +365,12 @@
         NSMutableArray *currentArray = [NSMutableArray array];
         
         for (NSInteger playerNo = 0; playerNo < 4; playerNo++) {
-            NSString *holeString = [NSString stringWithFormat:@"player%dHole%d", 1, holeNo+1];
+            NSString *holeString = [NSString stringWithFormat:@"player%dHole%d", playerNo+1, holeNo+1];
             UITextField *field = [self valueForKey:holeString];
             
             [currentArray addObject:field];
+            
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(inputFieldChanged:) name:UITextFieldTextDidChangeNotification object:field];
 
         }
         

@@ -721,7 +721,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="Ur0-AM-fez">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a" minimumFontSize="17" id="Ur0-AM-fez">
                                         <rect key="frame" x="330" y="54" width="592" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -731,7 +731,7 @@
                                             <outlet property="delegate" destination="b2E-TD-myi" id="Yvd-Oc-gCp"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="Qxz-zt-f5V">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" minimumFontSize="17" id="Qxz-zt-f5V">
                                         <rect key="frame" x="330" y="116" width="116" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -771,7 +771,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="fxg-8p-03C">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="b" minimumFontSize="17" id="fxg-8p-03C">
                                         <rect key="frame" x="330" y="206" width="592" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -781,7 +781,7 @@
                                             <outlet property="delegate" destination="b2E-TD-myi" id="BSk-9C-36I"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="4sM-mF-dTU">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2" minimumFontSize="17" id="4sM-mF-dTU">
                                         <rect key="frame" x="330" y="268" width="116" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -821,7 +821,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="8H4-no-WBz">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="c" minimumFontSize="17" id="8H4-no-WBz">
                                         <rect key="frame" x="330" y="358" width="592" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -831,7 +831,7 @@
                                             <outlet property="delegate" destination="b2E-TD-myi" id="XgN-uX-bLC"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="Yft-uo-0lo">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3" minimumFontSize="17" id="Yft-uo-0lo">
                                         <rect key="frame" x="330" y="420" width="116" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -871,7 +871,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="F7d-76-cAj">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="d" minimumFontSize="17" id="F7d-76-cAj">
                                         <rect key="frame" x="330" y="510" width="592" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -881,7 +881,7 @@
                                             <outlet property="delegate" destination="b2E-TD-myi" id="ntg-T3-JI0"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="Faa-fd-lTp">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" minimumFontSize="17" id="Faa-fd-lTp">
                                         <rect key="frame" x="330" y="572" width="116" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1245,32 +1245,6 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="EZU-qJ-1Gf">
-                                        <rect key="frame" x="946" y="21" width="72" height="49"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="3Jz-3o-m8X">
-                                        <rect key="frame" x="946" y="80" width="72" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" id="c5w-6C-XDd">
-                                        <rect key="frame" x="947" y="80" width="71" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="2" id="W9f-gN-M9M"/>
-                                        </connections>
-                                    </textField>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Press" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="66b-DR-TTd">
-                                        <rect key="frame" x="947" y="30" width="70" height="29"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3bY-cn-dKs">
                                         <rect key="frame" x="873" y="167" width="65" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -1394,7 +1368,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="x6I-k5-bBJ"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="1zG-lp-NWp"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="60q-uK-Idb">
@@ -1409,7 +1383,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="CFJ-Oi-qhe"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="7e8-Gd-1Yb"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="FTx-LA-0ep">
@@ -1435,7 +1409,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="hVs-RD-2xr"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="pHy-LC-2Pn"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="VLd-4B-dUg">
@@ -1450,7 +1424,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="2gs-Ks-zC9"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="BN9-eq-TCc"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="z4f-bX-V92">
@@ -1482,7 +1456,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="RTz-fx-N9G"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="BUT-zR-Gm8"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="OLG-4M-Cjf">
@@ -1497,7 +1471,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="mfB-oe-fSV"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="plU-qZ-s1C"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="lCy-xT-OQO">
@@ -1529,7 +1503,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="QBc-dS-Xvq"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="Ieo-oV-Tcj"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="6ci-PH-ScO">
@@ -1544,7 +1518,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="g5O-HJ-BB2"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="ES1-lA-URB"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="csw-7n-bsg">
@@ -1601,7 +1575,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="UAO-bf-XDR"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="ryU-D5-z9D"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="DJB-OR-wT3">
@@ -1616,7 +1590,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="ZBx-rl-sc4"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="Qmv-47-H43"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="KI8-KS-qef">
@@ -1631,7 +1605,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="Zvf-Fy-zbA"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="d4i-Uw-l5e"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="YRd-yd-Ytt">
@@ -1646,7 +1620,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="g2q-wj-8U9"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="Bvv-vc-ExI"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="Iyb-jj-DVg">
@@ -1661,7 +1635,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="yvA-Bo-5a5"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="fZf-q9-Sf6"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="FmJ-a6-OcJ">
@@ -1676,7 +1650,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="nah-OF-JCb"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="XU6-Cg-o8v"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="exE-oJ-TG6">
@@ -1691,7 +1665,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="Ys6-v1-Boz"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="tIn-DY-tJl"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="op7-Pv-x6h">
@@ -1706,7 +1680,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="moT-L8-xxN"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="1Vw-lq-7qT"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="oan-4d-4zJ">
@@ -1763,7 +1737,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="5QV-Dz-l2x"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="IXT-4F-bTT"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="b6r-oF-HwY">
@@ -1778,7 +1752,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="mZg-kj-buo"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="neV-TN-elx"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="0Zg-ah-2Tf">
@@ -1793,7 +1767,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="bYs-1H-x5j"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="urr-ed-4QL"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="Deq-kc-65y">
@@ -1808,7 +1782,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="9SP-EO-lGW"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="7vM-EI-9yx"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="9zV-7W-8Uc">
@@ -1823,7 +1797,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="Quf-1I-7H2"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="SkX-o7-UUn"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="B5s-Wn-wm8">
@@ -1838,7 +1812,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="EfT-zp-J0J"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="eNj-CF-ahg"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="a85-hn-dZz">
@@ -1853,7 +1827,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="tip-Rx-tem"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="1v7-dY-Qzp"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="lEf-du-B7x">
@@ -1868,7 +1842,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="au0-pD-bDP"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="9VI-Tp-cGs"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="c08-bU-8Af">
@@ -1925,7 +1899,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="LoZ-JB-ICR"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="IZ5-Nt-y5g"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="5fB-Ic-IhP">
@@ -1940,7 +1914,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="gCF-8L-n0T"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="XLi-hK-xS1"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="5nC-eM-NnR">
@@ -1955,7 +1929,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="Z1N-Dc-s25"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="kVO-rh-Ch3"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="x3a-6k-buu">
@@ -1970,7 +1944,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="CIP-Md-lwt"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="CsX-ob-87i"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="1Kh-Xa-HWo">
@@ -1985,7 +1959,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="5Z4-qW-tYX"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="1dG-lZ-fk2"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="z5R-mF-hfk">
@@ -2000,7 +1974,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="VEo-Ad-Lxa"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="eBW-rC-TrX"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="Clh-nf-mA4">
@@ -2015,7 +1989,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="LXe-GS-kbv"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="xL6-9q-9QP"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="6SY-2y-ehN">
@@ -2030,7 +2004,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="5wA-fd-YDG"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="Qtn-xA-Bdp"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="X8V-Ma-ucN">
@@ -2066,7 +2040,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="8Ac-FL-1MT"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="tUk-JX-zts"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="ExU-22-y0H">
@@ -2081,7 +2055,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="YEz-SN-S4t"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="Amu-Sd-1dE"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="iA7-qc-iHP">
@@ -2096,7 +2070,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="c5X-l0-ZIT"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="gf9-Ap-8xE"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="qCO-BP-o4F">
@@ -2111,7 +2085,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="DJ5-EI-T3w"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="KLx-Qh-SZp"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="HHt-qY-kRL">
@@ -2379,7 +2353,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="zHa-aP-E5X"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="ZEt-my-FDS"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="KZy-9X-ot7">
@@ -2394,7 +2368,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="kOj-vV-ciS"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="W94-5P-R9g"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="Sig-s4-eRw">
@@ -2409,7 +2383,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="Ic7-kC-nPn"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="3uC-3u-Oz8"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="ORx-nc-h2D">
@@ -2424,7 +2398,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="qvK-4w-T0D"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="pme-pY-UBY"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="Sht-AL-ACt">
@@ -2439,7 +2413,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="Txk-fo-5qm"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="uwR-dv-ZkI"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="yhh-E7-DM5">
@@ -2454,7 +2428,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="bhr-ym-y0b"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="4Tx-2T-m2i"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="Xlv-Jy-A2T">
@@ -2469,7 +2443,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="JBR-bb-b1E"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="Q2o-cS-MiK"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="fda-43-37b">
@@ -2504,7 +2478,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="OFT-2Z-Sb6"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="rQG-4k-gXy"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="A9D-C3-kTS">
@@ -2519,7 +2493,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="kgv-wP-3He"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="FhE-jZ-Skm"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="Tty-o8-dhY">
@@ -2534,7 +2508,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="QUs-Wn-7I5"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="Naa-fV-og4"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="5ON-r5-yaE">
@@ -2549,7 +2523,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="VxP-mS-evb"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="IC1-ds-QNH"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="Jtl-V8-992">
@@ -2564,7 +2538,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="okv-q3-NJ8"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="JCk-dM-n68"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="CHH-OK-lPR">
@@ -2579,7 +2553,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="0tu-MH-DsL"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="T07-X7-SZw"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="Kgn-nM-PKE">
@@ -2594,7 +2568,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="76N-Jl-caj"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="UJX-4T-jov"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="L2R-tQ-Tb9">
@@ -2609,7 +2583,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="TNC-L6-DSV"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="k29-S4-Ank"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="2uI-jc-SJy">
@@ -2644,7 +2618,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="4fq-u5-eZc"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="pfs-iI-0UO"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="532-ir-GhA">
@@ -2659,7 +2633,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="0pN-Zr-1er"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="5HF-Mh-qvB"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="1x8-I8-5ow">
@@ -2674,7 +2648,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="dKI-V5-ylG"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="Nnt-F2-Zss"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="w82-Sp-BwJ">
@@ -2689,7 +2663,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="Fjt-98-vKa"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="mZt-yk-mQn"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="XZ1-ew-VTH">
@@ -2704,7 +2678,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="dHi-8t-nhc"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="fHn-lC-Fvc"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="czF-kI-SrH">
@@ -2719,7 +2693,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="Ul7-2a-Gjl"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="ctI-2f-urm"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="WjD-Wg-gg7">
@@ -2734,7 +2708,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="9id-GT-fH7"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="8zG-G2-NcK"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="ak5-6y-yJq">
@@ -2749,7 +2723,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="H0D-Lz-8zY"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="G4l-yB-ZeT"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="MtX-Oy-Rrw">
@@ -2784,7 +2758,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="JIT-aX-ygW"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="cGH-Su-k74"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="iRM-Za-Rzq">
@@ -2799,7 +2773,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="wOA-P1-QhK"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="cr3-N5-nFD"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="I19-Qa-tUm">
@@ -2814,7 +2788,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="y5x-cJ-8sg"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="5pb-XE-4a1"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="da1-rW-DPd">
@@ -2829,7 +2803,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="aCf-BD-XEb"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="kQa-PC-Kda"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="CG8-n4-7SN">
@@ -2844,7 +2818,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="L9m-PJ-KMQ"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="dti-If-bPJ"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="A0o-1k-3UC">
@@ -2859,7 +2833,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="6nq-72-Y3y"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="JzB-jj-sfJ"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="gA8-VR-Ts1">
@@ -2874,7 +2848,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="RM4-Pt-9Oi"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="ldO-hI-qPj"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="lbR-jy-5o0">
@@ -2889,7 +2863,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="I6a-fC-bKM"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="R8r-2B-n8V"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="CWh-M9-KpW">
@@ -2914,7 +2888,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="BMF-yl-bMq"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="xIv-hB-nb4"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="lS1-QK-Ac6">
@@ -2929,7 +2903,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="Bqn-mG-EqR"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="bc8-zQ-fyt"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="Gux-NM-J2r">
@@ -2944,7 +2918,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="rrE-sU-nha"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="OeI-Zu-dvA"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" id="lTi-Ux-9dV">
@@ -2959,7 +2933,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="2" id="DVb-Wc-gnd"/>
+                                            <outlet property="delegate" destination="oER-8x-caQ" id="6MV-Xg-jX3"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qEa-s5-CL3">
@@ -3079,6 +3053,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current Teammate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A6t-Qt-xMb">
+                                <rect key="frame" x="0.0" y="55" width="307" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6rW-MC-ygi">
                                 <rect key="frame" x="0.0" y="0.0" width="253" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3124,35 +3105,61 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="PCG-5I-TAn">
-                                <rect key="frame" x="35" y="82" width="238" height="40"/>
+                                <rect key="frame" x="42" y="92" width="238" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gRg-G8-pxZ">
-                                <rect key="frame" x="42" y="88" width="225" height="29"/>
+                                <rect key="frame" x="49" y="98" width="225" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="ujg-W4-UvF">
-                                <rect key="frame" x="289" y="83" width="238" height="40"/>
+                                <rect key="frame" x="296" y="93" width="238" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e8g-Ao-2FT">
-                                <rect key="frame" x="296" y="89" width="225" height="29"/>
+                                <rect key="frame" x="303" y="99" width="225" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="4d8-91-DxO">
-                                <rect key="frame" x="543" y="82" width="238" height="40"/>
+                                <rect key="frame" x="550" y="93" width="238" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5rK-hz-RMC">
-                                <rect key="frame" x="550" y="88" width="225" height="29"/>
+                                <rect key="frame" x="557" y="99" width="225" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="EZU-qJ-1Gf">
+                                <rect key="frame" x="810" y="93" width="94" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="3Jz-3o-m8X">
+                                <rect key="frame" x="911" y="92" width="72" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" id="c5w-6C-XDd">
+                                <rect key="frame" x="912" y="92" width="71" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="W9f-gN-M9M"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Press" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="66b-DR-TTd">
+                                <rect key="frame" x="810" y="93" width="93" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -3465,7 +3472,6 @@
         <class className="LRViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LRViewController.h"/>
             <relationships>
-                <relationship kind="action" name="holeField8:"/>
                 <relationship kind="action" name="newGameButtonPressed:"/>
                 <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
                 <relationship kind="outlet" name="courseNameField" candidateClass="UITextField"/>
