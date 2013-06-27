@@ -1,30 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Course" representedClassName="Course" syncable="YES">
-        <attribute name="handicap1" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap2" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap3" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap4" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap5" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap6" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap7" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap8" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap9" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap10" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap11" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap12" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap13" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap14" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap15" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap16" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap17" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="handicap18" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="has_holes" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Hole" inverseName="in_course" inverseEntity="Hole" syncable="YES"/>
         <relationship name="has_players" optional="YES" toMany="YES" minCount="4" maxCount="4" deletionRule="Nullify" ordered="YES" destinationEntity="Player" inverseName="in_course" inverseEntity="Player" syncable="YES"/>
     </entity>
     <entity name="GameHistory" representedClassName="GameHistory" syncable="YES"/>
     <entity name="Hole" representedClassName="Hole" syncable="YES">
+        <attribute name="handicap" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="player1Score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="player2Score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="player3Score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -59,9 +42,9 @@
         <relationship name="in_course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="has_players" inverseEntity="Course" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Course" positionX="-360" positionY="-324" width="128" height="358"/>
+        <element name="Course" positionX="-360" positionY="-324" width="128" height="88"/>
         <element name="GameHistory" positionX="-110" positionY="207" width="128" height="43"/>
+        <element name="Hole" positionX="-585" positionY="-135" width="128" height="193"/>
         <element name="Player" positionX="-164" positionY="-306" width="128" height="358"/>
-        <element name="Hole" positionX="-585" positionY="-135" width="128" height="178"/>
     </elements>
 </model>

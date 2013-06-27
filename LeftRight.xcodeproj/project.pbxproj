@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		02A2B218804D471AB85697FD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82CAA720BF8A4B89B13CEED7 /* libPods.a */; };
 		9681950F177BEEA900C31908 /* red_rectangle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9681950E177BEEA900C31908 /* red_rectangle.jpg */; };
+		96819512177BFB8C00C31908 /* Hole.m in Sources */ = {isa = PBXBuildFile; fileRef = 96819511177BFB8C00C31908 /* Hole.m */; };
+		96819515177BFB8D00C31908 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 96819514177BFB8D00C31908 /* Course.m */; };
 		96B17CF11772A1800054C287 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF01772A1800054C287 /* UIKit.framework */; };
 		96B17CF31772A1800054C287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF21772A1800054C287 /* Foundation.framework */; };
 		96B17CF51772A1800054C287 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF41772A1800054C287 /* CoreGraphics.framework */; };
@@ -23,8 +25,6 @@
 		96B17D101772A1800054C287 /* LRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B17D0F1772A1800054C287 /* LRViewController.m */; };
 		96EB69C5177A7E0E005395A0 /* GameHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EB69C4177A7E0E005395A0 /* GameHistory.m */; };
 		96EB69C8177A7E0E005395A0 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EB69C7177A7E0E005395A0 /* Player.m */; };
-		96EB69CB177A8246005395A0 /* Hole.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EB69CA177A8246005395A0 /* Hole.m */; };
-		96EB69CE177A8246005395A0 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EB69CD177A8246005395A0 /* Course.m */; };
 		96FACB4F1773CE4C0009B820 /* LRModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB4D1773CE4C0009B820 /* LRModel.xcdatamodeld */; };
 		96FACB5A1773DD8D0009B820 /* Course+LRManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */; };
 		96FACB5E1773EAF50009B820 /* LRNewGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB5D1773EAF50009B820 /* LRNewGameController.m */; };
@@ -36,6 +36,10 @@
 		5333074CF59D4548B2036EDA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		82CAA720BF8A4B89B13CEED7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9681950E177BEEA900C31908 /* red_rectangle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red_rectangle.jpg; sourceTree = "<group>"; };
+		96819510177BFB8C00C31908 /* Hole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hole.h; sourceTree = "<group>"; };
+		96819511177BFB8C00C31908 /* Hole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hole.m; sourceTree = "<group>"; };
+		96819513177BFB8D00C31908 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		96819514177BFB8D00C31908 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		96B17CED1772A1800054C287 /* LeftRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeftRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B17CF01772A1800054C287 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96B17CF21772A1800054C287 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,10 +61,6 @@
 		96EB69C4177A7E0E005395A0 /* GameHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHistory.m; sourceTree = "<group>"; };
 		96EB69C6177A7E0E005395A0 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		96EB69C7177A7E0E005395A0 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		96EB69C9177A8246005395A0 /* Hole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hole.h; sourceTree = "<group>"; };
-		96EB69CA177A8246005395A0 /* Hole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hole.m; sourceTree = "<group>"; };
-		96EB69CC177A8246005395A0 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
-		96EB69CD177A8246005395A0 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		96FACB4E1773CE4C0009B820 /* LRModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LRModel.xcdatamodel; sourceTree = "<group>"; };
 		96FACB581773DD8D0009B820 /* Course+LRManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Course+LRManagedObject.h"; sourceTree = "<group>"; };
 		96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Course+LRManagedObject.m"; sourceTree = "<group>"; };
@@ -151,10 +151,10 @@
 			children = (
 				96FACB571773DD6F0009B820 /* ModelCategories */,
 				96FACB4D1773CE4C0009B820 /* LRModel.xcdatamodeld */,
-				96EB69CC177A8246005395A0 /* Course.h */,
-				96EB69CD177A8246005395A0 /* Course.m */,
-				96EB69C9177A8246005395A0 /* Hole.h */,
-				96EB69CA177A8246005395A0 /* Hole.m */,
+				96819513177BFB8D00C31908 /* Course.h */,
+				96819514177BFB8D00C31908 /* Course.m */,
+				96819510177BFB8C00C31908 /* Hole.h */,
+				96819511177BFB8C00C31908 /* Hole.m */,
 				96EB69C6177A7E0E005395A0 /* Player.h */,
 				96EB69C7177A7E0E005395A0 /* Player.m */,
 				96EB69C3177A7E0E005395A0 /* GameHistory.h */,
@@ -306,8 +306,8 @@
 				96FACB6517740EAF0009B820 /* LRActiveGameController.m in Sources */,
 				96EB69C5177A7E0E005395A0 /* GameHistory.m in Sources */,
 				96EB69C8177A7E0E005395A0 /* Player.m in Sources */,
-				96EB69CB177A8246005395A0 /* Hole.m in Sources */,
-				96EB69CE177A8246005395A0 /* Course.m in Sources */,
+				96819512177BFB8C00C31908 /* Hole.m in Sources */,
+				96819515177BFB8D00C31908 /* Course.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

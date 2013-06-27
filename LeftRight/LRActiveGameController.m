@@ -400,6 +400,88 @@
     self.player2TotalLabel.text = [NSString stringWithFormat:@"%d", p2Out + p2In];
     self.player3TotalLabel.text = [NSString stringWithFormat:@"%d", p3Out + p3In];
     self.player4TotalLabel.text = [NSString stringWithFormat:@"%d", p4Out + p4In];
+    
+    
+    // loop for calculations in each hole
+    for (NSInteger i = 0; i < 18; i++) {
+        
+        // calculate lowest handicap
+        NSInteger p1Handicap = [[self.course.has_players[0] handicap] integerValue];
+        NSInteger p2Handicap = [[self.course.has_players[1] handicap] integerValue];
+        NSInteger p3Handicap = [[self.course.has_players[2] handicap] integerValue];
+        NSInteger p4Handicap = [[self.course.has_players[3] handicap] integerValue];
+        
+        NSInteger lowestHandicap = MIN(p1Handicap, p2Handicap);
+        lowestHandicap = MIN(lowestHandicap, p3Handicap);
+        lowestHandicap = MIN(lowestHandicap, p4Handicap);
+        
+        Hole *hole = self.course.has_holes[i];
+        NSInteger holeHandicap = [hole.handicap integerValue];
+        
+        NSInteger p1Adjusted = (holeHandicap <= p1Handicap - lowestHandicap) ? [hole.player1Score integerValue] -1 : [hole.player1Score integerValue];
+        NSInteger p2Adjusted = (holeHandicap <= p1Handicap - lowestHandicap) ? [hole.player2Score integerValue] -1 : [hole.player2Score integerValue];
+        NSInteger p3Adjusted = (holeHandicap <= p1Handicap - lowestHandicap) ? [hole.player3Score integerValue] -1 : [hole.player3Score integerValue];
+        NSInteger p4Adjusted = (holeHandicap <= p1Handicap - lowestHandicap) ? [hole.player4Score integerValue] -1 : [hole.player4Score integerValue];
+        
+        
+        NSInteger teamATotal = 0;
+        NSInteger teamBTotal = 0;
+        
+        if ([hole.team isEqualToNumber:kTeam1]) {
+            if (p1Adjusted > p2Adjusted) {
+                p2Adjusted *= 10;
+            } else {
+                p1Adjusted *= 10;
+            }
+            teamATotal = p1Adjusted + p1Adjusted;
+            
+            if (p3Adjusted >= p4Adjusted) {
+                p3Adjusted *= 10;
+            } else {
+                p4Adjusted *= 10;
+            }
+            teamBTotal = p3Adjusted + p4Adjusted;
+            
+        } else if ([hole.team isEqualToNumber:kTeam2]) {
+            if (p1Adjusted > p3Adjusted) {
+                p3Adjusted *= 10;
+            } else {
+                p1Adjusted *= 10;
+            }
+            teamATotal = p3Adjusted + p1Adjusted;
+            
+            if (p2Adjusted >= p4Adjusted) {
+                p4Adjusted *= 10;
+            } else {
+                p2Adjusted *= 10;
+            }
+            teamBTotal = p4Adjusted + p2Adjusted;
+            
+        } else if ([hole.team isEqualToNumber:kTeam3]) {
+            if (p1Adjusted > p4Adjusted) {
+                p4Adjusted *= 10;
+            } else {
+                p1Adjusted *= 10;
+            }
+            teamATotal = p4Adjusted + p1Adjusted;
+            
+            if (p2Adjusted >= p3Adjusted) {
+                p3Adjusted *= 10;
+            } else {
+                p2Adjusted *= 10;
+            }
+            teamBTotal = p3Adjusted + p2Adjusted;
+            
+        }
+        
+        
+        
+
+
+    }
+    
+
+    
 
     
 
@@ -473,24 +555,24 @@
 }
 
 -(void)setupHandicaps {
-    self.courseHandicap1.text = [NSString stringWithFormat:@"%@", self.course.handicap1];
-    self.courseHandicap2.text = [NSString stringWithFormat:@"%@", self.course.handicap2];
-    self.courseHandicap3.text = [NSString stringWithFormat:@"%@", self.course.handicap3];
-    self.courseHandicap4.text = [NSString stringWithFormat:@"%@", self.course.handicap4];
-    self.courseHandicap5.text = [NSString stringWithFormat:@"%@", self.course.handicap5];
-    self.courseHandicap6.text = [NSString stringWithFormat:@"%@", self.course.handicap6];
-    self.courseHandicap7.text = [NSString stringWithFormat:@"%@", self.course.handicap7];
-    self.courseHandicap8.text = [NSString stringWithFormat:@"%@", self.course.handicap8];
-    self.courseHandicap9.text = [NSString stringWithFormat:@"%@", self.course.handicap9];
-    self.courseHandicap10.text = [NSString stringWithFormat:@"%@", self.course.handicap10];
-    self.courseHandicap11.text = [NSString stringWithFormat:@"%@", self.course.handicap11];
-    self.courseHandicap12.text = [NSString stringWithFormat:@"%@", self.course.handicap12];
-    self.courseHandicap13.text = [NSString stringWithFormat:@"%@", self.course.handicap13];
-    self.courseHandicap14.text = [NSString stringWithFormat:@"%@", self.course.handicap14];
-    self.courseHandicap15.text = [NSString stringWithFormat:@"%@", self.course.handicap15];
-    self.courseHandicap16.text = [NSString stringWithFormat:@"%@", self.course.handicap16];
-    self.courseHandicap17.text = [NSString stringWithFormat:@"%@", self.course.handicap17];
-    self.courseHandicap18.text = [NSString stringWithFormat:@"%@", self.course.handicap18];
+    self.courseHandicap1.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[0] handicap]];
+    self.courseHandicap2.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[1] handicap]];
+    self.courseHandicap3.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[2] handicap]];
+    self.courseHandicap4.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[3] handicap]];
+    self.courseHandicap5.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[4] handicap]];
+    self.courseHandicap6.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[5] handicap]];
+    self.courseHandicap7.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[6] handicap]];
+    self.courseHandicap8.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[7] handicap]];
+    self.courseHandicap9.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[8] handicap]];
+    self.courseHandicap10.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[9] handicap]];
+    self.courseHandicap11.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[10] handicap]];
+    self.courseHandicap12.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[11] handicap]];
+    self.courseHandicap13.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[12] handicap]];
+    self.courseHandicap14.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[13] handicap]];
+    self.courseHandicap15.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[14] handicap]];
+    self.courseHandicap16.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[15] handicap]];
+    self.courseHandicap17.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[16] handicap]];
+    self.courseHandicap18.text = [NSString stringWithFormat:@"%@", [self.course.has_holes[17] handicap]];
     
     NSArray *players = [self.course.has_players array];
     
