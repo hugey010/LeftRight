@@ -11,6 +11,7 @@
 		9681950F177BEEA900C31908 /* red_rectangle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9681950E177BEEA900C31908 /* red_rectangle.jpg */; };
 		96819512177BFB8C00C31908 /* Hole.m in Sources */ = {isa = PBXBuildFile; fileRef = 96819511177BFB8C00C31908 /* Hole.m */; };
 		96819515177BFB8D00C31908 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 96819514177BFB8D00C31908 /* Course.m */; };
+		969A3EBE1781118100964943 /* LRPlayerPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 969A3EBD1781118100964943 /* LRPlayerPopoverController.m */; };
 		96B17CF11772A1800054C287 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF01772A1800054C287 /* UIKit.framework */; };
 		96B17CF31772A1800054C287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF21772A1800054C287 /* Foundation.framework */; };
 		96B17CF51772A1800054C287 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF41772A1800054C287 /* CoreGraphics.framework */; };
@@ -40,6 +41,8 @@
 		96819511177BFB8C00C31908 /* Hole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hole.m; sourceTree = "<group>"; };
 		96819513177BFB8D00C31908 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
 		96819514177BFB8D00C31908 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		969A3EBC1781118100964943 /* LRPlayerPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRPlayerPopoverController.h; sourceTree = "<group>"; };
+		969A3EBD1781118100964943 /* LRPlayerPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRPlayerPopoverController.m; sourceTree = "<group>"; };
 		96B17CED1772A1800054C287 /* LeftRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeftRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B17CF01772A1800054C287 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96B17CF21772A1800054C287 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -181,6 +184,8 @@
 				96FACB5D1773EAF50009B820 /* LRNewGameController.m */,
 				96FACB6317740EAF0009B820 /* LRActiveGameController.h */,
 				96FACB6417740EAF0009B820 /* LRActiveGameController.m */,
+				969A3EBC1781118100964943 /* LRPlayerPopoverController.h */,
+				969A3EBD1781118100964943 /* LRPlayerPopoverController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 				96819512177BFB8C00C31908 /* Hole.m in Sources */,
 				96819515177BFB8D00C31908 /* Course.m in Sources */,
 				96C68CEB177D019100B627F1 /* Player.m in Sources */,
+				969A3EBE1781118100964943 /* LRPlayerPopoverController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +421,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5333074CF59D4548B2036EDA /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tyler Hugenberg";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tyler Hugenberg";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeftRight/LeftRight-Prefix.pch";
 				INFOPLIST_FILE = "LeftRight/LeftRight-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FA44F900-4BBB-43EC-964A-1F7C5083140A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FA44F900-4BBB-43EC-964A-1F7C5083140A";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

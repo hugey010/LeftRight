@@ -10,6 +10,7 @@
 #import "Course.h"
 #import "Player.h"
 #import "Hole.h"
+#import "LRPlayerPopoverController.h"
 
 @interface LRActiveGameController () {
     Hole *currentHole;
@@ -84,14 +85,14 @@
                 
                 // set team buttons
                 if ([currentHole.team isEqualToNumber:kTeam1]) {
-                    [self resetHoleButtonsExcept:self.team1Button];
+                    [self.team1Button setTitle:[self.course.has_players[1] name] forState:UIControlStateNormal];
                     
                 } else if ([currentHole.team isEqualToNumber:kTeam2]) {
-                    [self resetHoleButtonsExcept:self.team2Button];
+                    [self.team1Button setTitle:[self.course.has_players[2] name] forState:UIControlStateNormal];
                     
                 } else if ([currentHole.team isEqualToNumber:kTeam3]) {
-                    [self resetHoleButtonsExcept:self.team3Button];
-                    
+                    [self.team1Button setTitle:[self.course.has_players[3] name] forState:UIControlStateNormal];
+
                 }
                 
                 // set press value
@@ -352,6 +353,10 @@
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     DLog(@" ahole changed");
+    
+    [self refreshTeamInfo];
+    [self.playerPopover dismissPopoverAnimated:YES];
+    
     // recalculate all values
 
     [self recalculateAllValues];
@@ -576,11 +581,25 @@
 
 #pragma mark - Course Setup
 
+-(void)refreshTeamInfo {
+    if ([currentHole.team isEqualToNumber:kTeam1]) {
+        [self.team1Button setTitle:[self.course.has_players[1] name] forState:UIControlStateNormal];
+        
+    } else if ([currentHole.team isEqualToNumber:kTeam2]) {
+        [self.team1Button setTitle:[self.course.has_players[2] name] forState:UIControlStateNormal];
+
+    } else if ([currentHole.team isEqualToNumber:kTeam3]) {
+        [self.team1Button setTitle:[self.course.has_players[3] name] forState:UIControlStateNormal];
+
+    }
+}
+
 -(void)setupHoleObservers {
     for (NSInteger i = 0; i < 18; i++) {
         Hole *hole = self.course.has_holes[i];
         [self addObserversToHole:hole];
     }
+
 }
 
 -(void)setupHoleArrays {
@@ -620,7 +639,6 @@
     self.course.has_holes = set;
     
     currentHole = set[0];
-    [self resetHoleButtonsExcept:self.team1Button];
 }
 
 -(void)setupHandicaps {
@@ -668,39 +686,19 @@
     }
     
     [self.team1Button setTitle:[players[1] name] forState:UIControlStateNormal];
-    [self.team2Button setTitle:[players[2] name] forState:UIControlStateNormal];
-    [self.team3Button setTitle:[players[3] name] forState:UIControlStateNormal];
 
 }
 
 - (IBAction)team1ButtonPressed:(id)sender {
-    currentHole.team = kTeam1;
-    [self resetHoleButtonsExcept:sender];
-    [self recalculateAllValues];
     
-}
-
-- (IBAction)team2ButtonPressed:(id)sender {
-    currentHole.team = kTeam2;
-    [self resetHoleButtonsExcept:sender];
-    [self recalculateAllValues];
-
-}
-
-- (IBAction)team3ButtonPressed:(id)sender {
-    currentHole.team = kTeam3;
-    [self resetHoleButtonsExcept:sender];
-    [self recalculateAllValues];
-
-}
-
--(void)resetHoleButtonsExcept:(UIButton*)button {
-    [self.team1Button setBackgroundImage:nil forState:UIControlStateNormal];
-    [self.team2Button setBackgroundImage:nil forState:UIControlStateNormal];
-    [self.team3Button setBackgroundImage:nil forState:UIControlStateNormal];
+    LRPlayerPopoverController *popover = [self.storyboard instantiateViewControllerWithIdentifier:@"player_popover"];
+    popover.hole = currentHole;
+    popover.course = self.course;
+    self.playerPopover = [[UIPopoverController alloc] initWithContentViewController:popover];
+    self.playerPopover.delegate = self;
     
-    [button setBackgroundImage:[UIImage imageNamed:@"red_rectangle.jpg"] forState:UIControlStateNormal];
-
+    [self.playerPopover presentPopoverFromRect:self.team1Button.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+    [self recalculateAllValues];
     
 }
 @end
