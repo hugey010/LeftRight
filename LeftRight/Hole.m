@@ -2,7 +2,7 @@
 //  Hole.m
 //  LeftRight
 //
-//  Created by Tyler Hugenberg on 6/27/13.
+//  Created by Tyler Hugenberg on 7/1/13.
 //  Copyright (c) 2013 Hugey. All rights reserved.
 //
 
@@ -12,6 +12,7 @@
 
 @implementation Hole
 
+@dynamic handicap;
 @dynamic player1Score;
 @dynamic player2Score;
 @dynamic player3Score;
@@ -20,7 +21,6 @@
 @dynamic team;
 @dynamic team1Points;
 @dynamic team2Points;
-@dynamic handicap;
 @dynamic in_course;
 
 @end

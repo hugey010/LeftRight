@@ -69,12 +69,12 @@
         
         self.course.has_players = [NSOrderedSet orderedSetWithArray:@[p1, p2, p3, p4]];
         
-        LRActiveGameController *active = [self.storyboard instantiateViewControllerWithIdentifier:@"active"];
-        active.course = self.course;
+        //[[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+
         
-        [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
-        
-        [self.navigationController pushViewController:active animated:YES];
+        self.activeGame = [self.storyboard instantiateViewControllerWithIdentifier:@"active"];
+        self.activeGame.course = self.course;
+        [self.navigationController pushViewController:self.activeGame animated:YES];
         
         
         

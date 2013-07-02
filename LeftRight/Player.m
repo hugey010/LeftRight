@@ -2,7 +2,7 @@
 //  Player.m
 //  LeftRight
 //
-//  Created by Tyler Hugenberg on 6/27/13.
+//  Created by Tyler Hugenberg on 7/1/13.
 //  Copyright (c) 2013 Hugey. All rights reserved.
 //
 

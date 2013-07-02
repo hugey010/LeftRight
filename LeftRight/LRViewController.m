@@ -155,14 +155,16 @@
         
         if (!course) {
             course = [Course MR_createEntity];
-            
-            NSMutableOrderedSet *set = [NSMutableOrderedSet orderedSet];
-            for (NSInteger i = 0; i < 18; i++) {
-                Hole *hole = [Hole MR_createEntity];
-                set[i] = hole;
-            }
-            course.has_holes = set;
-        }     
+        }
+        
+        
+        NSMutableOrderedSet *set = [NSMutableOrderedSet orderedSet];
+        for (NSInteger i = 0; i < 18; i++) {
+            Hole *hole = [Hole MR_createEntity];
+            set[i] = hole;
+        }
+        course.has_holes = set;
+         
         
         course.name = self.courseNameField.text;
         [course.has_holes[0] setHandicap:[NSNumber numberWithInteger:[self.holeField1.text integerValue]]];
@@ -230,7 +232,7 @@
 
 - (IBAction)newGameButtonPressed:(id)sender {
     Course *course = [self saveCurrentCourse];
-    if ([course isValidCourse]) {
+    if (course && [course isValidCourse]) {
         
         [self.collectionView reloadData];
         

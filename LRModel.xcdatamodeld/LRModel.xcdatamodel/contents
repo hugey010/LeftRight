@@ -5,7 +5,6 @@
         <relationship name="has_holes" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Hole" inverseName="in_course" inverseEntity="Hole" syncable="YES"/>
         <relationship name="has_players" optional="YES" toMany="YES" minCount="4" maxCount="4" deletionRule="Nullify" ordered="YES" destinationEntity="Player" inverseName="in_course" inverseEntity="Player" syncable="YES"/>
     </entity>
-    <entity name="GameHistory" representedClassName="GameHistory" syncable="YES"/>
     <entity name="Hole" representedClassName="Hole" syncable="YES">
         <attribute name="handicap" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="player1Score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -16,7 +15,7 @@
         <attribute name="team" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="team1Points" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="team2Points" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="in_course" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Course" inverseName="has_holes" inverseEntity="Course" syncable="YES"/>
+        <relationship name="in_course" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" ordered="YES" destinationEntity="Course" inverseName="has_holes" inverseEntity="Course" syncable="YES"/>
     </entity>
     <entity name="Player" representedClassName="Player" syncable="YES">
         <attribute name="handicap" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -26,7 +25,6 @@
     </entity>
     <elements>
         <element name="Course" positionX="-360" positionY="-324" width="128" height="88"/>
-        <element name="GameHistory" positionX="-110" positionY="207" width="128" height="43"/>
         <element name="Hole" positionX="-585" positionY="-135" width="128" height="193"/>
         <element name="Player" positionX="-164" positionY="-306" width="128" height="105"/>
     </elements>

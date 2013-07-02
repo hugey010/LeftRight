@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		02A2B218804D471AB85697FD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82CAA720BF8A4B89B13CEED7 /* libPods.a */; };
+		9612C42D17827B930099AC8A /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 9612C42C17827B930099AC8A /* Player.m */; };
+		9612C43017827B930099AC8A /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 9612C42F17827B930099AC8A /* Course.m */; };
+		9612C43317827B930099AC8A /* Hole.m in Sources */ = {isa = PBXBuildFile; fileRef = 9612C43217827B930099AC8A /* Hole.m */; };
 		9681950F177BEEA900C31908 /* red_rectangle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9681950E177BEEA900C31908 /* red_rectangle.jpg */; };
-		96819512177BFB8C00C31908 /* Hole.m in Sources */ = {isa = PBXBuildFile; fileRef = 96819511177BFB8C00C31908 /* Hole.m */; };
-		96819515177BFB8D00C31908 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 96819514177BFB8D00C31908 /* Course.m */; };
 		969A3EBE1781118100964943 /* LRPlayerPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 969A3EBD1781118100964943 /* LRPlayerPopoverController.m */; };
 		96B17CF11772A1800054C287 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF01772A1800054C287 /* UIKit.framework */; };
 		96B17CF31772A1800054C287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF21772A1800054C287 /* Foundation.framework */; };
@@ -24,8 +25,6 @@
 		96B17D0A1772A1800054C287 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96B17D081772A1800054C287 /* MainStoryboard_iPhone.storyboard */; };
 		96B17D0D1772A1800054C287 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96B17D0B1772A1800054C287 /* MainStoryboard_iPad.storyboard */; };
 		96B17D101772A1800054C287 /* LRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B17D0F1772A1800054C287 /* LRViewController.m */; };
-		96C68CEB177D019100B627F1 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C68CEA177D019100B627F1 /* Player.m */; };
-		96EB69C5177A7E0E005395A0 /* GameHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EB69C4177A7E0E005395A0 /* GameHistory.m */; };
 		96FACB4F1773CE4C0009B820 /* LRModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB4D1773CE4C0009B820 /* LRModel.xcdatamodeld */; };
 		96FACB5A1773DD8D0009B820 /* Course+LRManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */; };
 		96FACB5E1773EAF50009B820 /* LRNewGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FACB5D1773EAF50009B820 /* LRNewGameController.m */; };
@@ -36,11 +35,13 @@
 /* Begin PBXFileReference section */
 		5333074CF59D4548B2036EDA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		82CAA720BF8A4B89B13CEED7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9612C42B17827B930099AC8A /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		9612C42C17827B930099AC8A /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		9612C42E17827B930099AC8A /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		9612C42F17827B930099AC8A /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		9612C43117827B930099AC8A /* Hole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hole.h; sourceTree = "<group>"; };
+		9612C43217827B930099AC8A /* Hole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hole.m; sourceTree = "<group>"; };
 		9681950E177BEEA900C31908 /* red_rectangle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red_rectangle.jpg; sourceTree = "<group>"; };
-		96819510177BFB8C00C31908 /* Hole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hole.h; sourceTree = "<group>"; };
-		96819511177BFB8C00C31908 /* Hole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hole.m; sourceTree = "<group>"; };
-		96819513177BFB8D00C31908 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
-		96819514177BFB8D00C31908 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		969A3EBC1781118100964943 /* LRPlayerPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRPlayerPopoverController.h; sourceTree = "<group>"; };
 		969A3EBD1781118100964943 /* LRPlayerPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRPlayerPopoverController.m; sourceTree = "<group>"; };
 		96B17CED1772A1800054C287 /* LeftRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeftRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,10 +61,6 @@
 		96B17D0C1772A1800054C287 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		96B17D0E1772A1800054C287 /* LRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRViewController.h; sourceTree = "<group>"; };
 		96B17D0F1772A1800054C287 /* LRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRViewController.m; sourceTree = "<group>"; };
-		96C68CE9177D019100B627F1 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		96C68CEA177D019100B627F1 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		96EB69C3177A7E0E005395A0 /* GameHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHistory.h; sourceTree = "<group>"; };
-		96EB69C4177A7E0E005395A0 /* GameHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHistory.m; sourceTree = "<group>"; };
 		96FACB4E1773CE4C0009B820 /* LRModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LRModel.xcdatamodel; sourceTree = "<group>"; };
 		96FACB581773DD8D0009B820 /* Course+LRManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Course+LRManagedObject.h"; sourceTree = "<group>"; };
 		96FACB591773DD8D0009B820 /* Course+LRManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Course+LRManagedObject.m"; sourceTree = "<group>"; };
@@ -153,15 +150,13 @@
 			isa = PBXGroup;
 			children = (
 				96FACB571773DD6F0009B820 /* ModelCategories */,
+				9612C42B17827B930099AC8A /* Player.h */,
+				9612C43117827B930099AC8A /* Hole.h */,
+				9612C43217827B930099AC8A /* Hole.m */,
+				9612C42E17827B930099AC8A /* Course.h */,
+				9612C42F17827B930099AC8A /* Course.m */,
+				9612C42C17827B930099AC8A /* Player.m */,
 				96FACB4D1773CE4C0009B820 /* LRModel.xcdatamodeld */,
-				96C68CE9177D019100B627F1 /* Player.h */,
-				96C68CEA177D019100B627F1 /* Player.m */,
-				96819513177BFB8D00C31908 /* Course.h */,
-				96819514177BFB8D00C31908 /* Course.m */,
-				96819510177BFB8C00C31908 /* Hole.h */,
-				96819511177BFB8C00C31908 /* Hole.m */,
-				96EB69C3177A7E0E005395A0 /* GameHistory.h */,
-				96EB69C4177A7E0E005395A0 /* GameHistory.m */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
@@ -309,11 +304,10 @@
 				96FACB5E1773EAF50009B820 /* LRNewGameController.m in Sources */,
 				96FACB621773F7550009B820 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				96FACB6517740EAF0009B820 /* LRActiveGameController.m in Sources */,
-				96EB69C5177A7E0E005395A0 /* GameHistory.m in Sources */,
-				96819512177BFB8C00C31908 /* Hole.m in Sources */,
-				96819515177BFB8D00C31908 /* Course.m in Sources */,
-				96C68CEB177D019100B627F1 /* Player.m in Sources */,
 				969A3EBE1781118100964943 /* LRPlayerPopoverController.m in Sources */,
+				9612C42D17827B930099AC8A /* Player.m in Sources */,
+				9612C43017827B930099AC8A /* Course.m in Sources */,
+				9612C43317827B930099AC8A /* Hole.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -721,7 +721,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="Ur0-AM-fez">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AA" minimumFontSize="17" id="Ur0-AM-fez">
                                         <rect key="frame" x="330" y="54" width="592" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -731,7 +731,7 @@
                                             <outlet property="delegate" destination="b2E-TD-myi" id="Yvd-Oc-gCp"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="Qxz-zt-f5V">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="72" minimumFontSize="17" id="Qxz-zt-f5V">
                                         <rect key="frame" x="330" y="116" width="116" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -771,7 +771,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="fxg-8p-03C">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BBB" minimumFontSize="17" id="fxg-8p-03C">
                                         <rect key="frame" x="330" y="206" width="592" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -781,7 +781,7 @@
                                             <outlet property="delegate" destination="b2E-TD-myi" id="BSk-9C-36I"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="4sM-mF-dTU">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="73" minimumFontSize="17" id="4sM-mF-dTU">
                                         <rect key="frame" x="330" y="268" width="116" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -821,7 +821,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="8H4-no-WBz">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CCCC" minimumFontSize="17" id="8H4-no-WBz">
                                         <rect key="frame" x="330" y="358" width="592" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -831,7 +831,7 @@
                                             <outlet property="delegate" destination="b2E-TD-myi" id="XgN-uX-bLC"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="Yft-uo-0lo">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="72" minimumFontSize="17" id="Yft-uo-0lo">
                                         <rect key="frame" x="330" y="420" width="116" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -871,7 +871,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.46666669849999998" green="0.56862747670000002" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="F7d-76-cAj">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="DDDDD" minimumFontSize="17" id="F7d-76-cAj">
                                         <rect key="frame" x="330" y="510" width="592" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -881,7 +881,7 @@
                                             <outlet property="delegate" destination="b2E-TD-myi" id="ntg-T3-JI0"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="Faa-fd-lTp">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="74" minimumFontSize="17" id="Faa-fd-lTp">
                                         <rect key="frame" x="330" y="572" width="116" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -3696,7 +3696,6 @@
         <class className="LRViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LRViewController.h"/>
             <relationships>
-                <relationship kind="action" name="holeField8:"/>
                 <relationship kind="action" name="newGameButtonPressed:"/>
                 <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
                 <relationship kind="outlet" name="courseNameField" candidateClass="UITextField"/>

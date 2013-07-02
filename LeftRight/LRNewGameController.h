@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @class Course;
+@class LRActiveGameController;
 
 @interface LRNewGameController : UIViewController
 
-@property (nonatomic, strong) Course *course;
+@property (nonatomic, weak) Course *course;
+@property (nonatomic, strong) LRActiveGameController *activeGame;
 
 @property (weak, nonatomic) IBOutlet UITextField *nameField1;
 @property (weak, nonatomic) IBOutlet UITextField *nameField2;

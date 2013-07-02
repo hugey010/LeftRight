@@ -15,7 +15,6 @@
 @interface LRActiveGameController () {
     Hole *currentHole;
     UITextField *currentField;
-    NSInteger activeIndex;
     
     NSMutableArray *groupedHoles;
     
@@ -43,16 +42,33 @@
     [self setupHoleObservers];
     
     
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pressFieldChanged:) name:UITextFieldTextDidChangeNotification object:self.pressField];
 
 
 
 }
 
+-(void)dealloc {
+    self.course = nil;
+    self.playerPopover = nil;
+    currentHole = nil;
+    currentField = nil;
+    groupedHoles = nil;
+    numberFormatter = nil;
+}
+
 -(void)viewWillDisappear:(BOOL)animated {
+    
     [super viewWillDisappear:animated];
+
     
+    [self removeObservers];
+    //self.course = nil;
     
+
 }
 
 - (IBAction)backButtonPressed:(id)sender {
@@ -77,7 +93,7 @@
     for (NSArray *holes in groupedHoles) {
         for (UITextField *field in holes) {
             if (field == textField) {
-                activeIndex = [groupedHoles indexOfObject:holes];
+                NSInteger activeIndex = [groupedHoles indexOfObject:holes];
                 currentField = textField;
                 currentHole = self.course.has_holes[activeIndex];
                 self.currentHoleLabel.text = [NSString stringWithFormat:@"%d", activeIndex+1];
@@ -352,14 +368,26 @@
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    DLog(@" ahole changed");
     
-    [self refreshTeamInfo];
-    [self.playerPopover dismissPopoverAnimated:YES];
+    if ([keyPath isEqualToString:@"player1Score"] ||
+        [keyPath isEqualToString:@"player2Score"] ||
+        [keyPath isEqualToString:@"player3Score"] ||
+        [keyPath isEqualToString:@"player4Score"] ||
+        [keyPath isEqualToString:@"team"]) {
+        
+        [self refreshTeamInfo];
+        [self.playerPopover dismissPopoverAnimated:YES];
+        
+        // recalculate all values
+        
+        [self recalculateAllValues];
+        
+    } else {
+        DLog(@"keypath = %@", keyPath);
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
     
-    // recalculate all values
 
-    [self recalculateAllValues];
     
 }
 
@@ -445,7 +473,7 @@
             } else {
                 p1Adjusted *= 10;
             }
-            teamATotal = p1Adjusted + p1Adjusted;
+            teamATotal = p1Adjusted + p2Adjusted;
             
             if (p3Adjusted >= p4Adjusted) {
                 p3Adjusted *= 10;
@@ -579,6 +607,17 @@
 
 }
 
+#pragma mark - Tear Down
+
+-(void)removeObservers {
+    for (NSInteger i = 0; i < 18; i++) {
+        Hole *hole = self.course.has_holes[i];
+        [self removeObserversFromHole:hole];
+    }
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 #pragma mark - Course Setup
 
 -(void)refreshTeamInfo {
@@ -627,18 +666,20 @@
 }
 
 -(void)createAllHoles {
-    NSMutableOrderedSet *set = [NSMutableOrderedSet orderedSet];
+    
+    //DLog(@"self.course.has_noles = %@", self.course.has_holes);
+    
     for (NSInteger i = 0; i < 18; i++) {
         Hole *hole = self.course.has_holes[i];
-        hole.team = kTeam1;
-        hole.press = @1;
-        set[i] = hole;
+        //DLog(@"holes = %@", hole);
+        //[hole setTeam:kTeam1];
+        [hole setPress:@1];
         [self addObserversToHole:hole];
     }
     
-    self.course.has_holes = set;
     
-    currentHole = set[0];
+    
+    currentHole = self.course.has_holes[0];
 }
 
 -(void)setupHandicaps {
