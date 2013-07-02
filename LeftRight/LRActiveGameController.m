@@ -52,22 +52,25 @@
 }
 
 -(void)dealloc {
+    [self removeObservers];
+    
     self.course = nil;
     self.playerPopover = nil;
     currentHole = nil;
     currentField = nil;
     groupedHoles = nil;
     numberFormatter = nil;
+    
+    for (NSInteger i = 1; i <= 18; i++) {
+        NSString *keyString = [NSString stringWithFormat:@"hole%ds", i];
+        NSArray *array = [self valueForKey:keyString];
+        array = nil;
+    }
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
     
     [super viewWillDisappear:animated];
-
-    
-    [self removeObservers];
-    //self.course = nil;
-    
 
 }
 
@@ -377,13 +380,10 @@
         
         [self refreshTeamInfo];
         [self.playerPopover dismissPopoverAnimated:YES];
-        
-        // recalculate all values
-        
+                
         [self recalculateAllValues];
         
     } else {
-        DLog(@"keypath = %@", keyPath);
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
     
@@ -667,14 +667,11 @@
 
 -(void)createAllHoles {
     
-    //DLog(@"self.course.has_noles = %@", self.course.has_holes);
-    
     for (NSInteger i = 0; i < 18; i++) {
         Hole *hole = self.course.has_holes[i];
-        //DLog(@"holes = %@", hole);
-        //[hole setTeam:kTeam1];
+
+        [hole setTeam:kTeam1];
         [hole setPress:@1];
-        [self addObserversToHole:hole];
     }
     
     

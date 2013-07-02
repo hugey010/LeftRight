@@ -10,9 +10,9 @@
 
 @class Course;
 
-#define kTeam1 @1
-#define kTeam2 @2
-#define kTeam3 @3
+#define kTeam1 (@1)
+#define kTeam2 (@2)
+#define kTeam3 (@3)
 
 @interface LRActiveGameController : UIViewController <UITextFieldDelegate, UIPopoverControllerDelegate>
 

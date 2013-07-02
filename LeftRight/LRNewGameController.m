@@ -69,7 +69,7 @@
         
         self.course.has_players = [NSOrderedSet orderedSetWithArray:@[p1, p2, p3, p4]];
         
-        //[[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+        [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
 
         
         self.activeGame = [self.storyboard instantiateViewControllerWithIdentifier:@"active"];
