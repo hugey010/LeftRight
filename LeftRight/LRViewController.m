@@ -10,6 +10,7 @@
 #import "Course+LRManagedObject.h"
 #import "LRNewGameController.h"
 #import "Hole.h"
+#import "LRCoursePopoverController.h"
 
 @interface LRViewController () {
     NSArray *records;
@@ -35,48 +36,6 @@
 -(void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
-
-#pragma mark - UICollectionViewDataSource methods
-
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [records count] + 1;
-}
-
--(UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"course" forIndexPath:indexPath];
-    
-    
-    UILabel *label = (UILabel*)[cell viewWithTag:21];
-    
-    if (indexPath.row == 0) {
-        label.text = @"New Course";
-        
-    } else {
-        Course *course = records[indexPath.row-1];
-        label.text = course.name;
-        
-    }
-    
-    return cell;
-}
-
-
-#pragma mark - UICollectionViewDelegate methods
-
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        [self saveCurrentCourse];
-        [self clearFormData];
-    } else {
-        [self saveCurrentCourse];
-        [self clearFormData];
-        [self loadFormDataWithCourse:records[indexPath.row-1]];
-    }
-    
-    records = [Course MR_findAll];
-    [self.collectionView reloadData];
-}
-
 
 #pragma mark - UITextFieldDelegate methods
 
@@ -189,6 +148,8 @@
         
         [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
         
+        records = [Course MR_findAll];
+        
         return course;
     }
     
@@ -227,15 +188,28 @@
     
 }
 
-- (IBAction)holeField8:(id)sender {
+- (IBAction)currentCourseButtonPressed:(id)sender {
+    [self saveCurrentCourse];
+    
+    if ([records count]) {
+            
+        LRCoursePopoverController *popover = [self.storyboard instantiateViewControllerWithIdentifier:@"course_popover"];
+        popover.courses = records;
+        popover.viewController = self;
+        self.coursePopover = [[UIPopoverController alloc] initWithContentViewController:popover];
+        self.coursePopover.delegate = self;
+    
+        [self.coursePopover presentPopoverFromRect:self.currentCourseButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+    }
+    
 }
+
+
 
 - (IBAction)newGameButtonPressed:(id)sender {
     Course *course = [self saveCurrentCourse];
     if (course && [course isValidCourse]) {
-        
-        [self.collectionView reloadData];
-        
+                
         LRNewGameController *newgame = [self.storyboard instantiateViewControllerWithIdentifier:@"newgame"];
         newgame.course = course;
         [self.navigationController pushViewController:newgame animated:YES];

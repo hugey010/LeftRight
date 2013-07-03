@@ -514,16 +514,13 @@
             
         }
         
+        NSInteger pointDiff = ABS(teamATotal - teamBTotal) * [hole.press integerValue];
 
         UILabel *pointsLabel = [self valueForKey:[NSString stringWithFormat:@"pointsLabel%d", i+1]];
-        pointsLabel.text = [NSString stringWithFormat:@"%d", teamATotal];
-        
-        
-        NSInteger pointDiff = ABS(teamATotal + teamBTotal) * [hole.press integerValue];
+        pointsLabel.text = [NSString stringWithFormat:@"%d", pointDiff];
         
         
 
-        
         if ([hole.team isEqualToNumber:kTeam1]) {
             if (teamATotal > teamBTotal) {
                 p1Points -= pointDiff;

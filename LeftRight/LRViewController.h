@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LRViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UITextFieldDelegate, UITextViewDelegate>
+@class Course;
 
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@interface LRViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate, UIPopoverControllerDelegate>
+
+@property (nonatomic, strong) UIPopoverController *coursePopover;
 
 @property (weak, nonatomic) IBOutlet UITextField *courseNameField;
 @property (weak, nonatomic) IBOutlet UITextField *holeField1;
@@ -34,7 +36,14 @@
 
 @property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *allFields;
 
+@property (weak, nonatomic) IBOutlet UIButton *currentCourseButton;
+- (IBAction)currentCourseButtonPressed:(id)sender;
 
 - (IBAction)newGameButtonPressed:(id)sender;
+
+-(Course*)saveCurrentCourse;
+-(void)clearFormData;
+-(void)loadFormDataWithCourse:(Course*)course;
+
 
 @end

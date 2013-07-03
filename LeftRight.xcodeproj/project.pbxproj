@@ -11,6 +11,7 @@
 		9612C42D17827B930099AC8A /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 9612C42C17827B930099AC8A /* Player.m */; };
 		9612C43017827B930099AC8A /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 9612C42F17827B930099AC8A /* Course.m */; };
 		9612C43317827B930099AC8A /* Hole.m in Sources */ = {isa = PBXBuildFile; fileRef = 9612C43217827B930099AC8A /* Hole.m */; };
+		967C487F1783D56400AA8CD1 /* LRCoursePopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C487E1783D56400AA8CD1 /* LRCoursePopoverController.m */; };
 		9681950F177BEEA900C31908 /* red_rectangle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9681950E177BEEA900C31908 /* red_rectangle.jpg */; };
 		969A3EBE1781118100964943 /* LRPlayerPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 969A3EBD1781118100964943 /* LRPlayerPopoverController.m */; };
 		96B17CF11772A1800054C287 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B17CF01772A1800054C287 /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 		9612C42F17827B930099AC8A /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		9612C43117827B930099AC8A /* Hole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hole.h; sourceTree = "<group>"; };
 		9612C43217827B930099AC8A /* Hole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hole.m; sourceTree = "<group>"; };
+		967C487D1783D56400AA8CD1 /* LRCoursePopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRCoursePopoverController.h; sourceTree = "<group>"; };
+		967C487E1783D56400AA8CD1 /* LRCoursePopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRCoursePopoverController.m; sourceTree = "<group>"; };
 		9681950E177BEEA900C31908 /* red_rectangle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red_rectangle.jpg; sourceTree = "<group>"; };
 		969A3EBC1781118100964943 /* LRPlayerPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRPlayerPopoverController.h; sourceTree = "<group>"; };
 		969A3EBD1781118100964943 /* LRPlayerPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRPlayerPopoverController.m; sourceTree = "<group>"; };
@@ -87,6 +90,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		967C487C1783D54B00AA8CD1 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				969A3EBC1781118100964943 /* LRPlayerPopoverController.h */,
+				969A3EBD1781118100964943 /* LRPlayerPopoverController.m */,
+				967C487D1783D56400AA8CD1 /* LRCoursePopoverController.h */,
+				967C487E1783D56400AA8CD1 /* LRCoursePopoverController.m */,
+			);
+			name = Popover;
+			sourceTree = "<group>";
+		};
 		96B17CE41772A17F0054C287 = {
 			isa = PBXGroup;
 			children = (
@@ -173,14 +187,13 @@
 		96FACB5B1773EACE0009B820 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				967C487C1783D54B00AA8CD1 /* Popover */,
 				96B17D0E1772A1800054C287 /* LRViewController.h */,
 				96B17D0F1772A1800054C287 /* LRViewController.m */,
 				96FACB5C1773EAF50009B820 /* LRNewGameController.h */,
 				96FACB5D1773EAF50009B820 /* LRNewGameController.m */,
 				96FACB6317740EAF0009B820 /* LRActiveGameController.h */,
 				96FACB6417740EAF0009B820 /* LRActiveGameController.m */,
-				969A3EBC1781118100964943 /* LRPlayerPopoverController.h */,
-				969A3EBD1781118100964943 /* LRPlayerPopoverController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -308,6 +321,7 @@
 				9612C42D17827B930099AC8A /* Player.m in Sources */,
 				9612C43017827B930099AC8A /* Course.m in Sources */,
 				9612C43317827B930099AC8A /* Hole.m in Sources */,
+				967C487F1783D56400AA8CD1 /* LRCoursePopoverController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

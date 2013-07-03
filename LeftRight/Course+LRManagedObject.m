@@ -35,7 +35,7 @@
 
 -(BOOL)isValidHoleField:(NSNumber*)field {
     NSInteger value = [field integerValue];
-    if (value >= 0 && value <= 9) {
+    if (value >= 0 && value <= 18) {
         return YES;
     } else {
         return NO;
