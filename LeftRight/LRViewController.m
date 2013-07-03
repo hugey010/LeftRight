@@ -199,7 +199,7 @@
         self.coursePopover = [[UIPopoverController alloc] initWithContentViewController:popover];
         self.coursePopover.delegate = self;
     
-        [self.coursePopover presentPopoverFromRect:self.currentCourseButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+        [self.coursePopover presentPopoverFromRect:self.currentCourseButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
     }
     
 }
