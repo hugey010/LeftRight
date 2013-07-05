@@ -198,7 +198,7 @@
         popover.viewController = self;
         self.coursePopover = [[UIPopoverController alloc] initWithContentViewController:popover];
         self.coursePopover.delegate = self;
-    
+        
         [self.coursePopover presentPopoverFromRect:self.currentCourseButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
     }
     
@@ -215,10 +215,11 @@
         [self.navigationController pushViewController:newgame animated:YES];
         
     } else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Course Values" message:@"Current course must have a name and handicap values between 0 and 9." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Course Values" message:@"Current course must have a name and handicap values between 0 and 18." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
         [alert show];
         
     }
+
     
     
 }

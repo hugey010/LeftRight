@@ -59,9 +59,9 @@
     if (indexPath.row != 0) {
         [self.viewController loadFormDataWithCourse:self.courses[indexPath.row-1]];
     }
-
     
-    [self.viewController dismissViewControllerAnimated:YES completion:nil];
+    [self.viewController.coursePopover dismissPopoverAnimated:YES];
+    
 }
 
 @end

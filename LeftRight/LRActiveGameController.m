@@ -392,6 +392,7 @@
 }
 
 -(void) recalculateAllValues {
+    
     // calculate out totals
     NSInteger p1Out = 0;
     NSInteger p2Out = 0;
@@ -458,10 +459,10 @@
         Hole *hole = self.course.has_holes[i];
         NSInteger holeHandicap = [hole.handicap integerValue];
         
-        NSInteger p1Adjusted = (holeHandicap <= p1Handicap - lowestHandicap) ? [hole.player1Score integerValue] -1 : [hole.player1Score integerValue];
-        NSInteger p2Adjusted = (holeHandicap <= p1Handicap - lowestHandicap) ? [hole.player2Score integerValue] -1 : [hole.player2Score integerValue];
-        NSInteger p3Adjusted = (holeHandicap <= p1Handicap - lowestHandicap) ? [hole.player3Score integerValue] -1 : [hole.player3Score integerValue];
-        NSInteger p4Adjusted = (holeHandicap <= p1Handicap - lowestHandicap) ? [hole.player4Score integerValue] -1 : [hole.player4Score integerValue];
+        NSInteger p1Adjusted = (holeHandicap <= (p1Handicap - lowestHandicap)) ? [hole.player1Score integerValue] -1 : [hole.player1Score integerValue];
+        NSInteger p2Adjusted = (holeHandicap <= (p2Handicap - lowestHandicap)) ? [hole.player2Score integerValue] -1 : [hole.player2Score integerValue];
+        NSInteger p3Adjusted = (holeHandicap <= (p3Handicap - lowestHandicap)) ? [hole.player3Score integerValue] -1 : [hole.player3Score integerValue];
+        NSInteger p4Adjusted = (holeHandicap <= (p4Handicap - lowestHandicap)) ? [hole.player4Score integerValue] -1 : [hole.player4Score integerValue];
         
         
         NSInteger teamATotal = 0;
@@ -475,7 +476,7 @@
             }
             teamATotal = p1Adjusted + p2Adjusted;
             
-            if (p3Adjusted >= p4Adjusted) {
+            if (p3Adjusted > p4Adjusted) {
                 p3Adjusted *= 10;
             } else {
                 p4Adjusted *= 10;
@@ -490,7 +491,7 @@
             }
             teamATotal = p3Adjusted + p1Adjusted;
             
-            if (p2Adjusted >= p4Adjusted) {
+            if (p2Adjusted > p4Adjusted) {
                 p4Adjusted *= 10;
             } else {
                 p2Adjusted *= 10;
@@ -505,7 +506,7 @@
             }
             teamATotal = p4Adjusted + p1Adjusted;
             
-            if (p2Adjusted >= p3Adjusted) {
+            if (p2Adjusted > p3Adjusted) {
                 p3Adjusted *= 10;
             } else {
                 p2Adjusted *= 10;
@@ -518,7 +519,6 @@
 
         UILabel *pointsLabel = [self valueForKey:[NSString stringWithFormat:@"pointsLabel%d", i+1]];
         pointsLabel.text = [NSString stringWithFormat:@"%d", pointDiff];
-        
         
 
         if ([hole.team isEqualToNumber:kTeam1]) {
@@ -562,12 +562,9 @@
                 p3Points -= pointDiff;
                 p4Points += pointDiff;
             }
-            
         }
         
-        
-
-
+        DLog(@"hole loop");
     }
     
     [self.course.has_players[0] setPoints:[NSNumber numberWithInteger:p1Points]];
@@ -579,10 +576,6 @@
     self.player2TotalPointLabel.text = [NSString stringWithFormat:@"%@", [self.course.has_players[1] points]];
     self.player3TotalPointLabel.text = [NSString stringWithFormat:@"%@", [self.course.has_players[2] points]];
     self.player4TotalPointLabel.text = [NSString stringWithFormat:@"%@", [self.course.has_players[3] points]];
-
-    
-
-    
 
 }
 
