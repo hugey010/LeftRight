@@ -459,10 +459,15 @@
         Hole *hole = self.course.has_holes[i];
         NSInteger holeHandicap = [hole.handicap integerValue];
         
+        DLog(@"lowest handicap = %d", lowestHandicap);
+        DLog(@"player handicaps = %d, %d, %d, %d", p1Handicap, p2Handicap, p3Handicap, p4Handicap);
+        
         NSInteger p1Adjusted = (holeHandicap <= (p1Handicap - lowestHandicap)) ? [hole.player1Score integerValue] -1 : [hole.player1Score integerValue];
         NSInteger p2Adjusted = (holeHandicap <= (p2Handicap - lowestHandicap)) ? [hole.player2Score integerValue] -1 : [hole.player2Score integerValue];
         NSInteger p3Adjusted = (holeHandicap <= (p3Handicap - lowestHandicap)) ? [hole.player3Score integerValue] -1 : [hole.player3Score integerValue];
         NSInteger p4Adjusted = (holeHandicap <= (p4Handicap - lowestHandicap)) ? [hole.player4Score integerValue] -1 : [hole.player4Score integerValue];
+        
+        DLog(@"players adjusted = %d, %d, %d, %d", p1Adjusted, p2Adjusted, p3Adjusted, p4Adjusted);
         
         
         NSInteger teamATotal = 0;
@@ -477,9 +482,9 @@
             teamATotal = p1Adjusted + p2Adjusted;
             
             if (p3Adjusted > p4Adjusted) {
-                p3Adjusted *= 10;
-            } else {
                 p4Adjusted *= 10;
+            } else {
+                p3Adjusted *= 10;
             }
             teamBTotal = p3Adjusted + p4Adjusted;
             
@@ -514,6 +519,9 @@
             teamBTotal = p3Adjusted + p2Adjusted;
             
         }
+        
+        DLog(@"team A score = %d", teamATotal);
+        DLog(@"team B score = %d", teamBTotal);
         
         NSInteger pointDiff = ABS(teamATotal - teamBTotal) * [hole.press integerValue];
 
@@ -564,7 +572,6 @@
             }
         }
         
-        DLog(@"hole loop");
     }
     
     [self.course.has_players[0] setPoints:[NSNumber numberWithInteger:p1Points]];
