@@ -14,6 +14,8 @@
 
 @interface LRActiveGameController () {
     Hole *currentHole;
+    NSInteger lastPressValue;
+    NSInteger lastPressHoleNumber;
     UITextField *currentField;
     
     NSMutableArray *groupedHoles;
@@ -98,7 +100,22 @@
             if (field == textField) {
                 NSInteger activeIndex = [groupedHoles indexOfObject:holes];
                 currentField = textField;
-                currentHole = self.course.has_holes[activeIndex];
+                
+                Hole *activeHole = self.course.has_holes[activeIndex];
+                
+                // some logic for figuring if the current press value should change
+                if (lastPressHoleNumber < activeIndex) {
+                    activeHole.press = [NSNumber numberWithInteger:lastPressValue];
+                }
+                
+                lastPressValue = [activeHole.press integerValue];
+                lastPressHoleNumber = activeIndex;
+                
+                currentHole = activeHole;
+                
+                self.pressField.text = [NSString stringWithFormat:@"%@", currentHole.press];
+
+                
                 self.currentHoleLabel.text = [NSString stringWithFormat:@"%d", activeIndex+1];
                 
                 
@@ -114,8 +131,9 @@
 
                 }
                 
-                // set press value
-                self.pressField.text = [NSString stringWithFormat:@"%@", currentHole.press];
+                
+      
+                
                 
                 
                 return;
@@ -130,6 +148,8 @@
 
 -(void)pressFieldChanged:(NSNotification*)notification {
     currentHole.press = [numberFormatter numberFromString:self.pressField.text];
+    lastPressHoleNumber = [self.course.has_holes indexOfObject:currentHole];
+    lastPressValue = [currentHole.press integerValue];
     [self recalculateAllValues];
 
 }
@@ -463,9 +483,16 @@
         DLog(@"player handicaps = %d, %d, %d, %d", p1Handicap, p2Handicap, p3Handicap, p4Handicap);
         
         NSInteger p1Adjusted = (holeHandicap <= (p1Handicap - lowestHandicap)) ? [hole.player1Score integerValue] -1 : [hole.player1Score integerValue];
+        p1Adjusted = p1Adjusted >= 0 ? p1Adjusted : 0;
+        
         NSInteger p2Adjusted = (holeHandicap <= (p2Handicap - lowestHandicap)) ? [hole.player2Score integerValue] -1 : [hole.player2Score integerValue];
+        p2Adjusted = p2Adjusted >= 0 ? p2Adjusted : 0;
+        
         NSInteger p3Adjusted = (holeHandicap <= (p3Handicap - lowestHandicap)) ? [hole.player3Score integerValue] -1 : [hole.player3Score integerValue];
+        p3Adjusted = p3Adjusted >= 0 ? p3Adjusted : 0;
+        
         NSInteger p4Adjusted = (holeHandicap <= (p4Handicap - lowestHandicap)) ? [hole.player4Score integerValue] -1 : [hole.player4Score integerValue];
+        p4Adjusted = p4Adjusted >= 0 ? p4Adjusted : 0;
         
         DLog(@"players adjusted = %d, %d, %d, %d", p1Adjusted, p2Adjusted, p3Adjusted, p4Adjusted);
         
@@ -671,9 +698,9 @@
         [hole setPress:@1];
     }
     
-    
-    
     currentHole = self.course.has_holes[0];
+    lastPressValue = [currentHole.press integerValue];
+    lastPressHoleNumber = 0;
 }
 
 -(void)setupHandicaps {
