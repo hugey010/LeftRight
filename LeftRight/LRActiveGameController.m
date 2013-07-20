@@ -36,7 +36,7 @@
     self.navigationItem.title = @"Left Right";
     UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithTitle:@"End Game" style:UIBarButtonItemStylePlain target:self action:@selector(endGameButtonPressed:)];
     self.navigationItem.rightBarButtonItem = nextButton;
-    
+
     numberFormatter = [[NSNumberFormatter alloc] init];
     [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
     

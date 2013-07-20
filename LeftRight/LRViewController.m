@@ -28,7 +28,8 @@
     self.navigationItem.title = @"Left Right";
     UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithTitle:@"New Game" style:UIBarButtonItemStylePlain target:self action:@selector(newGameButtonPressed:)];
     self.navigationItem.rightBarButtonItem = nextButton;
-    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+
     initialFrame = CGRectZero;
 
     records = [Course MR_findAll];

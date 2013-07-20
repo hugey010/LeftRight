@@ -26,7 +26,8 @@
     self.navigationItem.title = @"Left Right";
     UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithTitle:@"Start Game" style:UIBarButtonItemStylePlain target:self action:@selector(startGameButtonPressed:)];
     self.navigationItem.rightBarButtonItem = nextButton;
-    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+
     self.courseLabel.text = self.course.name;
     
 }
