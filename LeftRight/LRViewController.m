@@ -25,10 +25,11 @@
 {
     [super viewDidLoad];
     
-    initialFrame = CGRectZero;
+    self.navigationItem.title = @"Left Right";
+    UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithTitle:@"New Game" style:UIBarButtonItemStylePlain target:self action:@selector(newGameButtonPressed:)];
+    self.navigationItem.rightBarButtonItem = nextButton;
     
-    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    initialFrame = CGRectZero;
 
     records = [Course MR_findAll];
 }
@@ -56,57 +57,6 @@
 }
 
 #pragma mark - private methods
-
--(void)keyboardWillHide:(NSNotification*)n {
-    NSDictionary* userInfo = [n userInfo];
-    NSTimeInterval duration;
-    UIViewAnimationCurve animationCurve;
-    CGRect startFrame;
-    CGRect endFrame;
-    [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&duration];
-    [[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey]    getValue:&animationCurve];
-    [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey]        getValue:&startFrame];
-    [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey]          getValue:&endFrame];
-
-    
-    [UIView animateWithDuration:duration
-                          delay:0
-                        options:animationCurve|UIViewAnimationOptionBeginFromCurrentState
-                     animations:^{
-                         [self.view setFrame:initialFrame];
-                     }
-                     completion:nil];
-}
-
--(void)keyboardWillShow:(NSNotification*)n {
-    
-    NSDictionary* userInfo = [n userInfo];
-    NSTimeInterval duration;
-    UIViewAnimationCurve animationCurve;
-    CGRect startFrame;
-    CGRect endFrame;
-    [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&duration];
-    [[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey]    getValue:&animationCurve];
-    [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey]        getValue:&startFrame];
-    [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey]          getValue:&endFrame];
-    
-    initialFrame = self.view.frame;
-    
-    CGRect frame = CGRectMake(self.view.frame.origin.x,
-                              self.view.frame.origin.y - endFrame.size.height/4,
-                              self.view.frame.size.width,
-                              self.view.frame.size.height);
-    
-    [UIView animateWithDuration:duration
-                          delay:0
-                        options:animationCurve|UIViewAnimationOptionBeginFromCurrentState
-                     animations:^{
-                         [self.view setFrame:frame];
-                     }
-                     completion:nil];
-    
-    
-}
 
 -(Course*)saveCurrentCourse {
     if (self.courseNameField.text && self.courseNameField.text.length > 0) {

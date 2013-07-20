@@ -10,6 +10,8 @@
 #import "Course.h"
 #import "LRActiveGameController.h"
 #import "Player.h"
+#import "LRNavController.h"
+#import "LRAppDelegate.h"
 
 @interface LRNewGameController ()
 
@@ -20,6 +22,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.navigationItem.title = @"Left Right";
+    UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithTitle:@"Start Game" style:UIBarButtonItemStylePlain target:self action:@selector(startGameButtonPressed:)];
+    self.navigationItem.rightBarButtonItem = nextButton;
     
     self.courseLabel.text = self.course.name;
     
@@ -50,7 +56,6 @@
 - (IBAction)startGameButtonPressed:(id)sender {
     if ([self checkAllFields]) {
         
-        
         Player *p1 = [Player MR_createEntity];
         p1.name = self.nameField1.text;
         p1.handicap = [NSNumber numberWithInteger:[self.handicapField1.text integerValue]];
@@ -71,7 +76,6 @@
         
         [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
 
-        
         self.activeGame = [self.storyboard instantiateViewControllerWithIdentifier:@"active"];
         self.activeGame.course = self.course;
         [self.navigationController pushViewController:self.activeGame animated:YES];

@@ -11,6 +11,7 @@
 		9612C42D17827B930099AC8A /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 9612C42C17827B930099AC8A /* Player.m */; };
 		9612C43017827B930099AC8A /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 9612C42F17827B930099AC8A /* Course.m */; };
 		9612C43317827B930099AC8A /* Hole.m in Sources */ = {isa = PBXBuildFile; fileRef = 9612C43217827B930099AC8A /* Hole.m */; };
+		9614FB38179A35CE00D29199 /* LRNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9614FB37179A35CE00D29199 /* LRNavController.m */; };
 		967C487F1783D56400AA8CD1 /* LRCoursePopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C487E1783D56400AA8CD1 /* LRCoursePopoverController.m */; };
 		9681950F177BEEA900C31908 /* red_rectangle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9681950E177BEEA900C31908 /* red_rectangle.jpg */; };
 		969A3EBE1781118100964943 /* LRPlayerPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 969A3EBD1781118100964943 /* LRPlayerPopoverController.m */; };
@@ -42,6 +43,8 @@
 		9612C42F17827B930099AC8A /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		9612C43117827B930099AC8A /* Hole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hole.h; sourceTree = "<group>"; };
 		9612C43217827B930099AC8A /* Hole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hole.m; sourceTree = "<group>"; };
+		9614FB36179A35CE00D29199 /* LRNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRNavController.h; sourceTree = "<group>"; };
+		9614FB37179A35CE00D29199 /* LRNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRNavController.m; sourceTree = "<group>"; };
 		967C487D1783D56400AA8CD1 /* LRCoursePopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRCoursePopoverController.h; sourceTree = "<group>"; };
 		967C487E1783D56400AA8CD1 /* LRCoursePopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRCoursePopoverController.m; sourceTree = "<group>"; };
 		9681950E177BEEA900C31908 /* red_rectangle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red_rectangle.jpg; sourceTree = "<group>"; };
@@ -203,6 +206,8 @@
 			children = (
 				96FACB601773F7550009B820 /* TPKeyboardAvoidingScrollView.h */,
 				96FACB611773F7550009B820 /* TPKeyboardAvoidingScrollView.m */,
+				9614FB36179A35CE00D29199 /* LRNavController.h */,
+				9614FB37179A35CE00D29199 /* LRNavController.m */,
 			);
 			name = CustomUI;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 				9612C43017827B930099AC8A /* Course.m in Sources */,
 				9612C43317827B930099AC8A /* Hole.m in Sources */,
 				967C487F1783D56400AA8CD1 /* LRCoursePopoverController.m in Sources */,
+				9614FB38179A35CE00D29199 /* LRNavController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
