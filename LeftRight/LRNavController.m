@@ -36,6 +36,4 @@
     [self pushViewController:nextPush animated:YES];
 }
 
-
-
 @end

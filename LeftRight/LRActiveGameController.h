@@ -14,7 +14,7 @@
 #define kTeam2 (@2)
 #define kTeam3 (@3)
 
-@interface LRActiveGameController : UIViewController <UITextFieldDelegate, UIPopoverControllerDelegate>
+@interface LRActiveGameController : UIViewController <UITextFieldDelegate, UIPopoverControllerDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) Course *course;
 
@@ -196,8 +196,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *pressField;
 
-
-- (IBAction)backButtonPressed:(id)sender;
 - (IBAction)endGameButtonPressed:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UILabel *currentHoleLabel;

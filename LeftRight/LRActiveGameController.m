@@ -21,7 +21,10 @@
     NSMutableArray *groupedHoles;
     
     NSNumberFormatter *numberFormatter;
-
+    
+    UIAlertView *endGameAlert;
+    UIAlertView *backButtonAlert;
+    
 }
 
 @end
@@ -36,7 +39,10 @@
     self.navigationItem.title = @"Left Right";
     UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithTitle:@"End Game" style:UIBarButtonItemStylePlain target:self action:@selector(endGameButtonPressed:)];
     self.navigationItem.rightBarButtonItem = nextButton;
-
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonSystemItemTrash target:self action:@selector(backButtonPressed)];
+    
+    
     numberFormatter = [[NSNumberFormatter alloc] init];
     [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
     
@@ -71,14 +77,15 @@
     }
 }
 
-- (IBAction)backButtonPressed:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+- (void)backButtonPressed{
+    backButtonAlert = [[UIAlertView alloc] initWithTitle:@"Are you sure you want to end the game?" message:@"This will remove all current round information." delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"End Game", nil];
+    [backButtonAlert show];
 }
 
 - (IBAction)endGameButtonPressed:(id)sender {
-    [self.navigationController popToRootViewControllerAnimated:YES];
-    
-    // TODO: add this to history
+    endGameAlert = [[UIAlertView alloc] initWithTitle:@"Are you sure you want to end the game?" message:@"This will remove all current round information." delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"End Game", nil];
+    [endGameAlert show];
+        
 }
 
 #pragma mark - UITextFieldDelegate methods
@@ -133,7 +140,21 @@
     }
 
 }
- 
+
+#pragma mark - UIAlertViewDelegate methods
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        if (alertView == endGameAlert) {
+            [self.navigationController popToRootViewControllerAnimated:YES];
+        } else if (alertView == backButtonAlert) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    } else {
+        
+    }
+}
+
 
 #pragma mark - Observer methods
 
